@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// ==========================================================================
+// Wee – Button
+// ==========================================================================
+
+//Button
+.btn {
+  border: 1px solid #d7d7d7;
+  background-color: #f3f3f3;
+  line-height: normal;
+  padding: .5em 1em;
+  text-decoration: none;
+  font-size:14px;
+  color: #363636;
+  display: inline-block;
+  @include border-radius(3px);
+  @include transition(all 1.0s ease-in);
+  &:hover, &:active { text-decoration: none; }
+  // &:hover { background: #f9f9f9; }
+}
+.btn-primary {
+  // primary
+}
+.btn-secondary {
+  // secondary
+}
+.btn-block {
+  display:block;
+}
+.btn-disable{
+
+}
+.btn-lg {
+  padding:10px 15px;
+  font-size:18px;
+  line-height:1.3333;
+}
+
+.btn-sm {
+  padding:5px 10px;
+  line-height:1.5;
+  font-size:12px;
+}
+
+@mixin btn-color($color) {
+ background:$color;color:#fff;border:1px solid $color;
+}
+
+.btn-blue {@include btn-color($color-blue);}
+.btn-green {@include btn-color($color-green)}
+.btn-orange {@include btn-color($color-orange)}
+.btn-gray {@include btn-color($color-gray)}
+
+
+// Button Styled as Link
+.btn-link {
+  color: $base-link-color;
+  text-decoration: underline;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  &:hover { text-decoration: none; }
+  &:active { outline: 0; }
+}

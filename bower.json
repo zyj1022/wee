@@ -1,0 +1,24 @@
+{
+  "name": "weeui",
+  "version": "1.2.0",
+  "homepage": "https://github.com/zyj1022/wee",
+  "authors": [
+    "King Zhi <zyj10222@126.com>"
+  ],
+  "description": "简单快速的响应式HTML/CSS前端框架",
+  "keywords": [
+    "css",
+    "scss",
+    "framework",
+    "mobile",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

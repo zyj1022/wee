@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>WEE-Document</title>
+</head>
+
+<body>
+	<section class="header">
+		<div class="container">
+
+			<a href="#" class="logo">WEE</a>
+		</div>
+	</section>
+
+	<div class="container">
+		<h2>全局</h2>
+		<p>全局定义包括如下内容</p>
+		<table>
+			<caption>排版样式</caption>
+			<thead>
+				<tr>
+					<th>Element / Class</th>
+					<th>Example</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<code>&lt;b&gt;, &lt;strong&gt;</code>
+					</td>
+					<td>
+						<strong>Strong text</strong>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;em&gt;</code>
+					</td>
+					<td>
+						<em>Italic text</em>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;abbr&gt;</code>
+					</td>
+					<td>
+						<abbr title="As Soon As Possible">ASAP</abbr>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;dfn&gt;</code>
+					</td>
+					<td>
+						<dfn>Definition</dfn>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;mark&gt;</code>
+					</td>
+					<td>
+						<mark>Mark</mark>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;small&gt;</code>
+					</td>
+					<td>
+						<small>Small text</small>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;sub&gt;</code>
+					</td>
+					<td>
+						Text with <sub>Sub text</sub>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;sup&gt;</code>
+					</td>
+					<td>
+						Text with <sup>Sup text</sup>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<code>&lt;del&gt;</code>
+					</td>
+					<td>
+						<del>Deleted text</del>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>标题</h2>
+		<table class="table-border">
+			<caption>标题样式</caption>
+			<thead>
+				<tr>
+					<th>Element / Class</th>
+					<th>HTML Output</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						h1
+						<br/> .h1
+					</td>
+					<td>
+						<h2 class="h1">Heading 1</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						h2
+						<br/>.h2
+					</td>
+					<td>
+						<h2>Heading 2</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						h3
+						<br/>.h3
+					</td>
+					<td>
+						<h2 class="h3">Heading 3</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						h4
+						<br/>.h4
+					</td>
+					<td>
+						<h2 class="h4">Heading 4</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						h5
+						<br/>.h5
+					</td>
+					<td>
+						<h2 class="h5">Heading 5</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						h6
+						<br/>.h6
+					</td>
+					<td>
+						<h2 class="h6">Heading 6</h2>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>列表</h2>
+		<div class="row">
+			<div class="col-12">
+				<h3>无序列表</h3>
+				<ul>
+					<li>我是一条无序列表 1</li>
+					<li>我是一条无序列表 2</li>
+					<li>我是一条无序列表 3</li>
+				</ul>
+			</div>
+			<div class="col-12">
+				<h3>有序列表</h3>
+				<ol>
+					<li>我是一条有序列表 1</li>
+					<li>我是一条有序列表 2</li>
+					<li>我是一条有序列表 3</li>
+				</ol>
+			</div>
+			<div class="col-12">
+				<h3>定义列表</h3>
+				<ul class="no-bit">
+					<li>我是一条定义列表 1</li>
+					<li>我是一条定义列表 2</li>
+					<li>我是一条定义列表 3</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-exp">
+			<h2>布局</h2>
+			<p>固定宽度布局</p>
+			<div class="row">
+				<div class="col-1"><span>col-1</span></div>
+				<div class="col-11"><span>col-11</span></div>
+			</div>
+			<div class="row">
+				<div class="col-2"><span>col-2</span></div>
+				<div class="col-10"><span>col-10</span></div>
+			</div>
+			<div class="row">
+				<div class="col-3"><span>col-3</span></div>
+				<div class="col-9"><span>col-9</span></div>
+			</div>
+			<div class="row">
+				<div class="col-4"><span>col-4</span></div>
+				<div class="col-8"><span>col-8</span></div>
+			</div>
+			<div class="row">
+				<div class="col-5"><span>col-5</span></div>
+				<div class="col-7"><span>col-7</span></div>
+			</div>
+			<div class="row">
+				<div class="col-6"><span>col-6</span></div>
+				<div class="col-6"><span>col-6</span></div>
+			</div>
+			<div class="row">
+				<div class="col-12"><span>col-12</span></div>
+			</div>
+		</div>
+
+		<h2>响应式布局</h2>
+		<div class="row col-resp">
+			<div class="col-3 col-6-sm col-4-md  col-1-hd">
+				<span class="md1">col-3</span>
+				<span class="md">col-4-md</span>
+				<span class="sm">col-6-sm</span>
+				<span class="hd">col-1-hd</span>
+			</div>
+			<div class="col-9 col-6-sm col-8-md col-11-hd">
+				<span class="md1">col-9</span>
+				<span class="md">col-8-md</span>
+				<span class="sm">col-6-sm</span>
+				<span class="hd">col-11-hd</span>
+			</div>
+		</div>
+
+		<h2>响应布局 偏移</h2>
+		<div class="row col-resp">
+			<div class="col-4 push-8 col-7-sm push-5-sm col-3-md push-9-md col-2-hd push-10-hd">
+				<span class="md1">col-4 push8</span>
+				<span class="md">col-3-md push9</span>
+				<span class="sm">col-7-sm push5</span>
+				<span class="hd">col-2-hd push10</span>
+			</div>
+			<div class="col-8 pull-4 col-5-sm pull-7-sm col-9-md pull-3-md col-10-hd pull-2-hd">
+				<span class="md1">col-8 pull4</span>
+				<span class="md">col-9-md pull3</span>
+				<span class="sm">col-5-sm pull7</span>
+				<span class="hd">col-10-hd pull2</span>
+			</div>
+		</div>
+
+		<h2>响应布局 偏移</h2>
+		<div class="row col-push">
+			<div class="col-4 push-8"><span>col-4 push-8</span></div>
+		</div>
+		<div class="row col-push">
+			<div class="col-5 push-7"><span>col-5 pull-7</span></div>
+		</div>
+		<div class="row col-push">
+			<div class="col-6 push-6"><span>col-6 pull-6</span></div>
+		</div>
+		<div class="row col-push">
+			<div class="col-7 push-5"><span>col-7 pull-5</span></div>
+		</div>
+
+
+		<h2>按钮</h2>
+		<div class="row btn-area">
+			<div class="col-12">
+				<a class="btn btn-blue btn-lg" href="#" role="button">我是大按钮 (btn-lg)</a>
+				<br>
+				<button class="btn btn-green btn-sm" type="submit">我是小按钮 (btn-sm)</button>
+				<br>
+				<input class="btn btn-orange" type="button" value="默认按钮（btn)">
+				<br>
+				<input class="btn btn-gray" type="submit" value="Submit">
+				<br>
+			</div>
+		</div>
+
+		<h2>竖排表单</h2>
+		<div class="row form-group">
+			<form class="form" action="index.html" method="post">
+				<ul class="form-block">
+					<li class="form-item">
+						<label for="username">用户名</label>
+						<input type="text" placeholder="请输入用户名">
+					</li>
+					<li class="form-item">
+						<label for="password">密码</label>
+						<input type="text" placeholder="请输入密码">
+					</li>
+					<li class="form-field">
+						<input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"> 下次自动登录
+						<a href="#" class="btn-link">忘记密码</a>
+					</li>
+					<li class="form-field">
+						<input type="submit" class="btn btn-orange" value="登录">
+						<input type="submit" class="btn" value="注册">
+					</li>
+				</ul>
+			</form>
+		</div>
+
+
+		<h2>横排表单</h2>
+		<div class="row form-group">
+			<form class="form" action="index.html" method="post">
+				<ul class="form-uniline">
+					<li class="form-item">
+						<label for="username">用户名</label>
+						<input type="text" placeholder="请输入用户名">
+					</li>
+					<li class="form-item">
+						<label for="password">密码</label>
+						<input type="text" placeholder="请输入密码">
+					</li>
+					<li>
+						<input type="checkbox" name="" class="form-checkbox" value="1" checked="checked"> 下次自动登录
+						<a href="#" class="btn-link">忘记密码</a>
+					</li>
+					<li>
+						<input type="submit" class="btn btn-green" value="登录">
+						<input type="submit" class="btn" value="注册">
+					</li>
+				</ul>
+			</form>
+		</div>
+
+		<h2>注册表单</h2>
+		<div class="row form-group">
+			<form class="form" action="index.html" method="post">
+				<ul class="form-block">
+					<li class="form-item">
+						<label for="username">用户名</label>
+						<input type="text" placeholder="请输入用户名">
+					</li>
+					<li class="form-item">
+						<label for="password">密码</label>
+						<input type="text" placeholder="请输入密码">
+					</li>
+					<li class="form-item">
+						<label for="password">确认密码</label>
+						<input type="text" placeholder="请输入密码">
+					</li>
+					<li class="form-item">
+						<label for="password">联系人</label>
+						<input type="text" placeholder="">
+					</li>
+					<li class="form-item">
+						<label for="password">所在国家</label>
+						<select class="" name="" size="1" id="">
+							<option selected="selected" value="1">中国</option>
+							<option value="2">美国</option>
+							<option value="3">英国</option>
+						</select>
+					</li>
+					<li class="form-item">
+						<label for="password">电话号码</label>
+						<input type="text" id="" placeholder="">
+					</li>
+					<li class="form-item">
+						<label for="password">联系地址</label>
+						<input type="text" id="" placeholder="">
+					</li>
+
+					<li class="form-field">
+						<input type="submit" class="btn btn-blue" value="登录">
+						<input type="submit" class="btn" value="注册">
+					</li>
+				</ul>
+			</form>
+		</div>
+
+
+	</div>
+</body>
+
+</html>
