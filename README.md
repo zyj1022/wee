@@ -44,11 +44,16 @@ WEE 目前涵盖了常用的核心样式及12列栅格化，
       │   ├── images.scss
       │   ├── page.css
       │   ├── table.scss
+      │   ├── flex.scss [新增flex布局]
       │   └── typography.scss
       ├── normalize.scss
       ├── variables.scss
       └── wee.scss
 ```
+
+# 功能更新
+
+- 新增 Flex 布局 具体查看 flex.html 说明
 
 # 具体使用说明
 

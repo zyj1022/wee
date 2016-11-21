@@ -81,7 +81,7 @@ $fade-map: (
 @mixin animate-fadeInUp {
   @include fade-style(8);
 }
-@mixin animate-fadeOutUpBig {
+@mixin animate-fadeInUpBig {
   @include fade-style(9);
 }
 

@@ -12,8 +12,13 @@
 <body>
 	<section class="header">
 		<div class="container">
-
 			<a href="#" class="logo">WEE</a>
+			<nav>
+				<ul>
+					<li><a href="/">首页</a></li>
+					<li><a href="flex.html">Flex布局</a></li>
+				</ul>
+			</nav>
 		</div>
 	</section>
 
@@ -278,6 +283,169 @@
 		</div>
 
 
+		<div class="col-exp">
+			<h2>Flex 布局 </h2>
+			<p>24列栅格化，与上面使用方式类似，栅格更细致，变化更多样</p>
+			<h3>Flex 布局用法说明 <a target="_blank" href="http://caniuse.com/#search=flex">兼容性</a></h3>
+			<p>flex 容器 有两种</p>
+			<p>
+				flex-column: 容器里的[栅格]以横向排列，与传统栅格化的row一样
+			</p>
+			<p>
+				flex-row: 容器里的[栅格]以竖向排列，表示一层叠一层的排列方式
+			</p>
+			<p>
+				栅格化为24列，如果单行超过24列，即自动换行
+			</p>
+			<h3>用法示列</h3>
+			<div class="flex-column">
+				<div class="flex-col-12 flex-test"><span>flex-col-12</span></div>
+				<div class="flex-col-12 flex-test"><span>flex-col-12</span></div>
+				<div class="flex-col-8 flex-test"><span>flex-col-8</span></div>
+				<div class="flex-col-16 flex-test"><span>flex-col-16</span></div>
+				<div class="flex-col-6 flex-test"><span>flex-col-6</span></div>
+				<div class="flex-col flex-test"><span>flex-col 自动填充宽度</span></div>
+				<div class="flex-col-6 flex-test"><span>flex-col-6</span></div>
+				<div class="flex-col-14 flex-test"><span>flex-col-14</span></div>
+				<div class="flex-col"><span>flex-col 自动填充宽度</span></div>
+				<div class="flex-col-16 flex-test"><span>flex-col-16</span></div>
+				<div class="flex-col-12 flex-test"><span>flex-col-12</span></div>
+
+				<div class="flex-col-16 flex-row">
+					<div class="flex-col"><span>flex-col</span></div>
+					<div class="flex-col"><span>flex-col</span></div>
+				</div>
+				<div class="flex-col-8 flex-row">
+					<div class="flex-col"><span>flex-col</span></div>
+					<div class="flex-col"><span>flex-col</span></div>
+					<div class="flex-col"><span>flex-col</span></div>
+				</div>
+			</div>
+			<h3>flex-middle 垂直居中 flex-center 水平居中</h3>
+			<div class="flex-row flex-middle flex-center" style="min-height: 200px;background:#f5f5f5;border:1px solid #ccc">
+				<div class="flex-col-6 flex-test"><span>flex-col-6垂直居中</span></div>
+				<div class="flex-col-6 flex-test"><span>flex-col-6多行垂直居中</span></div>
+			</div>
+
+			<h3>flex-push-* 向左偏移</h3>
+			<div class="flex-column" style="background:#f5f5f5;">
+				<div class="flex-col-12"><span>flex-col-12</span></div>
+			</div>
+			<div class="flex-column" style="background:#f5f5f5;">
+				<div class="flex-col-12 flex-push-6"><span>flex-col-12 flex-push-6</span></div>
+			</div>
+			<div class="flex-column" style="background:#f5f5f5;">
+				<div class="flex-col-10 flex-push-14"><span>flex-col-10 flex-push-14</span></div>
+			</div>
+
+			<h3>flex-order-* 排序 order越小排在越前面</h3>
+			<div class="flex-column">
+				<div class="flex-col-5 flex-order-4"><span>flex-col-4 flex-order-4</span></div>
+				<div class="flex-col-5 flex-order-3"><span>flex-col-4 flex-order-3</span></div>
+				<div class="flex-col-5 flex-order-2"><span>flex-col-4 flex-order-2</span></div>
+				<div class="flex-col-5 flex-order-1"><span>flex-col-4 flex-order-1</span></div>
+			</div>
+
+			<h3>flex-left左对齐  flex-right 右对齐</h3>
+			<div class="flex-column" style="background:#f5f5f5;">
+				<div class="flex-col-4"><span>flex-col-4</span></div>
+				<div class="flex-col-4"><span>flex-col-4</span></div>
+				<div class="flex-col-4"><span>flex-col-4</span></div>
+			</div>
+
+			<div class="flex-column flex-right" style="background:#f5f5f5;">
+				<div class="flex-col-6"><span>flex-col-6</span></div>
+				<div class="flex-col-6"><span>flex-col-6</span></div>
+				<div class="flex-col-6"><span>flex-col-6</span></div>
+			</div>
+
+			<div class="flex-row flex-left" style="background:#f5f5f5;">
+				<div class="flex-col-4"><span>flex-col-4 左对齐</span></div>
+				<div class="flex-col-4 flex-right"><span>flex-col-4 右对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 左对齐</span></div>
+			</div>
+
+			<div class="flex-row" style="background:#f5f5f5;">
+				<div class="flex-col-4 flex-right"><span>flex-col-4 右对齐</span></div>
+				<div class="flex-col-4 flex-left"><span>flex-col-4 左对齐</span></div>
+				<div class="flex-col-4 flex-right"><span>flex-col-4 右对齐</span></div>
+			</div>
+
+			<h3>flex-top 顶部对齐 flex-bottom 底部对齐</h3>
+			<div class="flex-column flex-bottom" style="background:#f5f5f5;min-height:120px">
+				<div class="flex-col-6"><span>flex-col-6 底部对齐</span></div>
+				<div class="flex-col-6 flex-top"><span>flex-col-6 顶部对齐</span></div>
+				<div class="flex-col-6"><span>flex-col-6 底部对齐</span></div>
+			</div>
+
+			<h3>flex-between 等宽对齐 —— 自动调整栅格间距，保持两边间距相同</h3>
+			<div class="flex-column flex-between" style="background:#f5f5f5;">
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+			</div>
+			<div class="flex-row flex-between flex-center" style="background:#f5f5f5;min-height: 300px;">
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+			</div>
+
+			<h3>flex-around 分散排列 —— 与等宽对齐相同，但靠两侧的间距比[栅格]之间的间距大一倍</h3>
+			<div class="flex-column flex-around" style="background:#f5f5f5;">
+				<div class="flex-col-3"><span>分散排列</span></div>
+				<div class="flex-col-3"><span>分散排列</span></div>
+				<div class="flex-col-3"><span>分散排列</span></div>
+				<div class="flex-col-3"><span>分散排列</span></div>
+			</div>
+			<div class="flex-row flex-around flex-center" style="background:#f5f5f5;min-height: 400px;">
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+				<div class="flex-col-4"><span>flex-col-4 等宽对齐</span></div>
+			</div>
+
+			<h3>响应式</h3>
+			<p><strong>flex-md</strong> 当分辨率低于 992px 的时候，使[容器]变为竖向排列</p>
+			<div class="flex-column flex-middle flex-md" style="background:#f5f5f5;min-height: 100px;">
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+			</div>
+
+			<p><strong>flex-sm</strong> 当分辨率低于 768px 的时候，使[容器]变为竖向排列</p>
+			<div class="flex-column flex-middle flex-sm" style="background:#f5f5f5;min-height: 100px;">
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+			</div>
+
+			<p><strong>flex-md-hide</strong> 当分辨率低于 992px 的时候，隐藏[栅格]或[容器]</p>
+			<p><strong>flex-md-show</strong> 当分辨率低于 992px 的时候，显示[栅格]或[容器]</p>
+			<div class="flex-column flex-middle flex-md" style="background:#f5f5f5;min-height: 100px;">
+				<div class="flex-col-24"><span>flex-col-24</span></div>
+				<div class="flex-col flex-md-hide"><span>低于992px则隐藏该栅格</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col flex-md-show"><span>低于992px 则显示该栅格</span></div>
+				<div class="flex-col flex-md-show"><span>低于992px 则显示该栅格</span></div>
+				<div class="flex-col flex-md-show"><span>低于992px 则显示该栅格</span></div>
+			</div>
+
+			<p><strong>flex-sm-hide</strong> 当分辨率低于 768px 的时候，隐藏[栅格]或[容器]</p>
+			<p><strong>flex-sm-show</strong> 当分辨率低于 768px 的时候，显示[栅格]或[容器]</p>
+			<div class="flex-column flex-middle flex-md" style="background:#f5f5f5;min-height: 100px;">
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col flex-sm-hide"><span>低于 768px 则隐藏该栅格</span></div>
+				<div class="flex-col"><span>flex-col</span></div>
+				<div class="flex-col flex-sm-show"><span>低于 768px 则显示该栅格</span></div>
+			</div>
+
+		</div>
+
+
 		<h2>按钮</h2>
 		<div class="row btn-area">
 			<div class="col-12">
@@ -385,6 +553,8 @@
 				</ul>
 			</form>
 		</div>
+
+
 
 
 	</div>
