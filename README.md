@@ -3,6 +3,8 @@
 WEE 是一个面向熟悉SASS使用人员的响应式前端框架，以[MUSS](https://github.com/zyj1022/muss) 为基础，
 根据实际使用需求，总结概括了常用组件，致力于让你使用最少的代码，用最少的时间创建你所需要的网站。
 
+# [Demo 查看](http://zyj1022.github.io/demos/wee/)
+
 # 使用方法
 
 安装node，之后全局安装wee
