@@ -5,347 +5,15 @@
 /* Github: https://github.com/zyj1022/wee | @zyj1022
 /* Version: 1.1 | Last Updated: 2019-3-20
 /* ========================================================================== */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-/*
-* Colors Ant Design 色系
-* https://ant.design/docs/spec/colors-cn
+* UFE Design Colors 色系
 */
 body {
   font-size: 16px;
   font-size: 1rem;
   line-height: 20px;
   line-height: 1.25rem;
-  color: #595959;
+  color: #666666;
   background: #fff;
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -358,7 +26,7 @@ body {
 }
 
 a {
-  color: #1890ff;
+  color: #1088DB;
   background: transparent;
   text-decoration: none;
 }
@@ -421,93 +89,93 @@ dfn {
 }
 
 .wee-alert-primary {
-  background-color: #cbe6ff;
-  border-color: #98cdff;
-  color: #0069cb;
+  background-color: #a5d6f8;
+  border-color: #76c1f5;
+  color: #0b5c94;
 }
 
 .wee-alert-primary hr {
-  border-top-color: #7ec1ff;
+  border-top-color: #5eb6f3;
 }
 
 .wee-alert-primary .wee-alert-link {
-  color: #003465;
+  color: #042135;
 }
 
 .wee-alert-secondary {
-  background-color: #e5e5e5;
-  border-color: #cccccc;
-  color: #666666;
+  background-color: #d0d0d0;
+  border-color: #b7b7b7;
+  color: #515151;
 }
 
 .wee-alert-secondary hr {
-  border-top-color: #bfbfbf;
+  border-top-color: #aaaaaa;
 }
 
 .wee-alert-secondary .wee-alert-link {
-  color: #333333;
+  color: #1e1e1e;
 }
 
 .wee-alert-success {
-  background-color: #baf29e;
-  border-color: #9aec71;
-  color: #368011;
+  background-color: #d6eed1;
+  border-color: #b4e0ac;
+  color: #428b34;
 }
 
 .wee-alert-success hr {
-  border-top-color: #8ae95b;
+  border-top-color: #a4d999;
 }
 
 .wee-alert-success .wee-alert-link {
-  color: #102605;
+  color: #1f4118;
 }
 
 .wee-alert-info {
-  background-color: #93f4f4;
-  border-color: #65f0f0;
-  color: #0c7c7c;
+  background-color: #94f1ff;
+  border-color: #61eaff;
+  color: #008094;
 }
 
 .wee-alert-info hr {
-  border-top-color: #4deeee;
+  border-top-color: #47e6ff;
 }
 
 .wee-alert-info .wee-alert-link {
-  color: #031f1f;
+  color: #00272e;
 }
 
 .wee-alert-warning {
-  background-color: #fef6c3;
-  border-color: #fdee91;
-  color: #bda404;
+  background-color: #fff5a6;
+  border-color: #ffef73;
+  color: #a69200;
 }
 
 .wee-alert-warning hr {
-  border-top-color: #fcea78;
+  border-top-color: #ffec59;
 }
 
 .wee-alert-warning .wee-alert-link {
-  color: #5a4e02;
+  color: #403800;
 }
 
 .wee-alert-danger {
-  background-color: #fdcdcf;
-  border-color: #fb9ca1;
-  color: #c20912;
+  background-color: #fceae7;
+  border-color: #f7c1b9;
+  color: #ce2d16;
 }
 
 .wee-alert-danger hr {
-  border-top-color: #f9848a;
+  border-top-color: #f5aca2;
 }
 
 .wee-alert-danger .wee-alert-link {
-  color: #600409;
+  color: #72190c;
 }
 
 .wee-alert-light {
   background-color: white;
   border-color: white;
-  color: #cfcfcf;
+  color: #c8c8c8;
 }
 
 .wee-alert-light hr {
@@ -515,17 +183,17 @@ dfn {
 }
 
 .wee-alert-light .wee-alert-link {
-  color: #9c9c9c;
+  color: #959595;
 }
 
 .wee-alert-dark {
-  background-color: #7f7f7f;
-  border-color: #666666;
-  color: black;
+  background-color: #9d9d9d;
+  border-color: #848484;
+  color: #1e1e1e;
 }
 
 .wee-alert-dark hr {
-  border-top-color: #595959;
+  border-top-color: #777777;
 }
 
 .wee-alert-dark .wee-alert-link {
@@ -575,35 +243,35 @@ a.wee-badge:hover, a.wee-badge:focus {
 }
 
 .wee-badge-primary {
-  background-color: #1890ff;
+  background-color: #1088DB;
 }
 
 .wee-badge-secondary {
-  background-color: #8c8c8c;
+  background-color: #777777;
 }
 
 .wee-badge-success {
-  background-color: #52c41a;
+  background-color: #61BD4F;
 }
 
 .wee-badge-info {
-  background-color: #13c2c2;
+  background-color: #00C2E0;
 }
 
 .wee-badge-warning {
-  background-color: #fadb14;
+  background-color: #F2D600;
 }
 
 .wee-badge-danger {
-  background-color: #f5222d;
+  background-color: #EB5A46;
 }
 
 .wee-badge-light {
-  background-color: #f5f5f5;
+  background-color: #EEEEEE;
 }
 
 .wee-badge-dark {
-  background-color: #262626;
+  background-color: #444444;
 }
 
 .wee-breadcrumb {
@@ -643,8 +311,8 @@ a.wee-badge:hover, a.wee-badge:focus {
 
 .wee-btn {
   position: relative;
-  border: 1px solid #d9d9d9;
-  background-color: #ffffff;
+  border: 1px solid #BDBDBD;
+  background-color: #FAFAFA;
   cursor: pointer;
   text-align: center;
   line-height: normal;
@@ -669,8 +337,8 @@ a.wee-badge:hover, a.wee-badge:focus {
 .wee-btn:hover, .wee-btn:active {
   text-decoration: none;
   background: transparent;
-  color: #096dd9;
-  border: 1px solid #096dd9;
+  color: #007ACE;
+  border: 1px solid #007ACE;
 }
 
 .wee-btn:focus, .wee-btn.focus {
@@ -683,8 +351,8 @@ a.wee-badge:hover, a.wee-badge:focus {
 .wee-btn.disabled, .wee-btn:disabled {
   cursor: default;
   background: transparent;
-  color: #d9d9d9;
-  border: 1px solid #d9d9d9;
+  color: #BDBDBD;
+  border: 1px solid #BDBDBD;
 }
 
 .wee-btn:not(:disabled):not(.disabled):active, .wee-btn:not(:disabled):not(.disabled).active {
@@ -701,646 +369,654 @@ a.wee-badge:hover, a.wee-badge:focus {
 
 .wee-btn-primary {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #1890ff;
-  color: #ffffff;
-  border: 1px solid #1890ff;
+  background: #1088DB;
+  color: #FAFAFA;
+  border: 1px solid #1088DB;
 }
 
 .wee-btn-primary:hover {
-  background: #4ba9ff;
-  color: #ffffff;
-  border: 1px solid #4ba9ff;
+  background: #0e79c3;
+  color: #FAFAFA;
+  border: 1px solid #0e79c3;
 }
 
 .wee-btn-primary:focus,
 .wee-btn-primary.focus {
-  box-shadow: 0 0 0 1px rgba(24, 144, 255, 0.3);
+  box-shadow: 0 0 0 1px rgba(16, 136, 219, 0.3);
 }
 
 .wee-btn-primary.disabled,
 .wee-btn-primary:disabled {
   cursor: default;
-  background: #7ec1ff;
-  color: #ffffff;
-  border: 1px solid #7ec1ff;
+  background: #5eb6f3;
+  color: #FAFAFA;
+  border: 1px solid #5eb6f3;
 }
 
 .wee-btn-primary:not(:disabled):not(.disabled):active,
 .wee-btn-primary:not(:disabled):not(.disabled).active {
-  background: #0076e4;
-  color: #ffffff;
-  border: 1px solid #0076e4;
+  background: #0d6aab;
+  color: #FAFAFA;
+  border: 1px solid #0d6aab;
 }
 
 .wee-btn-primary:not(:disabled):not(.disabled):active:focus,
 .wee-btn-primary:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
-  box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(16, 136, 219, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(16, 136, 219, 0.5);
+  box-shadow: 0 3px 5px rgba(16, 136, 219, 0.5);
 }
 
 .wee-btn-outline-primary {
   background: transparent;
-  color: #1890ff;
-  border: 1px solid #1890ff;
+  color: #1088DB;
+  border: 1px solid #1088DB;
   background-image: none;
 }
 
 .wee-btn-outline-primary:hover {
-  background: #1890ff;
-  color: #ffffff;
-  border: 1px solid #1890ff;
+  background: #1088DB;
+  color: #FAFAFA;
+  border: 1px solid #1088DB;
 }
 
 .wee-btn-outline-primary:focus,
 .wee-btn-outline-primary.focus {
-  box-shadow: 0 0 0 1px rgba(24, 144, 255, 0.3);
+  box-shadow: 0 0 0 1px rgba(16, 136, 219, 0.3);
 }
 
 .wee-btn-outline-primary.disabled,
 .wee-btn-outline-primary:disabled {
-  color: #1890ff;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #5eb6f3;
+  border: 1px solid #5eb6f3;
 }
 
 .wee-btn-outline-primary:not(:disabled):not(.disabled):active,
 .wee-btn-outline-primary:not(:disabled):not(.disabled).active {
-  background: #0076e4;
-  color: #ffffff;
-  border: 1px solid #0076e4;
+  background: #0d6aab;
+  color: #FAFAFA;
+  border: 1px solid #0d6aab;
 }
 
 .wee-btn-outline-primary:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-primary:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
-  box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(16, 136, 219, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(16, 136, 219, 0.5);
+  box-shadow: 0 3px 5px rgba(16, 136, 219, 0.5);
 }
 
 .wee-btn-secondary {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #8c8c8c;
-  color: #ffffff;
-  border: 1px solid #8c8c8c;
+  background: #777777;
+  color: #FAFAFA;
+  border: 1px solid #777777;
 }
 
 .wee-btn-secondary:hover {
-  background: #a6a5a5;
-  color: #ffffff;
-  border: 1px solid #a6a5a5;
+  background: #6a6a6a;
+  color: #FAFAFA;
+  border: 1px solid #6a6a6a;
 }
 
 .wee-btn-secondary:focus,
 .wee-btn-secondary.focus {
-  box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.3);
+  box-shadow: 0 0 0 1px rgba(119, 119, 119, 0.3);
 }
 
 .wee-btn-secondary.disabled,
 .wee-btn-secondary:disabled {
   cursor: default;
-  background: #bfbfbf;
-  color: #ffffff;
-  border: 1px solid #bfbfbf;
+  background: #aaaaaa;
+  color: #FAFAFA;
+  border: 1px solid #aaaaaa;
 }
 
 .wee-btn-secondary:not(:disabled):not(.disabled):active,
 .wee-btn-secondary:not(:disabled):not(.disabled).active {
-  background: #737272;
-  color: #ffffff;
-  border: 1px solid #737272;
+  background: #5e5d5d;
+  color: #FAFAFA;
+  border: 1px solid #5e5d5d;
 }
 
 .wee-btn-secondary:not(:disabled):not(.disabled):active:focus,
 .wee-btn-secondary:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
-  box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(119, 119, 119, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(119, 119, 119, 0.5);
+  box-shadow: 0 3px 5px rgba(119, 119, 119, 0.5);
 }
 
 .wee-btn-outline-secondary {
   background: transparent;
-  color: #8c8c8c;
-  border: 1px solid #8c8c8c;
+  color: #777777;
+  border: 1px solid #777777;
   background-image: none;
 }
 
 .wee-btn-outline-secondary:hover {
-  background: #8c8c8c;
-  color: #ffffff;
-  border: 1px solid #8c8c8c;
+  background: #777777;
+  color: #FAFAFA;
+  border: 1px solid #777777;
 }
 
 .wee-btn-outline-secondary:focus,
 .wee-btn-outline-secondary.focus {
-  box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.3);
+  box-shadow: 0 0 0 1px rgba(119, 119, 119, 0.3);
 }
 
 .wee-btn-outline-secondary.disabled,
 .wee-btn-outline-secondary:disabled {
-  color: #8c8c8c;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
 }
 
 .wee-btn-outline-secondary:not(:disabled):not(.disabled):active,
 .wee-btn-outline-secondary:not(:disabled):not(.disabled).active {
-  background: #737272;
-  color: #ffffff;
-  border: 1px solid #737272;
+  background: #5e5d5d;
+  color: #FAFAFA;
+  border: 1px solid #5e5d5d;
 }
 
 .wee-btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-secondary:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
-  box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(119, 119, 119, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(119, 119, 119, 0.5);
+  box-shadow: 0 3px 5px rgba(119, 119, 119, 0.5);
 }
 
 .wee-btn-success {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #52c41a;
-  color: #ffffff;
-  border: 1px solid #52c41a;
+  background: #61BD4F;
+  color: #FAFAFA;
+  border: 1px solid #61BD4F;
 }
 
 .wee-btn-success:hover {
-  background: #6ae32e;
-  color: #ffffff;
-  border: 1px solid #6ae32e;
+  background: #54b042;
+  color: #FAFAFA;
+  border: 1px solid #54b042;
 }
 
 .wee-btn-success:focus,
 .wee-btn-success.focus {
-  box-shadow: 0 0 0 1px rgba(82, 196, 26, 0.3);
+  box-shadow: 0 0 0 1px rgba(97, 189, 79, 0.3);
 }
 
 .wee-btn-success.disabled,
 .wee-btn-success:disabled {
   cursor: default;
-  background: #8ae95b;
-  color: #ffffff;
-  border: 1px solid #8ae95b;
+  background: #a4d999;
+  color: #FAFAFA;
+  border: 1px solid #a4d999;
 }
 
 .wee-btn-success:not(:disabled):not(.disabled):active,
 .wee-btn-success:not(:disabled):not(.disabled).active {
-  background: #3f9714;
-  color: #ffffff;
-  border: 1px solid #3f9714;
+  background: #4b9e3b;
+  color: #FAFAFA;
+  border: 1px solid #4b9e3b;
 }
 
 .wee-btn-success:not(:disabled):not(.disabled):active:focus,
 .wee-btn-success:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
-  box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(97, 189, 79, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(97, 189, 79, 0.5);
+  box-shadow: 0 3px 5px rgba(97, 189, 79, 0.5);
 }
 
 .wee-btn-outline-success {
   background: transparent;
-  color: #52c41a;
-  border: 1px solid #52c41a;
+  color: #61BD4F;
+  border: 1px solid #61BD4F;
   background-image: none;
 }
 
 .wee-btn-outline-success:hover {
-  background: #52c41a;
-  color: #ffffff;
-  border: 1px solid #52c41a;
+  background: #61BD4F;
+  color: #FAFAFA;
+  border: 1px solid #61BD4F;
 }
 
 .wee-btn-outline-success:focus,
 .wee-btn-outline-success.focus {
-  box-shadow: 0 0 0 1px rgba(82, 196, 26, 0.3);
+  box-shadow: 0 0 0 1px rgba(97, 189, 79, 0.3);
 }
 
 .wee-btn-outline-success.disabled,
 .wee-btn-outline-success:disabled {
-  color: #52c41a;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #a4d999;
+  border: 1px solid #a4d999;
 }
 
 .wee-btn-outline-success:not(:disabled):not(.disabled):active,
 .wee-btn-outline-success:not(:disabled):not(.disabled).active {
-  background: #3f9714;
-  color: #ffffff;
-  border: 1px solid #3f9714;
+  background: #4b9e3b;
+  color: #FAFAFA;
+  border: 1px solid #4b9e3b;
 }
 
 .wee-btn-outline-success:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-success:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
-  box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(97, 189, 79, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(97, 189, 79, 0.5);
+  box-shadow: 0 3px 5px rgba(97, 189, 79, 0.5);
 }
 
 .wee-btn-info {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #13c2c2;
-  color: #ffffff;
-  border: 1px solid #13c2c2;
+  background: #00C2E0;
+  color: #FAFAFA;
+  border: 1px solid #00C2E0;
 }
 
 .wee-btn-info:hover {
-  background: #1fe9e9;
-  color: #ffffff;
-  border: 1px solid #1fe9e9;
+  background: #00acc7;
+  color: #FAFAFA;
+  border: 1px solid #00acc7;
 }
 
 .wee-btn-info:focus,
 .wee-btn-info.focus {
-  box-shadow: 0 0 0 1px rgba(19, 194, 194, 0.3);
+  box-shadow: 0 0 0 1px rgba(0, 194, 224, 0.3);
 }
 
 .wee-btn-info.disabled,
 .wee-btn-info:disabled {
   cursor: default;
-  background: #4deeee;
-  color: #ffffff;
-  border: 1px solid #4deeee;
+  background: #47e6ff;
+  color: #FAFAFA;
+  border: 1px solid #47e6ff;
 }
 
 .wee-btn-info:not(:disabled):not(.disabled):active,
 .wee-btn-info:not(:disabled):not(.disabled).active {
-  background: #0e9494;
-  color: #ffffff;
-  border: 1px solid #0e9494;
+  background: #0096ad;
+  color: #FAFAFA;
+  border: 1px solid #0096ad;
 }
 
 .wee-btn-info:not(:disabled):not(.disabled):active:focus,
 .wee-btn-info:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
-  box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(0, 194, 224, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 194, 224, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 194, 224, 0.5);
 }
 
 .wee-btn-outline-info {
   background: transparent;
-  color: #13c2c2;
-  border: 1px solid #13c2c2;
+  color: #00C2E0;
+  border: 1px solid #00C2E0;
   background-image: none;
 }
 
 .wee-btn-outline-info:hover {
-  background: #13c2c2;
-  color: #ffffff;
-  border: 1px solid #13c2c2;
+  background: #00C2E0;
+  color: #FAFAFA;
+  border: 1px solid #00C2E0;
 }
 
 .wee-btn-outline-info:focus,
 .wee-btn-outline-info.focus {
-  box-shadow: 0 0 0 1px rgba(19, 194, 194, 0.3);
+  box-shadow: 0 0 0 1px rgba(0, 194, 224, 0.3);
 }
 
 .wee-btn-outline-info.disabled,
 .wee-btn-outline-info:disabled {
-  color: #13c2c2;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #47e6ff;
+  border: 1px solid #47e6ff;
 }
 
 .wee-btn-outline-info:not(:disabled):not(.disabled):active,
 .wee-btn-outline-info:not(:disabled):not(.disabled).active {
-  background: #0e9494;
-  color: #ffffff;
-  border: 1px solid #0e9494;
+  background: #0096ad;
+  color: #FAFAFA;
+  border: 1px solid #0096ad;
 }
 
 .wee-btn-outline-info:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-info:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
-  box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(0, 194, 224, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(0, 194, 224, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 194, 224, 0.5);
 }
 
 .wee-btn-warning {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #fadb14;
-  color: #ffffff;
-  border: 1px solid #fadb14;
+  background: #F2D600;
+  color: #FAFAFA;
+  border: 1px solid #F2D600;
 }
 
 .wee-btn-warning:hover {
-  background: #fbe346;
-  color: #ffffff;
-  border: 1px solid #fbe346;
+  background: #d9bf00;
+  color: #FAFAFA;
+  border: 1px solid #d9bf00;
 }
 
 .wee-btn-warning:focus,
 .wee-btn-warning.focus {
-  box-shadow: 0 0 0 1px rgba(250, 219, 20, 0.3);
+  box-shadow: 0 0 0 1px rgba(242, 214, 0, 0.3);
 }
 
 .wee-btn-warning.disabled,
 .wee-btn-warning:disabled {
   cursor: default;
-  background: #fcea78;
-  color: #ffffff;
-  border: 1px solid #fcea78;
+  background: #ffec59;
+  color: #FAFAFA;
+  border: 1px solid #ffec59;
 }
 
 .wee-btn-warning:not(:disabled):not(.disabled):active,
 .wee-btn-warning:not(:disabled):not(.disabled).active {
-  background: #d6ba05;
-  color: #ffffff;
-  border: 1px solid #d6ba05;
+  background: #bfa900;
+  color: #FAFAFA;
+  border: 1px solid #bfa900;
 }
 
 .wee-btn-warning:not(:disabled):not(.disabled):active:focus,
 .wee-btn-warning:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
-  box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(242, 214, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(242, 214, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(242, 214, 0, 0.5);
 }
 
 .wee-btn-outline-warning {
   background: transparent;
-  color: #fadb14;
-  border: 1px solid #fadb14;
+  color: #F2D600;
+  border: 1px solid #F2D600;
   background-image: none;
 }
 
 .wee-btn-outline-warning:hover {
-  background: #fadb14;
-  color: #ffffff;
-  border: 1px solid #fadb14;
+  background: #F2D600;
+  color: #FAFAFA;
+  border: 1px solid #F2D600;
 }
 
 .wee-btn-outline-warning:focus,
 .wee-btn-outline-warning.focus {
-  box-shadow: 0 0 0 1px rgba(250, 219, 20, 0.3);
+  box-shadow: 0 0 0 1px rgba(242, 214, 0, 0.3);
 }
 
 .wee-btn-outline-warning.disabled,
 .wee-btn-outline-warning:disabled {
-  color: #fadb14;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #ffec59;
+  border: 1px solid #ffec59;
 }
 
 .wee-btn-outline-warning:not(:disabled):not(.disabled):active,
 .wee-btn-outline-warning:not(:disabled):not(.disabled).active {
-  background: #d6ba05;
-  color: #ffffff;
-  border: 1px solid #d6ba05;
+  background: #bfa900;
+  color: #FAFAFA;
+  border: 1px solid #bfa900;
 }
 
 .wee-btn-outline-warning:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-warning:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
-  box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(242, 214, 0, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(242, 214, 0, 0.5);
+  box-shadow: 0 3px 5px rgba(242, 214, 0, 0.5);
 }
 
 .wee-btn-danger {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #f5222d;
-  color: #ffffff;
-  border: 1px solid #f5222d;
+  background: #EB5A46;
+  color: #FAFAFA;
+  border: 1px solid #EB5A46;
 }
 
 .wee-btn-danger:hover {
-  background: #f7535b;
-  color: #ffffff;
-  border: 1px solid #f7535b;
+  background: #e9452f;
+  color: #FAFAFA;
+  border: 1px solid #e9452f;
 }
 
 .wee-btn-danger:focus,
 .wee-btn-danger.focus {
-  box-shadow: 0 0 0 1px rgba(245, 34, 45, 0.3);
+  box-shadow: 0 0 0 1px rgba(235, 90, 70, 0.3);
 }
 
 .wee-btn-danger.disabled,
 .wee-btn-danger:disabled {
   cursor: default;
-  background: #f9848a;
-  color: #ffffff;
-  border: 1px solid #f9848a;
+  background: #f5aca2;
+  color: #FAFAFA;
+  border: 1px solid #f5aca2;
 }
 
 .wee-btn-danger:not(:disabled):not(.disabled):active,
 .wee-btn-danger:not(:disabled):not(.disabled).active {
-  background: #da0a15;
-  color: #ffffff;
-  border: 1px solid #da0a15;
+  background: #e53219;
+  color: #FAFAFA;
+  border: 1px solid #e53219;
 }
 
 .wee-btn-danger:not(:disabled):not(.disabled):active:focus,
 .wee-btn-danger:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
-  box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(235, 90, 70, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(235, 90, 70, 0.5);
+  box-shadow: 0 3px 5px rgba(235, 90, 70, 0.5);
 }
 
 .wee-btn-outline-danger {
   background: transparent;
-  color: #f5222d;
-  border: 1px solid #f5222d;
+  color: #EB5A46;
+  border: 1px solid #EB5A46;
   background-image: none;
 }
 
 .wee-btn-outline-danger:hover {
-  background: #f5222d;
-  color: #ffffff;
-  border: 1px solid #f5222d;
+  background: #EB5A46;
+  color: #FAFAFA;
+  border: 1px solid #EB5A46;
 }
 
 .wee-btn-outline-danger:focus,
 .wee-btn-outline-danger.focus {
-  box-shadow: 0 0 0 1px rgba(245, 34, 45, 0.3);
+  box-shadow: 0 0 0 1px rgba(235, 90, 70, 0.3);
 }
 
 .wee-btn-outline-danger.disabled,
 .wee-btn-outline-danger:disabled {
-  color: #f5222d;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #f5aca2;
+  border: 1px solid #f5aca2;
 }
 
 .wee-btn-outline-danger:not(:disabled):not(.disabled):active,
 .wee-btn-outline-danger:not(:disabled):not(.disabled).active {
-  background: #da0a15;
-  color: #ffffff;
-  border: 1px solid #da0a15;
+  background: #e53219;
+  color: #FAFAFA;
+  border: 1px solid #e53219;
 }
 
 .wee-btn-outline-danger:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-danger:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
-  box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(235, 90, 70, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(235, 90, 70, 0.5);
+  box-shadow: 0 3px 5px rgba(235, 90, 70, 0.5);
 }
 
 .wee-btn-light {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #f5f5f5;
-  color: #ffffff;
-  border: 1px solid #f5f5f5;
+  background: #EEEEEE;
+  color: #FAFAFA;
+  border: 1px solid #EEEEEE;
 }
 
 .wee-btn-light:hover {
-  background: white;
-  color: #ffffff;
-  border: 1px solid white;
+  background: #e1e1e1;
+  color: #FAFAFA;
+  border: 1px solid #e1e1e1;
 }
 
 .wee-btn-light:focus,
 .wee-btn-light.focus {
-  box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.3);
+  box-shadow: 0 0 0 1px rgba(238, 238, 238, 0.3);
 }
 
 .wee-btn-light.disabled,
 .wee-btn-light:disabled {
   cursor: default;
   background: white;
-  color: #ffffff;
+  color: #FAFAFA;
   border: 1px solid white;
 }
 
 .wee-btn-light:not(:disabled):not(.disabled):active,
 .wee-btn-light:not(:disabled):not(.disabled).active {
-  background: #dcdbdb;
-  color: #ffffff;
-  border: 1px solid #dcdbdb;
+  background: #d5d4d4;
+  color: #FAFAFA;
+  border: 1px solid #d5d4d4;
 }
 
 .wee-btn-light:not(:disabled):not(.disabled):active:focus,
 .wee-btn-light:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
-  box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(238, 238, 238, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(238, 238, 238, 0.5);
+  box-shadow: 0 3px 5px rgba(238, 238, 238, 0.5);
 }
 
 .wee-btn-outline-light {
   background: transparent;
-  color: #f5f5f5;
-  border: 1px solid #f5f5f5;
+  color: #EEEEEE;
+  border: 1px solid #EEEEEE;
   background-image: none;
 }
 
 .wee-btn-outline-light:hover {
-  background: #f5f5f5;
-  color: #ffffff;
-  border: 1px solid #f5f5f5;
+  background: #EEEEEE;
+  color: #FAFAFA;
+  border: 1px solid #EEEEEE;
 }
 
 .wee-btn-outline-light:focus,
 .wee-btn-outline-light.focus {
-  box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.3);
+  box-shadow: 0 0 0 1px rgba(238, 238, 238, 0.3);
 }
 
 .wee-btn-outline-light.disabled,
 .wee-btn-outline-light:disabled {
-  color: #f5f5f5;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
 .wee-btn-outline-light:not(:disabled):not(.disabled):active,
 .wee-btn-outline-light:not(:disabled):not(.disabled).active {
-  background: #dcdbdb;
-  color: #ffffff;
-  border: 1px solid #dcdbdb;
+  background: #d5d4d4;
+  color: #FAFAFA;
+  border: 1px solid #d5d4d4;
 }
 
 .wee-btn-outline-light:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-light:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
-  box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(238, 238, 238, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(238, 238, 238, 0.5);
+  box-shadow: 0 3px 5px rgba(238, 238, 238, 0.5);
 }
 
 .wee-btn-dark {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.125);
-  background: #262626;
-  color: #ffffff;
-  border: 1px solid #262626;
+  background: #444444;
+  color: #FAFAFA;
+  border: 1px solid #444444;
 }
 
 .wee-btn-dark:hover {
-  background: #403f3f;
-  color: #ffffff;
-  border: 1px solid #403f3f;
+  background: #373737;
+  color: #FAFAFA;
+  border: 1px solid #373737;
 }
 
 .wee-btn-dark:focus,
 .wee-btn-dark.focus {
-  box-shadow: 0 0 0 1px rgba(38, 38, 38, 0.3);
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.3);
 }
 
 .wee-btn-dark.disabled,
 .wee-btn-dark:disabled {
   cursor: default;
-  background: #595959;
-  color: #ffffff;
-  border: 1px solid #595959;
+  background: #777777;
+  color: #FAFAFA;
+  border: 1px solid #777777;
 }
 
 .wee-btn-dark:not(:disabled):not(.disabled):active,
 .wee-btn-dark:not(:disabled):not(.disabled).active {
-  background: #0d0c0c;
-  color: #ffffff;
-  border: 1px solid #0d0c0c;
+  background: #2b2a2a;
+  color: #FAFAFA;
+  border: 1px solid #2b2a2a;
 }
 
 .wee-btn-dark:not(:disabled):not(.disabled):active:focus,
 .wee-btn-dark:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
-  box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(68, 68, 68, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(68, 68, 68, 0.5);
+  box-shadow: 0 3px 5px rgba(68, 68, 68, 0.5);
 }
 
 .wee-btn-outline-dark {
   background: transparent;
-  color: #262626;
-  border: 1px solid #262626;
+  color: #444444;
+  border: 1px solid #444444;
   background-image: none;
 }
 
 .wee-btn-outline-dark:hover {
-  background: #262626;
-  color: #ffffff;
-  border: 1px solid #262626;
+  background: #444444;
+  color: #FAFAFA;
+  border: 1px solid #444444;
 }
 
 .wee-btn-outline-dark:focus,
 .wee-btn-outline-dark.focus {
-  box-shadow: 0 0 0 1px rgba(38, 38, 38, 0.3);
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.3);
 }
 
 .wee-btn-outline-dark.disabled,
 .wee-btn-outline-dark:disabled {
-  color: #262626;
   cursor: default;
-  background-color: transparent;
+  background: transparent;
+  color: #777777;
+  border: 1px solid #777777;
 }
 
 .wee-btn-outline-dark:not(:disabled):not(.disabled):active,
 .wee-btn-outline-dark:not(:disabled):not(.disabled).active {
-  background: #0d0c0c;
-  color: #ffffff;
-  border: 1px solid #0d0c0c;
+  background: #2b2a2a;
+  color: #FAFAFA;
+  border: 1px solid #2b2a2a;
 }
 
 .wee-btn-outline-dark:not(:disabled):not(.disabled):active:focus,
 .wee-btn-outline-dark:not(:disabled):not(.disabled).active:focus {
-  -webkit-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
-  -moz-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
-  box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(68, 68, 68, 0.5);
+  -moz-box-shadow: 0 3px 5px rgba(68, 68, 68, 0.5);
+  box-shadow: 0 3px 5px rgba(68, 68, 68, 0.5);
 }
 
 .wee-btn-light,
 .wee-btn-light:hover {
-  color: #8c8c8c;
-  border-color: #f5f5f5;
+  color: #777777;
+  border-color: #EEEEEE;
 }
 
 .wee-btn-light:not(:disabled):not(.disabled):active,
 .wee-btn-light:not(:disabled):not(.disabled).active {
-  color: #8c8c8c;
-  border-color: #f5f5f5;
+  color: #777777;
+  border-color: #EEEEEE;
 }
 
 .wee-btn-block {
@@ -1377,6 +1053,21 @@ a.wee-badge:hover, a.wee-badge:focus {
   padding: 0 20px;
 }
 
+.wee-btn-square {
+  padding: 0 16px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.wee-btn-square.wee-btn-sm, .wee-btn-group-sm > .wee-btn-square.wee-btn {
+  padding: 0 10px;
+}
+
+.wee-btn-square.wee-btn-lg, .wee-btn-group-lg > .wee-btn-square.wee-btn {
+  padding: 0 20px;
+}
+
 .wee-btn-circle {
   padding: 0;
   width: 32px;
@@ -1396,7 +1087,7 @@ a.wee-badge:hover, a.wee-badge:focus {
 }
 
 .wee-btn-link {
-  color: #1890ff;
+  color: #1088DB;
   background: transparent;
   border: none;
   box-shadow: none;
@@ -1404,7 +1095,7 @@ a.wee-badge:hover, a.wee-badge:focus {
 }
 
 .wee-btn-link:hover, .wee-btn-link:active {
-  color: #096dd9;
+  color: #007ACE;
   text-decoration: underline;
   outline: 0;
   border: none;
@@ -4050,7 +3741,7 @@ table > thead > tr > td {
 }
 
 .wee-table-hover > tbody > tr:hover {
-  background-color: #e4f2ff;
+  background-color: #bde1fa;
 }
 
 ul, ol {

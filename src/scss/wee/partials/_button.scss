@@ -70,7 +70,7 @@
   }
 
   .#{$prefix}-btn-#{$color}:hover {
-    @include btn-color(lighten($value, 10%), lighten($value, 10%), $color-grey-1);
+    @include btn-color(darken($value, 5%), darken($value, 5%), $color-grey-1);
   }
 
   .#{$prefix}-btn-#{$color}:focus,
@@ -110,9 +110,8 @@
 
   .#{$prefix}-btn-outline-#{$color}.disabled,
   .#{$prefix}-btn-outline-#{$color}:disabled {
-    color: $value;
     cursor:default;
-    background-color: transparent;
+    @include btn-color(transparent, lighten($value, 20%),  lighten($value, 20%));
   }
 
   .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled):active,
@@ -165,6 +164,19 @@
 .#{$prefix}-btn-round {
   padding: 0 16px;
   @include border-radius(40px);
+
+  &.#{$prefix}-btn-sm {
+    padding: 0 10px;
+  }
+
+  &.#{$prefix}-btn-lg {
+    padding: 0 20px;
+  }
+}
+
+.#{$prefix}-btn-square {
+  padding: 0 16px;
+  @include border-radius(0);
 
   &.#{$prefix}-btn-sm {
     padding: 0 10px;
