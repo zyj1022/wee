@@ -17,6 +17,8 @@ table {
   width: 100%;
   margin: 1em 0;
   text-align: left;
+  border-collapse:collapse;
+  border-spacing:0;
   thead,
   tbody,
   tfoot {
@@ -27,15 +29,57 @@ table {
       border-bottom: 1px solid #e9e9e9;
     }
   }
+
+  > thead {
+    > tr {
+      > th,
+      > td {
+        background: #f7f7f7;
+      }
+    }
+  }
 }
 
-.table-striped>tbody>tr:nth-child(even) {
-  background-color: $table-striped-even-bg;
+.#{$prefix}-table-bordered {
+  border: 1px solid #e9e9e9;
+  > thead {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid #e9e9e9;
+        border-bottom: none;
+      }
+    }
+  }
+
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 1px solid #e9e9e9;
+      }
+    }
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 2px;
+    }
+  }
 }
-.table-striped>tbody>tr:nth-child(odd) {
-  background-color: $table-striped-odd-bg;
+
+.#{$prefix}-table-striped {
+  > tbody > tr:nth-child(even) {
+    background-color: $table-striped-even-bg;
+  }
+  > tbody > tr:nth-of-type(odd) {
+    background-color: $table-striped-odd-bg;
+  }
 }
-.table-border {
-  border-left:1px solid #e9e9e9;
-  border-right:1px solid #e9e9e9;
+
+.#{$prefix}-table-hover {
+  > tbody > tr:hover {
+    background-color: lighten($primary, 40%);
+  }
 }

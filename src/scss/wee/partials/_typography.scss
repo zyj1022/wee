@@ -70,25 +70,25 @@ h6, .h6 {
 
 // Blockquote
 // --------------------------------------------------------------------------
-blockquote, .blockquote {
-  color: #424242;
-  font-style: italic;
-  margin: 3em 0;
-  p {
-    @include font-size(22px);
-    @include line-height(28px);
-    padding-left:20px;
-    border-left:4px solid #ccc;
-    margin-bottom: .4em;
-  }
-  cite {
-    @include font-all(12px,18px,#999);
-    font-style: normal;
-    &:before {
-      content: '\2014 \0020';
-    }
-  }
-}
+// blockquote, .blockquote {
+//   color: #424242;
+//   font-style: italic;
+//   margin: 3em 0;
+//   p {
+//     @include font-size(22px);
+//     @include line-height(28px);
+//     padding-left:20px;
+//     border-left:4px solid #ccc;
+//     margin-bottom: .4em;
+//   }
+//   cite {
+//     @include font-all(12px,18px,#999);
+//     font-style: normal;
+//     &:before {
+//       content: '\2014 \0020';
+//     }
+//   }
+// }
 
 // Alignment
 // --------------------------------------------------------------------------

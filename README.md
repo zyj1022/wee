@@ -5,7 +5,7 @@ WEE 是一个面向熟悉SASS使用人员的响应式前端框架，以[MUSS](ht
 
 # [Demo 查看](http://zyj1022.github.io/demos/wee/)
 
-# 使用方法
+## 使用方法
 
 安装node，之后全局安装wee
 
@@ -23,9 +23,10 @@ WEE 是一个面向熟悉SASS使用人员的响应式前端框架，以[MUSS](ht
 
     <link rel="stylesheet" href="css/wee.css">
 
-# 文件描述
+## 文件描述
 
-WEE 目前涵盖了常用的核心样式及12列栅格化，
+WEE 目前涵盖了常用的核心样式, 更为更灵活的24列栅格化，
+
 - CSS标准化 [normalize](http://necolas.github.io/normalize.css/)
 
 具体文件结构如下
@@ -35,29 +36,68 @@ WEE 目前涵盖了常用的核心样式及12列栅格化，
   └── scss/
       │── [muss](https://github.com/zyj1022/muss)/
       │── partials/
+      │   ├── global.scss
+      │   ├── affix.scss
       │   ├── alert.scss
+      │   ├── avatar.scss
+      │   ├── badge.scss
       │   ├── breadcrumb.scss
-      │   ├── button.css
+      │   ├── button.scss
+      │   ├── buttonGroup.scss
+      │   ├── calendar.scss
+      │   ├── card.scss
+      │   ├── carousel.scss
+      │   ├── cascader.scss
+      │   ├── checkbox.scss
       │   ├── code.scss
+      │   ├── comment.scss
+      │   ├── datepicker.scss
+      │   ├── drawer.scss
+      │   ├── dropdown.scss
+      │   ├── empty.scss
+      │   ├── flex.scss
       │   ├── form.scss
       │   ├── gird.scss
-      │   ├── global.css
       │   ├── helper.scss
+      │   ├── icon.scss
       │   ├── images.scss
-      │   ├── page.css
+      │   ├── input.scss
+      │   ├── list.scss
+      │   ├── menu.scss
+      │   ├── message.scss
+      │   ├── modal.scss
+      │   ├── notification.scss
+      │   ├── pagination.scss
+      │   ├── popover.scss
+      │   ├── progress.scss
+      │   ├── radio.scss
+      │   ├── rate.scss
+      │   ├── select.scss
+      │   ├── slider.scss
+      │   ├── spin.scss
+      │   ├── step.scss
+      │   ├── switch.scss
       │   ├── table.scss
-      │   ├── flex.scss [新增flex布局]
+      │   ├── tabs.scss
+      │   ├── tag.scss
+      │   ├── timeline.scss
+      │   ├── timepicker.scss
+      │   ├── transfer.scss
+      │   ├── tree.scss
       │   └── typography.scss
+      ├── colors-ufe.scss [ufe-design-colors]
+      ├── colors.scss
       ├── normalize.scss
       ├── variables.scss
       └── wee.scss
 ```
 
-# 功能更新
+## 功能更新
 
-- 新增 Flex 布局 具体查看 flex.html 说明
+- 1.2 全面组件化按照 [WeeKit](https://github.com/weeui/weekit) 样式，配合对应的 [react-wee](https://github.com/weeui/react-wee) 版本进行组件化开发。
+- 1.1 新增 Flex 布局 具体查看 [flex.html](http://zyj1022.github.io/demos/wee/flex.html) 说明。
 
-# 具体使用说明
+## 具体使用说明
 
 当前为初级1.2.0版，部分内容还在完善中，下载包中暂未包含[muss](https://github.com/zyj1022/muss)，
 所以在使用时先将muss置入你的下载文件的scss文件夹中，如上目录结构所示即可。

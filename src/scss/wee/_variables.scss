@@ -5,13 +5,104 @@
 
 // Global Typography
 // ----------------------------------------------------------------------------
+
+$prefix: 'wee';
+
+// Colors
+$color-white:    #fff !default;
+$color-gray-100: #f8f9fa !default;
+$color-gray-200: #e9ecef !default;
+$color-gray-300: #dee2e6 !default;
+$color-gray-400: #ced4da !default;
+$color-gray-500: #adb5bd !default;
+$color-gray-600: #6c757d !default;
+$color-gray-700: #495057 !default;
+$color-gray-800: #343a40 !default;
+$color-gray-900: #212529 !default;
+$color-black:    #000 !default;
+
+$color-grays: () !default;
+
+$color-grays: map-merge(
+  (
+    "100": $color-gray-100,
+    "200": $color-gray-200,
+    "300": $color-gray-300,
+    "400": $color-gray-400,
+    "500": $color-gray-500,
+    "600": $color-gray-600,
+    "700": $color-gray-700,
+    "800": $color-gray-800,
+    "900": $color-gray-900
+  ),
+  $color-grays
+);
+
+$color-blue:    $color-blue-7 !default;
+$color-indigo:  #6610f2 !default;
+$color-purple:  $color-purple-6 !default;
+$color-pink:    $color-magenta-6 !default;
+$color-red:     $color-red-6 !default;
+$color-orange:  $color-orange-6 !default;
+$color-yellow:  $color-yellow-6 !default;
+$color-green:   $color-green-6 !default;
+$color-teal:    #20c997 !default;
+$color-cyan:    $color-cyan-6 !default;
+
+$colors-group: () !default;
+
+$colors-group: map-merge(
+  (
+    "blue":       $color-blue,
+    "indigo":     $color-indigo,
+    "purple":     $color-purple,
+    "pink":       $color-pink,
+    "red":        $color-red,
+    "orange":     $color-orange,
+    "yellow":     $color-yellow,
+    "green":      $color-green,
+    "teal":       $color-teal,
+    "cyan":       $color-cyan,
+    "white":      $color-white,
+    "gray":       $color-gray-600,
+    "gray-dark":  $color-gray-800
+  ),
+  $colors-group
+);
+
+$primary:       $color-blue-6 !default;
+$secondary:     $color-grey-7 !default;
+$success:       $color-green-6 !default;
+$info:          $color-cyan-6 !default;
+$warning:       $color-yellow-6 !default;
+$danger:        $color-red-6 !default;
+$light:         $color-grey-3 !default;
+$dark:          $color-grey-9!default;
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
 $base-bg-color: #fff;
 $base-font-family: sans-serif;
 $base-font-size: 16px;
 $base-line-height: 20px;
 $base-font-weight: 400;
-$base-font-color: #585858;
-$base-link-color: #0066ff;
+$base-font-color: $color-grey-8;
+$base-link-color: $color-blue-6;
 
 // Headings
 // ----------------------------------------------------------------------------
@@ -40,7 +131,7 @@ $h6-line-height: 24px;
 $screen-xs: 480px;
 $screen-sm: 720px;
 $screen-md: 960px;
-$screen-hd: 1120px;
+$screen-hd: 1140px;
 $screen-sw: 1620px;
 $screen-fd: 100%;
 
@@ -62,12 +153,14 @@ $flex-columns: 24;
 $table-border-color: #DDD;
 $table-td-border-color: #DDD;
 $table-th-bg: #DDD;
-$table-striped-even-bg: #FFF;
-$table-striped-odd-bg: #EEE;
+$table-striped-even-bg: #f7f7f7;
+$table-striped-odd-bg: #fff;
 
 // Form
 // ----------------------------------------------------------------------------
-$color-blue:#2592f6;
-$color-orange:#f77e00;
-$color-green:#12b335;
-$color-gray:#b3b3b3;
+$color-blue: $color-blue-6;
+$color-orange: $color-orange-6;
+$color-green: $color-green-6;
+$color-gray: $color-grey-6;
+
+$enable-shadows: false !default;

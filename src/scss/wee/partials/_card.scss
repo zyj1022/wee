@@ -1,0 +1,32 @@
+// ==========================================================================
+// Wee – Card
+// ==========================================================================
+
+.#{$prefix}-card {
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all .3s;
+  border: 1px solid #ccc;
+}
+
+.#{$prefix}-head-title {
+  padding: 5px 20px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  // background: #eee;
+}
+
+
+.#{$prefix}-card-body {
+  padding: 20px;
+  // background: #ddd;
+
+  img {margin-bottom: 20px; width:100%;}
+}
+
+.#{$prefix}-card-text {
+  margin-bottom: 20px;
+}

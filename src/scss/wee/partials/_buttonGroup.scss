@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+// ==========================================================================
+// Wee – buttonGroup
+// ==========================================================================
+
+.#{$prefix}-btn-group,
+.#{$prefix}-btn-group-vertical {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+
+  > .#{$prefix}-btn {
+    position: relative;
+    flex: 0 1 auto;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 1;
+    }
+  }
+
+  .#{$prefix}-btn + .#{$prefix}-btn,
+  .#{$prefix}-btn + .#{$prefix}-btn-group,
+  .#{$prefix}-btn-group + .#{$prefix}-btn,
+  .#{$prefix}-btn-group + .#{$prefix}-btn-group {
+    margin-left: -1px;
+  }
+}
+
+.#{$prefix}-btn-group {
+  > .#{$prefix}-btn:first-child {
+    margin-left: 0;
+  }
+
+  > .#{$prefix}-btn:not(:last-child):not(.#{$prefix}-dropdown-toggle),
+  > .#{$prefix}-btn-group:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  > .#{$prefix}-btn:not(:first-child),
+  > .#{$prefix}-btn-group:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.#{$prefix}-btn-group-sm > .#{$prefix}-btn { @extend .#{$prefix}-btn-sm; }
+.#{$prefix}-btn-group-lg > .#{$prefix}-btn { @extend .#{$prefix}-btn-lg; }
+
+.#{$prefix}-btn-group-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .#{$prefix}-btn,
+  .#{$prefix}-btn-group {
+    width: 100%;
+  }
+
+  > .#{$prefix}-btn + .#{$prefix}-btn,
+  > .#{$prefix}-btn + .#{$prefix}-btn-group,
+  > .#{$prefix}-btn-group + .#{$prefix}-btn,
+  > .#{$prefix}-btn-group + .#{$prefix}-btn-group {
+    margin-top: -1px;
+    margin-left: 0;
+  }
+
+  > .#{$prefix}-btn:not(:last-child):not(.#{$prefix}-dropdown-toggle),
+  > .#{$prefix}-btn-group:not(:last-child) > .#{$prefix}-btn {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  > .#{$prefix}-btn:not(:first-child),
+  > .#{$prefix}-btn-group:not(:first-child) > .#{$prefix}-btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.#{$prefix}-btn-group-toggle {
+  > .#{$prefix}-btn,
+  > .#{$prefix}-btn-group > .#{$prefix}-btn {
+    margin-bottom: 0;
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+      pointer-events: none;
+    }
+  }
+}

@@ -27,7 +27,7 @@ gulp.task('sass', function() {
         .pipe(reload({
             stream: true
         }))
-        .pipe($.notify("SCSS Compiled Successfully :)"));
+        // .pipe($.notify("SCSS Compiled Successfully :)"));
 });
 
 gulp.task('sassCore', function() {
@@ -44,7 +44,7 @@ gulp.task('sassCore', function() {
         }))
         .pipe($.cssnano())
         .pipe(gulp.dest('core'))
-        .pipe($.notify("SCSS To Core Compiled Successfully :)"));
+        // .pipe($.notify("SCSS To Core Compiled Successfully :)"));
 });
 
 
@@ -57,14 +57,14 @@ gulp.task('movejs', function() {
         }))
         .pipe($.uglify())
         .pipe(gulp.dest('dist/js'))
-        .pipe($.notify('MoveJS Task Complete :)'));
+        // .pipe($.notify('MoveJS Task Complete :)'));
 });
 
 // MOVE OUT
 gulp.task('move2out', function() {
     return gulp.src('src/**/*.html')
         .pipe(gulp.dest('dist/html'))
-        .pipe($.notify('Move2out Task Complete :)'));
+        // .pipe($.notify('Move2out Task Complete :)'));
 });
 
 // Minify Images
@@ -76,7 +76,7 @@ gulp.task('imagemin', function() {
             interlaced: true
         })))
         .pipe(gulp.dest('dist/images/'))
-        .pipe($.notify('Imagemin Task Complete :)'));
+        // .pipe($.notify('Imagemin Task Complete :)'));
 });
 
 // BrowserSync Task (Live reload)

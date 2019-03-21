@@ -5,7 +5,7 @@
 // ==========================================================================
 
 // Form
-.form {
+.#{$prefix}-form {
   @include padding-all(1em, null, 1em, null);
 }
 
@@ -15,23 +15,23 @@ label {
 	display:inline-block;
 }
 
-.form-item {
+.#{$prefix}-form-item {
 
 }
 
-.form-group {
+.#{$prefix}-form-group {
   ul {padding:0;}
   li {list-style:none;margin-bottom:15px;line-height:30px;}
 }
 
 // 水平排列
-.form-uniline {
+.#{$prefix}-form-uniline {
 	li {float:left;margin-right:20px;}
 }
 
 
 // 垂直排列
-.form-block {
+.#{$prefix}-form-block {
 	label {
 		margin-right:5px;
 		width:100px;
@@ -39,14 +39,14 @@ label {
 	}
 }
 
-.form-field {
+.#{$prefix}-form-field {
   padding-left:110px;
 }
 
 
 // Checkbox and Radio
-.checkbox,
-.radio {
+.#{$prefix}-checkbox,
+.#{$prefix}-radio {
   display: inline-block;
   position: relative;
   @include padding-all(.5em, null, .5em, null);
@@ -97,14 +97,14 @@ $inputs: 'select,
   }
 }
 
-textarea {
+.#{$prefix}-textarea {
   width: 300px;
   height: 150px;
 }
 
 
 // Custom Select
-.select {
+.#{$prefix}-select {
   border: 1px solid #ccc;
   overflow: hidden;
   height: 36px;

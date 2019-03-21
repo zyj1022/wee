@@ -4,62 +4,217 @@
 // Wee – Button
 // ==========================================================================
 
+
+@mixin btn-color($bgColor, $borderColor, $textColor) {
+ background:$bgColor;
+ color: $textColor;
+ border:1px solid $borderColor;
+}
+
 //Button
-.btn {
-  border: 1px solid #d7d7d7;
-  background-color: #f3f3f3;
+.#{$prefix}-btn {
+  position: relative;
+  border: 1px solid $color-grey-5;
+  background-color: $color-grey-1;
+  cursor: pointer;
+  text-align: center;
   line-height: normal;
-  padding: .5em 1em;
-  text-decoration: none;
+  white-space: nowrap;
+  background-image: none;
+  height: 32px;
+  padding: 0 14px;
   font-size:14px;
-  color: #363636;
+  color: rgba(0,0,0,0.65);
   display: inline-block;
-  @include border-radius(3px);
-  @include transition(all 1.0s ease-in);
-  &:hover, &:active { text-decoration: none; }
-  // &:hover { background: #f9f9f9; }
+  @include border-radius(4px);
+  @include transition(all 0.3s ease-in-out);
+  @include box-shadow(0, 2px, 0, rgba(0,0,0,0.0125));
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    @include btn-color(transparent, $color-blue-7, $color-blue-7)
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    @include box-shadow(0, 4px, 6px, rgba(#000, .125));
+  }
+
+  &.disabled,
+  &:disabled {
+    cursor:default;
+    @include btn-color(transparent, $color-grey-5, $color-grey-5)
+  }
+
+  &:not(:disabled):not(.disabled) {
+
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    @include box-shadow(0, 4px, 6px, rgba(#000, .125));
+
+    &:focus {
+      @include box-shadow(0, 4px, 6px, rgba(#000, .125));
+    }
+  }
 }
-.btn-primary {
-  // primary
-}
-.btn-secondary {
-  // secondary
-}
-.btn-block {
-  display:block;
-}
-.btn-disable{
+
+@each $color, $value in $theme-colors {
+  // btn
+  .#{$prefix}-btn-#{$color} {
+    @include text-shadow(0px, -1px, 0px, rgba(0,0,0,0.125));
+    @include btn-color($value, $value, $color-grey-1);
+  }
+
+  .#{$prefix}-btn-#{$color}:hover {
+    @include btn-color(lighten($value, 10%), lighten($value, 10%), $color-grey-1);
+  }
+
+  .#{$prefix}-btn-#{$color}:focus,
+  .#{$prefix}-btn-#{$color}.focus {
+    box-shadow: 0 0 0 1px rgba($value, .3);
+  }
+
+  .#{$prefix}-btn-#{$color}.disabled,
+  .#{$prefix}-btn-#{$color}:disabled {
+    cursor:default;
+    @include btn-color(lighten($value, 20%), lighten($value, 20%),  $color-grey-1);
+  }
+
+  .#{$prefix}-btn-#{$color}:not(:disabled):not(.disabled):active,
+  .#{$prefix}-btn-#{$color}:not(:disabled):not(.disabled).active {
+    @include btn-color(darken($value, 10%), darken($value, 10%), $color-grey-1);
+
+    &:focus {
+      @include box-shadow(0, 3px, 5px, rgba($value, .5));
+    }
+  }
+
+  // btn-outline
+  .#{$prefix}-btn-outline-#{$color} {
+    @include btn-color(transparent, $value, $value);
+    background-image: none;
+  }
+
+  .#{$prefix}-btn-outline-#{$color}:hover {
+     @include btn-color($value, $value, $color-grey-1);
+  }
+
+  .#{$prefix}-btn-outline-#{$color}:focus,
+  .#{$prefix}-btn-outline-#{$color}.focus {
+    box-shadow: 0 0 0 1px rgba($value, .3);
+  }
+
+  .#{$prefix}-btn-outline-#{$color}.disabled,
+  .#{$prefix}-btn-outline-#{$color}:disabled {
+    color: $value;
+    cursor:default;
+    background-color: transparent;
+  }
+
+  .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled):active,
+  .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled).active {
+    @include btn-color(darken($value, 10%), darken($value, 10%), $color-grey-1);
+
+    &:focus {
+      @include box-shadow(0, 3px, 5px, rgba($value, .5));
+    }
+  }
 
 }
-.btn-lg {
-  padding:10px 15px;
+
+.#{$prefix}-btn-light,
+.#{$prefix}-btn-light:hover {
+  color: $color-grey-7;
+  border-color: $color-grey-3;
+}
+
+.#{$prefix}-btn-light:not(:disabled):not(.disabled):active,
+.#{$prefix}-btn-light:not(:disabled):not(.disabled).active {
+  color: $color-grey-7;
+  border-color: $color-grey-3;
+}
+
+
+.#{$prefix}-btn-block {
+  display:block;
+  width:100%;
+}
+
+.#{$prefix}-btn-disable {
+
+}
+
+.#{$prefix}-btn-lg {
+  padding:0 15px;
+  height: 40px;
+  line-height:40px;
   font-size:18px;
   line-height:1.3333;
 }
 
-.btn-sm {
-  padding:5px 10px;
-  line-height:1.5;
+.#{$prefix}-btn-sm {
+  padding:0 6px;
+  height: 24px;
   font-size:12px;
 }
 
-@mixin btn-color($color) {
- background:$color;color:#fff;border:1px solid $color;
+.#{$prefix}-btn-round {
+  padding: 0 16px;
+  @include border-radius(40px);
+
+  &.#{$prefix}-btn-sm {
+    padding: 0 10px;
+  }
+
+  &.#{$prefix}-btn-lg {
+    padding: 0 20px;
+  }
 }
 
-.btn-blue {@include btn-color($color-blue);}
-.btn-green {@include btn-color($color-green)}
-.btn-orange {@include btn-color($color-orange)}
-.btn-gray {@include btn-color($color-gray)}
-
-
-// Button Styled as Link
-.btn-link {
-  color: $base-link-color;
-  text-decoration: underline;
-  border: 0;
-  background: transparent;
+.#{$prefix}-btn-circle {
   padding: 0;
-  &:hover { text-decoration: none; }
-  &:active { outline: 0; }
+  width: 32px;
+  @include border-radius(50%);
+
+  &.#{$prefix}-btn-sm {
+    padding: 0;
+    width: 24px;
+  }
+
+  &.#{$prefix}-btn-lg {
+    padding: 0;
+    width: 40px;
+  }
+}
+
+// Button Link
+.#{$prefix}-btn-link {
+  color: $color-blue-6;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
+  &:hover,
+  &:active {
+    color: $color-blue-7;
+    text-decoration: underline;
+    outline: 0;
+    border: none;
+    box-shadow:none;
+  }
+  &:focus {
+    box-shadow:none;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    box-shadow:none;
+    &:focus {
+      box-shadow:none;
+    }
+  }
 }
