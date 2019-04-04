@@ -1,25 +1,29 @@
-.wee-header {
+// Normalize
+//---------------------------------------------------------------------------
+@import 'wee/normalize';
+
+.wee-header-bar {
 	background: #7548D7;
 	height: 100px;
 }
 
-.wee-header a {
+.wee-header-bar a {
 	color: #fff;
 	text-decoration: none;
 }
 
-.wee-header a.logo {
+.wee-header-bar a.logo {
 	line-height: 100px;
 	font-size: 36px;
 }
 
-.wee-header nav {
+.wee-header-bar nav {
 	float: right;
 	line-height: 70px;
 	color: #fff;
 }
 
-.wee-header nav li {
+.wee-header-bar nav li {
 	list-style: none;
 	float: left;
 	display: block;
@@ -54,12 +58,6 @@
 
 .wee-col-resp .hd {
 	display: none;
-}
-
-.wee-col-push {
-	div {
-		margin-bottom: 20px;
-	}
 }
 
 .wee-btn-area {
@@ -137,8 +135,15 @@
 	}
 }
 
-@for $i from 1 through 24 {
-  .#{$prefix}-col-#{$i} {
-    margin-bottom: 20px;
-  }
+.wee-avatar-demo {
+	span {margin-right: 40px;}
 }
+
+.wee-alert-demo {
+	margin-bottom: 40px;
+}
+// @for $i from 1 through 24 {
+//   .#{$prefix}-col-#{$i} {
+//     margin-bottom: 20px;
+//   }
+// }

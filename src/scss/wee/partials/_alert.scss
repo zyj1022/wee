@@ -13,7 +13,7 @@
     border-top-color: darken($border, 5%);
   }
   .#{$prefix}-alert-link {
-    color: darken($text-color, 20%);
+    color: darken($text-color, 15%);
   }
 }
 
@@ -24,8 +24,48 @@
   border: 1px solid transparent;
 }
 
+.#{$prefix}-alert-round {
+  border-radius: 40px;
+}
+
 @each $color, $value in $theme-colors {
-  .#{$prefix}-alert-#{$color} {
-    @include alert-define(lighten($value, 35%), lighten($value,25%), darken($value, 15%));
+  @if $color == light {
+    .#{$prefix}-alert-#{$color} {
+      @include alert-define(lighten($value, 5%), $value, darken($value, 15%));
+    }
+  } @else {
+    .#{$prefix}-alert-#{$color} {
+      @include alert-define(lighten($value, 35%), lighten($value,30%), darken($value, 15%));
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @if $color == light {
+    .#{$prefix}-alert-#{$color}-outline {
+      @include alert-define($color-white, $value, darken($value, 15%));
+    }
+  } @else {
+    .#{$prefix}-alert-#{$color}-outline {
+      @include alert-define($color-white, $value, $value);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  @if $color == light {
+    .#{$prefix}-alert-#{$color}-bg {
+      @include alert-define($value, $value, darken($value, 25%));
+      .#{$prefix}-alert-link {
+        color:darken($value, 25%);
+      }
+    }
+  } @else {
+    .#{$prefix}-alert-#{$color}-bg {
+      @include alert-define($value, $value, $color-white);
+      .#{$prefix}-alert-link {
+        color: $color-white;
+      }
+    }
   }
 }

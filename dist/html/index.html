@@ -6,697 +6,109 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../css/style.css">
-	<title>WEE-Document</title>
+	<title>WEE-简单快速的响应式前端开发框架</title>
 </head>
 
-<body>
+<body class="wee-body">
 	<section class="wee-header">
 		<div class="wee-container">
-			<a href="#" class="logo">WEE</a>
-			<nav>
-				<ul>
-					<li><a href="/">首页</a></li>
-					<li><a href="flex.html">Flex布局</a></li>
-				</ul>
-			</nav>
+			 <div class="wee-row">
+			 	  <div class="wee-col-4"><a href="#" class="logo"></a></div>
+					<div class="wee-col-20">
+					 <nav>
+						 <ul>
+							 <li><a href="/">首页</a></li>
+							 <li><a href="docs.html">开发文档</a></li>
+							 <li><a href="flex.html">FLEX布局</a></li>
+						 </ul>
+					 </nav>
+					</div>
+			 </div>
+		</div>
+		<div class="wee-container wee-banner">
+			 <div class="txt-area">
+				 <div class="txt">响应式前端开发框架，功能组件 <br/> 让web开发更快速，更简单</div>
+				 <a href="#" class="btn-start">快速开始</a>
+			 </div>
+			 <div class="undraw-area"></div>
+		</div>
+		<div class="effect">
+			 <div class="title-area">特性 Features</div>
+			 <img src="./images/home-effect.svg" alt="" >
 		</div>
 	</section>
 
-	<div class="wee-container">
-		<h2>全局</h2>
-		<p>全局定义包括如下内容</p>
-		<table>
-			<caption>排版样式</caption>
-			<thead>
-				<tr>
-					<th>Element / Class</th>
-					<th>Example</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<code>&lt;b&gt;, &lt;strong&gt;</code>
-					</td>
-					<td>
-						<strong>Strong text</strong>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;em&gt;</code>
-					</td>
-					<td>
-						<em>Italic text</em>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;abbr&gt;</code>
-					</td>
-					<td>
-						<abbr title="As Soon As Possible">ASAP</abbr>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;dfn&gt;</code>
-					</td>
-					<td>
-						<dfn>Definition</dfn>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;mark&gt;</code>
-					</td>
-					<td>
-						<mark>Mark</mark>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;small&gt;</code>
-					</td>
-					<td>
-						<small>Small text</small>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;sub&gt;</code>
-					</td>
-					<td>
-						Text with <sub>Sub text</sub>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;sup&gt;</code>
-					</td>
-					<td>
-						Text with <sup>Sup text</sup>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<code>&lt;del&gt;</code>
-					</td>
-					<td>
-						<del>Deleted text</del>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h2>标题</h2>
-		<table class="wee-table-border">
-			<caption>标题样式</caption>
-			<thead>
-				<tr>
-					<th>Element / Class</th>
-					<th>HTML Output</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						h1
-						<br/> .h1
-					</td>
-					<td>
-						<h2 class="h1">Heading 1</h2>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						h2
-						<br/>.h2
-					</td>
-					<td>
-						<h2>Heading 2</h2>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						h3
-						<br/>.h3
-					</td>
-					<td>
-						<h2 class="h3">Heading 3</h2>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						h4
-						<br/>.h4
-					</td>
-					<td>
-						<h2 class="h4">Heading 4</h2>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						h5
-						<br/>.h5
-					</td>
-					<td>
-						<h2 class="h5">Heading 5</h2>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						h6
-						<br/>.h6
-					</td>
-					<td>
-						<h2 class="h6">Heading 6</h2>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<h2>列表</h2>
-		<div class="wee-row">
-			<div class="wee-col-12">
-				<h3>无序列表</h3>
-				<ul>
-					<li>我是一条无序列表 1</li>
-					<li>我是一条无序列表 2</li>
-					<li>我是一条无序列表 3</li>
-				</ul>
-			</div>
-			<div class="wee-col-12">
-				<h3>有序列表</h3>
-				<ol>
-					<li>我是一条有序列表 1</li>
-					<li>我是一条有序列表 2</li>
-					<li>我是一条有序列表 3</li>
-				</ol>
-			</div>
-			<div class="wee-col-12">
-				<h3>定义列表</h3>
-				<ul class="no-bit">
-					<li>我是一条定义列表 1</li>
-					<li>我是一条定义列表 2</li>
-					<li>我是一条定义列表 3</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="wee-col-exp">
-			<h2>布局</h2>
-			<p>固定宽度布局</p>
-			<div class="wee-row">
-				<div class="wee-col-4"><span>wee-col-4</span></div>
-				<div class="wee-col-20"><span>wee-col-20</span></div>
-			</div>
-			<div class="wee-row">
-				<div class="wee-col-6"><span>wee-col-6</span></div>
-				<div class="wee-col-18"><span>wee-col-18</span></div>
-			</div>
-			<div class="wee-row">
-				<div class="wee-col-8"><span>wee-col-8</span></div>
-				<div class="wee-col-16"><span>wee-col-16</span></div>
-			</div>
-			<div class="wee-row">
-				<div class="wee-col-10"><span>wee-col-10</span></div>
-				<div class="wee-col-14"><span>wee-col-14</span></div>
-			</div>
-			<div class="wee-row">
-				<div class="wee-col-12"><span>wee-col-12</span></div>
-				<div class="wee-col-12"><span>wee-col-12</span></div>
-			</div>
-			<div class="wee-row">
-				<div class="wee-col-24"><span>wee-col-24</span></div>
-			</div>
-		</div>
-
-		<h2>响应式布局</h2>
-		<div class="wee-row wee-col-resp">
-			<div class="wee-col-6 wee-col-12-sm wee-col-8-md  wee-col-6-hd">
-				<span class="md1">wee-col-6</span>
-				<span class="md">wee-col-8-md</span>
-				<span class="sm">wee-col-12-sm</span>
-				<span class="hd">wee-col-6-hd</span>
-			</div>
-			<div class="wee-col-18 wee-col-12-sm wee-col-16-md wee-col-18-hd">
-				<span class="md1">wee-col-18</span>
-				<span class="md">wee-col-16-md</span>
-				<span class="sm">wee-col-12-sm</span>
-				<span class="hd">wee-col-18-hd</span>
-			</div>
-		</div>
-
-		<h2>响应布局 偏移</h2>
-		<div class="wee-row wee-col-resp">
-			<div class="wee-col-8 wee-col-push-16 wee-col-14-sm wee-col-push-10-sm wee-col-6-md wee-col-push-18-md wee-col-4-hd wee-col-push-20-hd">
-				<span class="md1">wee-col-8 push16</span>
-				<span class="md">wee-col-6-md push18</span>
-				<span class="sm">wee-col-14-sm push10</span>
-				<span class="hd">wee-col-4-hd push20</span>
-			</div>
-			<div class="wee-col-16 wee-col-pull-8 wee-col-10-sm wee-col-pull-14-sm wee-col-18-md wee-col-pull-6-md wee-col-20-hd wee-col-pull-4-hd">
-				<span class="md1">wee-col-16 pull8</span>
-				<span class="md">wee-col-18-md pull6</span>
-				<span class="sm">wee-col-10-sm pull14</span>
-				<span class="hd">wee-col-20-hd pull4</span>
-			</div>
-		</div>
-
-		<h2>响应布局 偏移</h2>
-		<div class="wee-row wee-col-push">
-			<div class="wee-col-8 wee-col-push-16"><span>wee-col-8 wee-push-16</span></div>
-		</div>
-		<div class="wee-row wee-col-push">
-			<div class="wee-col-10 wee-col-push-14"><span>wee-col-10 push-14</span></div>
-		</div>
-		<div class="wee-row wee-col-push">
-			<div class="wee-col-12 wee-col-push-12"><span>wee-col-12 push-12</span></div>
-		</div>
-		<div class="wee-row wee-col-push">
-			<div class="wee-col-14 wee-col-push-10"><span>wee-col-14 push-10</span></div>
-		</div>
-
-
-		<div class="wee-col-exp">
-			<h2>Flex 布局 </h2>
-			<p>24列栅格化，与上面使用方式类似，栅格更细致，变化更多样</p>
-			<h3>Flex 布局用法说明 <a target="_blank" href="http://caniuse.com/#search=flex">兼容性</a></h3>
-			<p>flex 容器 有两种</p>
-			<p>
-				wee-flex-column: 容器里的[栅格]以横向排列，与传统栅格化的wee-row一样
-			</p>
-			<p>
-				wee-flex-row: 容器里的[栅格]以竖向排列，表示一层叠一层的排列方式
-			</p>
-			<p>
-				栅格化为24列，如果单行超过24列，即自动换行
-			</p>
-			<h3>用法示列</h3>
-			<div class="wee-flex-column">
-				<div class="wee-flex-col-12 wee-flex-test"><span>wee-flex-col-12</span></div>
-				<div class="wee-flex-col-12 wee-flex-test"><span>wee-flex-col-12</span></div>
-				<div class="wee-flex-col-8 wee-flex-test"><span>wee-flex-col-8</span></div>
-				<div class="wee-flex-col-16 wee-flex-test"><span>wee-flex-col-16</span></div>
-				<div class="wee-flex-col-6 wee-flex-test"><span>wee-flex-col-6</span></div>
-				<div class="wee-flex-col wee-flex-test"><span>wee-flex-col 自动填充宽度</span></div>
-				<div class="wee-flex-col-6 wee-flex-test"><span>wee-flex-col-6</span></div>
-				<div class="wee-flex-col-14 wee-flex-test"><span>wee-flex-col-14</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col 自动填充宽度</span></div>
-				<div class="wee-flex-col-16 wee-flex-test"><span>wee-flex-col-16</span></div>
-				<div class="wee-flex-col-12 wee-flex-test"><span>wee-flex-col-12</span></div>
-
-				<div class="wee-flex-col-16 wee-flex-row">
-					<div class="wee-flex-col"><span>wee-flex-col</span></div>
-					<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				</div>
-				<div class="wee-flex-col-8 wee-flex-row">
-					<div class="wee-flex-col"><span>wee-flex-col</span></div>
-					<div class="wee-flex-col"><span>wee-flex-col</span></div>
-					<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				</div>
-			</div>
-			<h3>wee-flex-middle 垂直居中 wee-flex-center 水平居中</h3>
-			<div class="wee-flex-row wee-flex-middle wee-flex-center" style="min-height: 200px;background:#f5f5f5;border:1px solid #ccc">
-				<div class="wee-flex-col-6 wee-flex-test"><span>wee-flex-col-6垂直居中</span></div>
-				<div class="wee-flex-col-6 wee-flex-test"><span>wee-flex-col-6多行垂直居中</span></div>
-			</div>
-
-			<h3>wee-flex-push-* 向左偏移</h3>
-			<div class="wee-flex-column" style="background:#f5f5f5;">
-				<div class="wee-flex-col-12"><span>wee-flex-col-12</span></div>
-			</div>
-			<div class="wee-flex-column" style="background:#f5f5f5;">
-				<div class="wee-flex-col-12 wee-flex-push-6"><span>wee-flex-col-12 wee-flex-push-6</span></div>
-			</div>
-			<div class="wee-flex-column" style="background:#f5f5f5;">
-				<div class="wee-flex-col-10 wee-flex-push-14"><span>wee-flex-col-10 wee-flex-push-14</span></div>
-			</div>
-
-			<h3>wee-flex-order-* 排序 order越小排在越前面</h3>
-			<div class="wee-flex-column">
-				<div class="wee-flex-col-5 wee-flex-order-4"><span>wee-flex-col-4 wee-flex-order-4</span></div>
-				<div class="wee-flex-col-5 wee-flex-order-3"><span>wee-flex-col-4 wee-flex-order-3</span></div>
-				<div class="wee-flex-col-5 wee-flex-order-2"><span>wee-flex-col-4 wee-flex-order-2</span></div>
-				<div class="wee-flex-col-5 wee-flex-order-1"><span>wee-flex-col-4 wee-flex-order-1</span></div>
-			</div>
-
-			<h3>wee-flex-left左对齐  wee-flex-right 右对齐</h3>
-			<div class="wee-flex-column" style="background:#f5f5f5;">
-				<div class="wee-flex-col-4"><span>wee-flex-col-4</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4</span></div>
-			</div>
-
-			<div class="wee-flex-column wee-flex-right" style="background:#f5f5f5;">
-				<div class="wee-flex-col-6"><span>wee-flex-col-6</span></div>
-				<div class="wee-flex-col-6"><span>wee-flex-col-6</span></div>
-				<div class="wee-flex-col-6"><span>wee-flex-col-6</span></div>
-			</div>
-
-			<div class="wee-flex-row wee-flex-left" style="background:#f5f5f5;">
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 左对齐</span></div>
-				<div class="wee-flex-col-4 wee-flex-right"><span>wee-flex-col-4 右对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 左对齐</span></div>
-			</div>
-
-			<div class="wee-flex-row" style="background:#f5f5f5;">
-				<div class="wee-flex-col-4 wee-flex-right"><span>wee-flex-col-4 右对齐</span></div>
-				<div class="wee-flex-col-4 wee-flex-left"><span>wee-flex-col-4 左对齐</span></div>
-				<div class="wee-flex-col-4 wee-flex-right"><span>wee-flex-col-4 右对齐</span></div>
-			</div>
-
-			<h3>wee-flex-top 顶部对齐 wee-flex-bottom 底部对齐</h3>
-			<div class="wee-flex-column wee-flex-bottom" style="background:#f5f5f5;min-height:120px">
-				<div class="wee-flex-col-6"><span>wee-flex-col-6 底部对齐</span></div>
-				<div class="wee-flex-col-6 wee-flex-top"><span>wee-flex-col-6 顶部对齐</span></div>
-				<div class="wee-flex-col-6"><span>wee-flex-col-6 底部对齐</span></div>
-			</div>
-
-			<h3>wee-flex-between 等宽对齐 —— 自动调整栅格间距，保持两边间距相同</h3>
-			<div class="wee-flex-column wee-flex-between" style="background:#f5f5f5;">
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-			</div>
-			<div class="wee-flex-row wee-flex-between wee-flex-center" style="background:#f5f5f5;min-height: 300px;">
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-			</div>
-
-			<h3>wee-flex-around 分散排列 —— 与等宽对齐相同，但靠两侧的间距比[栅格]之间的间距大一倍</h3>
-			<div class="wee-flex-column wee-flex-around" style="background:#f5f5f5;">
-				<div class="wee-flex-col-3"><span>分散排列</span></div>
-				<div class="wee-flex-col-3"><span>分散排列</span></div>
-				<div class="wee-flex-col-3"><span>分散排列</span></div>
-				<div class="wee-flex-col-3"><span>分散排列</span></div>
-			</div>
-			<div class="wee-flex-row wee-flex-around wee-flex-center" style="background:#f5f5f5;min-height: 400px;">
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-				<div class="wee-flex-col-4"><span>wee-flex-col-4 等宽对齐</span></div>
-			</div>
-
-			<h3>响应式</h3>
-			<p><strong>wee-flex-md</strong> 当分辨率低于 992px 的时候，使[容器]变为竖向排列</p>
-			<div class="wee-flex-column wee-flex-middle wee-flex-md" style="background:#f5f5f5;min-height: 100px;">
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-			</div>
-
-			<p><strong>wee-flex-sm</strong> 当分辨率低于 768px 的时候，使[容器]变为竖向排列</p>
-			<div class="wee-flex-column wee-flex-middle wee-flex-sm" style="background:#f5f5f5;min-height: 100px;">
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-			</div>
-
-			<p><strong>wee-flex-md-hide</strong> 当分辨率低于 992px 的时候，隐藏[栅格]或[容器]</p>
-			<p><strong>wee-flex-md-show</strong> 当分辨率低于 992px 的时候，显示[栅格]或[容器]</p>
-			<div class="wee-flex-column wee-flex-middle wee-flex-md" style="background:#f5f5f5;min-height: 100px;">
-				<div class="wee-flex-col-24"><span>wee-flex-col-24</span></div>
-				<div class="wee-flex-col wee-flex-md-hide"><span>低于992px则隐藏该栅格</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col wee-flex-md-show"><span>低于992px 则显示该栅格</span></div>
-				<div class="wee-flex-col wee-flex-md-show"><span>低于992px 则显示该栅格</span></div>
-				<div class="wee-flex-col wee-flex-md-show"><span>低于992px 则显示该栅格</span></div>
-			</div>
-
-			<p><strong>wee-flex-sm-hide</strong> 当分辨率低于 768px 的时候，隐藏[栅格]或[容器]</p>
-			<p><strong>wee-flex-sm-show</strong> 当分辨率低于 768px 的时候，显示[栅格]或[容器]</p>
-			<div class="wee-flex-column wee-flex-middle wee-flex-md" style="background:#f5f5f5;min-height: 100px;">
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col wee-flex-sm-hide"><span>低于 768px 则隐藏该栅格</span></div>
-				<div class="wee-flex-col"><span>wee-flex-col</span></div>
-				<div class="wee-flex-col wee-flex-sm-show"><span>低于 768px 则显示该栅格</span></div>
-			</div>
-
-		</div>
-
-
-		<h2>按钮</h2>
-		<div class="wee-row wee-btn-area">
-			<div class="wee-col-24">
-				  <button class="wee-btn">default</button>
-					<button class="wee-btn wee-btn-primary">primary</button>
-					<button class="wee-btn wee-btn-primary wee-btn-round">primary</button>
-					<button class="wee-btn wee-btn-secondary">secondary</button>
-					<button class="wee-btn wee-btn-success">success</button>
-					<button class="wee-btn wee-btn-info">info</button>
-					<button class="wee-btn wee-btn-warning">warning</button>
-					<button class="wee-btn wee-btn-danger">danger</button>
-					<button class="wee-btn wee-btn-light">light</button>
-					<button class="wee-btn wee-btn-dark">dark</button>
-					<button class="wee-btn wee-btn-link">btn-link</button>
-			</div>
-			<div class="wee-col-6">
-					<button class="wee-btn wee-btn-primary wee-btn-block">primary</button>
-			</div>
-			<div class="wee-col-6">
-					<button class="wee-btn wee-btn-success wee-btn-block">success</button>
-			</div>
-			<div class="wee-col-6">
-					<button class="wee-btn wee-btn-info wee-btn-block">info</button>
-			</div>
-			<div class="wee-col-24">
-				  <button class="wee-btn">default</button>
-					<button class="wee-btn wee-btn-outline-primary">primary</button>
-					<button class="wee-btn wee-btn-outline-primary wee-btn-round">primary</button>
-					<button class="wee-btn wee-btn-outline-secondary">secondary</button>
-					<button class="wee-btn wee-btn-outline-success">success</button>
-					<button class="wee-btn wee-btn-outline-info">info</button>
-					<button class="wee-btn wee-btn-outline-warning">warning</button>
-					<button class="wee-btn wee-btn-outline-danger">danger</button>
-			</div>
-
-			<div class="wee-col-24">
-				  <button class="wee-btn" disabled>default</button>
-					<button class="wee-btn wee-btn-outline-primary" disabled>primary</button>
-					<button class="wee-btn wee-btn-outline-primary wee-btn-round" disabled>primary</button>
-					<button class="wee-btn wee-btn-outline-secondary" disabled>secondary</button>
-					<button class="wee-btn wee-btn-outline-success" disabled>success</button>
-					<button class="wee-btn wee-btn-outline-info" disabled>info</button>
-					<button class="wee-btn wee-btn-outline-warning" disabled>warning</button>
-					<button class="wee-btn wee-btn-outline-danger" disabled>danger</button>
-			</div>
-
-			<div class="wee-col-24">
-				  <button class="wee-btn">default</button>
-					<button class="wee-btn wee-btn-primary wee-btn-lg">primary</button>
-					<button class="wee-btn wee-btn-secondary wee-btn-lg">secondary</button>
-					<button class="wee-btn wee-btn-secondary wee-btn-round wee-btn-lg ">secondary</button>
-					<button class="wee-btn wee-btn-primary wee-btn-round wee-btn-lg ">primary</button>
-					<button class="wee-btn wee-btn-secondary wee-btn-circle wee-btn-lg ">S</button>
-					<button class="wee-btn wee-btn-primary wee-btn-circle wee-btn-lg ">P</button>
-					<button class="wee-btn wee-btn-success wee-btn-round">success</button>
-					<button class="wee-btn wee-btn-success">success</button>
-					<button class="wee-btn wee-btn-info">info</button>
-					<button class="wee-btn wee-btn-success wee-btn-circle">A</button>
-					<button class="wee-btn wee-btn-info wee-btn-circle">B</button>
-					<button class="wee-btn wee-btn-warning wee-btn-square wee-btn-sm">warning</button>
-					<button class="wee-btn wee-btn-danger wee-btn-square wee-btn-sm">danger</button>
-					<button class="wee-btn wee-btn-warning wee-btn-circle wee-btn-sm">W</button>
-					<button class="wee-btn wee-btn-danger wee-btn-circle wee-btn-sm">D</button>
-					<button class="wee-btn wee-btn-warning wee-btn-round wee-btn-sm">warning</button>
-					<button class="wee-btn wee-btn-danger wee-btn-round wee-btn-sm">danger</button>
-			</div>
-
-			<div class="wee-col-24">
-				  <button class="wee-btn" disabled>default</button>
-					<button class="wee-btn wee-btn-primary wee-btn-lg" disabled>primary</button>
-					<button class="wee-btn wee-btn-secondary wee-btn-lg" disabled>secondary</button>
-					<button class="wee-btn wee-btn-success" disabled>success</button>
-					<button class="wee-btn wee-btn-info" disabled>info</button>
-					<button class="wee-btn wee-btn-warning wee-btn-sm" disabled>warning</button>
-					<button class="wee-btn wee-btn-danger wee-btn-sm" disabled>danger</button>
-			</div>
-
-			<div class="wee-col-24">
-				<div class="wee-btn-group-lg wee-btn-group">
-					<button class="wee-btn">Left</button>
-					<button class="wee-btn">Middle</button>
-					<button class="wee-btn">Right</button>
-				</div>
-
-				<div class="wee-btn-group-lg wee-btn-group">
-					<button class="wee-btn" disabled>Left</button>
-					<button class="wee-btn" disabled>Middle</button>
-					<button class="wee-btn" disabled>Right</button>
-				</div>
-
-
-				<div class="wee-btn-group-lg wee-btn-group">
-					<button class="wee-btn wee-btn-primary">Middle</button>
-				</div>
-
-				<div class="wee-btn-group">
-					<button class="wee-btn">Left</button>
-					<button class="wee-btn">Middle</button>
-					<button class="wee-btn">Right</button>
-				</div>
-
-				<div class="wee-btn-group-sm wee-btn-group">
-					<button class="wee-btn">Left</button>
-					<button class="wee-btn">Middle</button>
-					<button class="wee-btn">Right</button>
-				</div>
-		</div>
-
-		<div class="wee-col-24">
-			<div class="wee-btn-group-lg wee-btn-group">
-				<button class="wee-btn wee-btn-primary">Left</button>
-				<button class="wee-btn wee-btn-primary">Middle</button>
-				<button class="wee-btn wee-btn-primary">Right</button>
-			</div>
-
-			<div class="wee-btn-group">
-				<button class="wee-btn wee-btn-primary">Left</button>
-				<button class="wee-btn wee-btn-primary">Middle</button>
-				<button class="wee-btn wee-btn-primary">Right</button>
-			</div>
-
-			<div class="wee-btn-group-sm wee-btn-group">
-				<button class="wee-btn wee-btn-primary">Left</button>
-				<button class="wee-btn wee-btn-primary">Middle</button>
-				<button class="wee-btn wee-btn-primary">Right</button>
-			</div>
-	</div>
-
-	<div class="wee-col-24">
-		<div class="wee-btn-group-lg wee-btn-group-vertical">
-			<button class="wee-btn wee-btn-primary">1</button>
-			<button class="wee-btn wee-btn-primary">2</button>
-			<button class="wee-btn wee-btn-primary">3</button>
-			<button class="wee-btn wee-btn-primary">4</button>
-			<button class="wee-btn wee-btn-primary">5</button>
-			<button class="wee-btn wee-btn-primary">6</button>
-			<button class="wee-btn wee-btn-primary">7</button>
-		</div>
-
-		<div class="wee-btn-group-vertical">
-			<button class="wee-btn wee-btn-primary">Left</button>
-			<button class="wee-btn wee-btn-primary">Middle</button>
-			<button class="wee-btn wee-btn-primary">Right</button>
-		</div>
-		<div class="wee-btn-group-sm wee-btn-group-vertical">
-			<button class="wee-btn wee-btn-primary">Left</button>
-			<button class="wee-btn wee-btn-primary">Middle</button>
-			<button class="wee-btn wee-btn-primary">Right</button>
-		</div>
-		<div class="wee-btn-group">
-		  <button type="button" class="wee-btn wee-btn-primary">1</button>
-		  <button type="button" class="wee-btn wee-btn-primary">2</button>
-		</div>
-</div>
-
-		</div>
-
-		<h2>竖排表单</h2>
-		<div class="wee-row wee-form-group">
-			<form class="wee-form" action="index.html" method="post">
-				<ul class="wee-form-block">
-					<li class="wee-form-item">
-						<label for="username">用户名</label>
-						<input type="text" placeholder="请输入用户名">
+	<section class="wee-features">
+		 <div class="wee-container">
+			<ul class="wee-row">
+				 <li class="wee-col-8">
+				 	   <div class="undraw"><img src="./images/undraw_11.svg" alt="" ></div>
+						 <div class="txt">支持多端适配，移动端响<br/>应式适配，快速上手</div>
+				 </li>
+				 <li class="wee-col-8">
+							<div class="undraw"><img src="./images/undraw_12.svg" alt="" ></div>
+							<div class="txt">多种栅格化方式、Flex布局，<br/>快速搭建网站基本框架</div>
 					</li>
-					<li class="wee-form-item">
-						<label for="password">密码</label>
-						<input type="text" placeholder="请输入密码">
-					</li>
-					<li class="wee-form-field">
-						<input type="checkbox" name="" class="wee-checkbox" value="1" checked="checked"> 下次自动登录
-						<a href="#" class="wee-btn-link">忘记密码</a>
-					</li>
-					<li class="wee-form-field">
-						<input type="submit" class="wee-btn wee-btn-orange" value="登录">
-						<input type="submit" class="wee-btn" value="注册">
-					</li>
-				</ul>
-			</form>
+				<li class="wee-col-8">
+						<div class="undraw"><img src="./images/undraw_13.svg" alt="" ></div>
+						<div class="txt">集成多种基础布局组件，代码<br/>可以复用，功能开发更清晰</div>
+				</li>
+			</ul>
+			</div>
+	</section>
+
+	<section class="wee-demos">
+			<div class="title-area">演示 Demos</div>
+			<div class="wee-container">
+					<div class="wee-row">
+						 <div class="wee-col-12">
+							  <div class="case-box">
+									<a href="#" class="item type-1">
+										<img class="case-img" src="./images/case_1.png" alt="" >
+									</a>
+							  </div>
+						 </div>
+						 <div class="wee-col-12">
+							 <div class="case-box">
+								 <a href="#" class="item type-2">
+									 <img class="case-img" src="./images/case_2.png" alt="" >
+								 </a>
+							 </div>
+						 </div>
+					</div>
+			</div>
+	</section>
+
+	<section class="wee-footer">
+		<div class="wee-container">
+			 <div class="wee-row">
+				  <div class="wee-col-8">
+				  	  <h3>资源</h3>
+							<ul>
+								<li><a href="https://github.com/weeui/weekit" target="_blank">WeeKit——Web UI组件设计库</a></li>
+								<li><a href="https://github.com/weeui/react-wee" target="_blank">React-wee——React版本组件库</a></li>
+								<li><a href="https://github.com/zyj1022/muss" target="_blank">Muss——基础SASS库，快速编写CSS样式</a></li>
+								<li><a href="https://github.com/zyj1022/zebra" target="_blank">Zebra——前端JS基础类库</a></li>
+								<li><a href="#" target="_blank">Universal-website——通用建站模板</a></li>
+								<li><a href="https://github.com/zyj1022/rainbow" target="_blank">Rainbow——Web渐变配色方案</a></li>
+							</ul>
+				  </div>
+				  <div class="wee-col-8">
+				  	  <h3>图表</h3>
+							<ul>
+								<li><a href="http://zyj1022.github.io/demos/react-echarts-packet/" target="_blank">React-echarts-packet——React component for Echarts</a></li>
+								<li><a href="http://zyj1022.github.io/demos/rechartjs/" target="_blank">Rechartjs——React component for Chart.js</a></li>
+							</ul>
+				  </div>
+			 	  <div class="wee-col-8"></div>
+						 <h3>联系</h3>
+			 </div>
+			 <div class="foot-logo"><img src="./images/flogo.svg" alt="" ></div>
+			 <div class="copyright">Copyright © wee. All Rights Reserved. 2018</div>
 		</div>
+	</section>
 
 
-		<h2>横排表单</h2>
-		<div class="wee-row wee-form-group">
-			<form class="wee-form" action="index.html" method="post">
-				<ul class="wee-form-uniline">
-					<li class="wee-form-item">
-						<label for="username">用户名</label>
-						<input type="text" class="wee-input" placeholder="请输入用户名">
-					</li>
-					<li class="wee-form-item">
-						<label for="password">密码</label>
-						<input type="text" class="wee-input" placeholder="请输入密码">
-					</li>
-					<li>
-						<input type="checkbox" name="" class="wee-checkbox" value="1" checked="checked"> 下次自动登录
-						<a href="#" class="wee-btn-link">忘记密码</a>
-					</li>
-					<li>
-						<input type="submit" class="wee-btn wee-btn-green" value="登录">
-						<input type="submit" class="wee-btn" value="注册">
-					</li>
-				</ul>
-			</form>
-		</div>
-
-		<h2>注册表单</h2>
-		<div class="wee-row wee-form-group">
-			<form class="wee-form" action="index.html" method="post">
-				<ul class="wee-form-block">
-					<li class="wee-form-item">
-						<label for="username">用户名</label>
-						<input type="text" class="wee-input" placeholder="请输入用户名">
-					</li>
-					<li class="wee-form-item">
-						<label for="password">密码</label>
-						<input type="text" class="wee-input" placeholder="请输入密码">
-					</li>
-					<li class="wee-form-item">
-						<label for="password">确认密码</label>
-						<input type="text" class="wee-input" placeholder="请输入密码">
-					</li>
-					<li class="wee-form-item">
-						<label for="password">联系人</label>
-						<input type="text" class="wee-input" placeholder="">
-					</li>
-					<li class="wee-form-item">
-						<label for="password">所在国家</label>
-						<select class="" name="" size="1" id="" class="wee-select">
-							<option selected="selected" value="1">中国</option>
-							<option value="2">美国</option>
-							<option value="3">英国</option>
-						</select>
-					</li>
-					<li class="wee-form-item">
-						<label for="password">电话号码</label>
-						<input type="text" id="" class="wee-input" placeholder="">
-					</li>
-					<li class="wee-form-item">
-						<label for="password">联系地址</label>
-						<input type="text" id="" class="wee-input" placeholder="">
-					</li>
-
-					<li class="wee-form-field">
-						<input type="submit" class="wee-btn wee-btn-blue" value="登录">
-						<input type="submit" class="wee-btn" value="注册">
-					</li>
-				</ul>
-			</form>
-		</div>
-
-
-
-
-	</div>
 </body>
 
 </html>
