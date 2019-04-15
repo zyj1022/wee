@@ -7,13 +7,7 @@
 
 // List Types
 // --------------------------------------------------------------------------
-ul, ol {
-  @include margin(1em 0 2em);
-  @include padding(0 0 0 40px);
-  li {
-    margin-bottom: 5px;
-  }
-}
+
 dl {
   &::after {
     clear: both;

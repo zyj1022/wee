@@ -15,6 +15,21 @@
   .#{$prefix}-alert-link {
     color: darken($text-color, 15%);
   }
+  .#{$prefix}-alert-close {
+    color: darken($text-color, 15%);
+  }
+}
+
+.#{$prefix}-alert-close {
+  border: none;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 2px;
 }
 
 .#{$prefix}-alert {
@@ -22,11 +37,14 @@
   @include margin(10px null 10px null);
   border-radius: $base-border-radius;
   border: 1px solid transparent;
+  position: relative;
 }
 
 .#{$prefix}-alert-round {
   border-radius: 40px;
 }
+
+
 
 @each $color, $value in $theme-colors {
   @if $color == light {
