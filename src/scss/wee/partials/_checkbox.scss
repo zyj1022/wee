@@ -3,3 +3,154 @@
 // ==========================================================================
 // Wee – checkbox
 // ==========================================================================
+
+input[type='checkbox'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type='checkbox'][disabled],
+input[type='checkbox'].disabled {
+  cursor: not-allowed;
+}
+
+.#{$prefix}-checkbox-wrap {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,0.65);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  display: inline-block;
+  line-height: unset;
+  cursor: pointer;
+}
+
+.#{$prefix}-checkbox {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,0.65);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  position: relative;
+  top: -0.09em;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: none;
+  cursor: pointer;
+}
+
+.#{$prefix}-checkbox-input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.#{$prefix}-checkbox-inner {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: $color-grey-1;
+  border: 1px solid $color-grey-5;
+  border-radius: 2px;
+  @include transition(all 0.3s);
+}
+
+.#{$prefix}-checkbox:hover {
+  .#{$prefix}-checkbox-inner {
+    border-color: $primary;
+  }
+}
+
+.#{$prefix}-checkbox-inner::after {
+  box-sizing: content-box;
+  content: "";
+  border: 0 solid $color-grey-1;
+  border-left: 0;
+  border-top: 0;
+  width: 3px;
+  height: 7px;
+  left: 5px;
+  top: 2px;
+  position: absolute;
+  opacity: 0;
+  @include transform(rotate(0deg) scaleY(0));
+  @include transition(0.15s ease-in 0.05s);
+  @include transform-origin(center);
+}
+
+.#{$prefix}-checkbox+span,
+.#{$prefix}-checkbox-wrapper+span {
+  padding-right: 8px;
+  padding-left: 4px;
+}
+
+.#{$prefix}-checkbox-checked {
+  .#{$prefix}-checkbox-inner {
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  .#{$prefix}-checkbox-inner::after {
+    border-width: 2px;
+    opacity: 1;
+    @include transform(rotate(45deg) scaleY(1));
+  }
+}
+
+.#{$prefix}-checkbox-wrap-disabled {
+  cursor: not-allowed;
+}
+
+.#{$prefix}-checkbox-disabled {
+  cursor: not-allowed;
+
+  .#{$prefix}-checkbox-inner {
+    background-color: #f5f5f5;
+    border-color: $color-grey-5 !important;
+  }
+
+  .#{$prefix}-checkbox-inner::after {
+    opacity: 1;
+    @include transform(rotate(45deg) scaleY(1));
+  }
+}
+
+.#{$prefix}-checkbox-disabled.#{$prefix}-checkbox-checked {
+  .#{$prefix}-checkbox-inner::after {
+    border-color: rgba(0,0,0,0.25);
+  }
+}
+
+.#{$prefix}-checkbox-indeterminate {
+  .#{$prefix}-checkbox-inner {
+    background-color: $color-grey-1;
+    border-color: $color-grey-5;
+  }
+
+  .#{$prefix}-checkbox-inner::after {
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: $primary;
+    border: 0;
+    @include transform(translate(-50%, -50%) scale(1));
+    opacity: 1;
+    content: ' ';
+  }
+}

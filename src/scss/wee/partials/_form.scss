@@ -45,22 +45,22 @@ label {
 
 
 // Checkbox and Radio
-.#{$prefix}-checkbox,
-.#{$prefix}-radio {
-  display: inline-block;
-  position: relative;
-  @include padding-all(.5em, null, .5em, null);
-  label {
-    @include padding-all(0, null, null, 20px);
-    display: inline-block;
-  }
-  input[type="checkbox"],
-  input[type="radio"] {
-    position: absolute;
-    top: 4px;
-    left: 0;
-  }
-}
+// .#{$prefix}-checkbox,
+// .#{$prefix}-radio {
+//   display: inline-block;
+//   position: relative;
+//   @include padding-all(.5em, null, .5em, null);
+//   label {
+//     @include padding-all(0, null, null, 20px);
+//     display: inline-block;
+//   }
+//   input[type="checkbox"],
+//   input[type="radio"] {
+//     position: absolute;
+//     top: 4px;
+//     left: 0;
+//   }
+// }
 
 $inputs: 'select,
           textarea,
