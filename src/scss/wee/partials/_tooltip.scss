@@ -1,0 +1,79 @@
+@charset "UTF-8";
+// ==========================================================================
+// Wee – tooltip
+// ==========================================================================
+
+.#{$tooltip}-wrap {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $tooltip-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  list-style: none;
+  position: absolute;
+  z-index: $z-index-tooltip;
+  display: block;
+  max-width: $tooltip-max-width;
+}
+
+.#{$tooltip}-content {
+  min-width: 30px;
+  min-height: 32px;
+  padding: 6px 8px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  word-wrap: break-word;
+  background-color: $tooltip-bg;
+  border-radius: $border-radius-base;
+  box-shadow: $shadow-box-base;
+}
+
+.#{$tooltip}-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.#{$tooltip-placement}-top {
+  .#{$tooltip}-arrow {
+    left: 50%;
+    margin-left: -$tooltip-arrow-width;
+    bottom: -$tooltip-arrow-width;
+    border-width: $tooltip-arrow-width $tooltip-arrow-width 0;
+    border-top-color: $tooltip-bg;
+  }
+}
+
+.#{$tooltip-placement}-bottom {
+  .#{$tooltip}-arrow {
+    left: 50%;
+    margin-left: -$tooltip-arrow-width;
+    top: -$tooltip-arrow-width;
+    border-width: 0 $tooltip-arrow-width $tooltip-arrow-width;
+    border-bottom-color: $tooltip-bg;
+  }
+}
+
+.#{$tooltip-placement}-left {
+  .#{$tooltip}-arrow {
+    top: 50%;
+    margin-top: -$tooltip-arrow-width;
+    right: -$tooltip-arrow-width;
+    border-width: $tooltip-arrow-width 0 $tooltip-arrow-width $tooltip-arrow-width;
+    border-left-color: $tooltip-bg;
+  }
+}
+
+.#{$tooltip-placement}-right {
+  .#{$tooltip}-arrow {
+    top: 50%;
+    margin-top: -$tooltip-arrow-width;
+    left: -$tooltip-arrow-width;
+    border-width: $tooltip-arrow-width $tooltip-arrow-width $tooltip-arrow-width 0;
+    border-right-color: $tooltip-bg;
+  }
+}

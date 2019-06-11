@@ -27,7 +27,7 @@ input[type='checkbox'].disabled {
   cursor: pointer;
 }
 
-.#{$prefix}-checkbox {
+.#{$prefix}-checkbox-box {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -69,7 +69,7 @@ input[type='checkbox'].disabled {
   @include transition(all 0.3s);
 }
 
-.#{$prefix}-checkbox:hover {
+.#{$prefix}-checkbox-box:hover {
   .#{$prefix}-checkbox-inner {
     border-color: $primary;
   }
@@ -92,8 +92,8 @@ input[type='checkbox'].disabled {
   @include transform-origin(center);
 }
 
-.#{$prefix}-checkbox+span,
-.#{$prefix}-checkbox-wrapper+span {
+.#{$prefix}-checkbox-box+span,
+.#{$prefix}-checkbox-wrap+span {
   padding-right: 8px;
   padding-left: 4px;
 }

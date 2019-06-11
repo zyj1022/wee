@@ -3,3 +3,97 @@
 // ==========================================================================
 // Wee – notification
 // ==========================================================================
+$notification: $prefix + '-notification';
+
+.#{$notification} {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-size: $font-size-base ;
+  line-height: $line-height-base;
+  list-style: none;
+  position: fixed;
+  z-index: $z-index-notification;
+  width: $notification-default-width;
+  max-width: calc(100vw - 32px);
+  margin-right: $gap-lg;
+}
+
+.#{$notification}-inner {
+  position: relative;
+  margin-bottom: $gap-md;
+  padding: $gap-md $gap-lg;
+  overflow: hidden;
+  line-height: $line-height-base;
+  background: #fff;
+  border-radius: $border-radius-base ;
+  box-shadow: $shadow-type-2;
+}
+
+.#{$notification}-content {}
+
+.#{$notification}-message {
+  display: inline-block;
+  margin-bottom: $gap-sm;
+  color: $text-color-dark;
+  font-size: $font-size-lg;
+  line-height: 24px;
+}
+
+.#{$notification}-description {
+  font-size: $font-size-base ;
+}
+
+.#{$notification}-notice-close {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  color: $text-color-secondary;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.#{$notification}-notice-close:hover {
+  color: $text-color-secondary-dark;
+}
+
+.#{$notification}-with-icon {
+  .#{$notification}-message {
+    margin-bottom: 4px;
+    margin-left: 40px;
+    font-size: $font-size-lg;
+  }
+
+  .#{$notification}-description {
+    margin-left: 40px;
+    font-size: $font-size-base ;
+  }
+
+  .#{$notification}-icon {
+    position: absolute;
+    margin-top: 4px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .#{$notification}-icon-success {
+    color: $success;
+  }
+  .#{$notification}-icon-info {
+    color: $primary;
+  }
+  .#{$notification}-icon-error {
+    color: $danger;
+  }
+  .#{$notification}-icon-waring {
+    color: $warning;
+  }
+}
+
+.#{$notification}-btnArea {
+  margin-top: 10px;
+  text-align: right;
+}

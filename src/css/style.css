@@ -11,9 +11,9 @@
 */
 body {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.1428571429rem;
   line-height: 20px;
-  line-height: 1.25rem;
+  line-height: 1.4285714286rem;
   color: #595959;
   background: #fff;
   font-size: 100%;
@@ -101,7 +101,7 @@ dfn {
 .wee-alert {
   padding: 10px 15px 10px 15px;
   margin: 10px 10px;
-  border-radius: 5px;
+  border-radius: 4px;
   border: 1px solid transparent;
   position: relative;
 }
@@ -1696,7 +1696,7 @@ input[type='checkbox'].disabled {
   cursor: pointer;
 }
 
-.wee-checkbox {
+.wee-checkbox-box {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -1740,7 +1740,7 @@ input[type='checkbox'].disabled {
   transition: all 0.3s;
 }
 
-.wee-checkbox:hover .wee-checkbox-inner {
+.wee-checkbox-box:hover .wee-checkbox-inner {
   border-color: #1890ff;
 }
 
@@ -1765,8 +1765,8 @@ input[type='checkbox'].disabled {
   transform-origin: center;
 }
 
-.wee-checkbox + span,
-.wee-checkbox-wrapper + span {
+.wee-checkbox-box + span,
+.wee-checkbox-wrap + span {
   padding-right: 8px;
   padding-left: 4px;
 }
@@ -2440,6 +2440,30 @@ label {
 
 .wee-form-field {
   padding-left: 110px;
+}
+
+.wee-checkbox,
+.wee-radio {
+  display: inline-block;
+  position: relative;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.wee-checkbox label,
+.wee-radio label {
+  padding-top: 0;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.wee-checkbox input[type="checkbox"],
+.wee-checkbox input[type="radio"],
+.wee-radio input[type="checkbox"],
+.wee-radio input[type="radio"] {
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
 
 select,
@@ -4197,7 +4221,13 @@ input[type="color"][disabled] {
 }
 
 .wee-icon {
-  margin: 3px;
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
 }
 
 img {
@@ -4239,6 +4269,222 @@ img.circle {
   border-radius: 50%;
 }
 
+.wee-message {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  position: fixed;
+  top: 16px;
+  left: 0;
+  z-index: 1010;
+  width: 100%;
+}
+
+.wee-message .wee-icon {
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.wee-message-notice {
+  padding: 8px;
+  text-align: center;
+}
+
+.wee-message-inner {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  pointer-events: all;
+}
+
+.wee-message-success .wee-icon {
+  color: #52c41a;
+}
+
+.wee-message-error .wee-icon {
+  color: #f5222d;
+}
+
+.wee-message-warning .wee-icon {
+  color: #fadb14;
+}
+
+.wee-notification {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  position: fixed;
+  z-index: 1010;
+  width: 386px;
+  max-width: calc(100vw - 32px);
+  margin-right: 24px;
+}
+
+.wee-notification-inner {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  overflow: hidden;
+  line-height: 1.5;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.wee-notification-message {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.wee-notification-description {
+  font-size: 14px;
+}
+
+.wee-notification-notice-close {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  color: rgba(0, 0, 0, 0.45);
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.wee-notification-notice-close:hover {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.wee-notification-with-icon .wee-notification-message {
+  margin-bottom: 4px;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+.wee-notification-with-icon .wee-notification-description {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.wee-notification-with-icon .wee-notification-icon {
+  position: absolute;
+  margin-top: 4px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.wee-notification-with-icon .wee-notification-icon-success {
+  color: #52c41a;
+}
+
+.wee-notification-with-icon .wee-notification-icon-info {
+  color: #1890ff;
+}
+
+.wee-notification-with-icon .wee-notification-icon-error {
+  color: #f5222d;
+}
+
+.wee-notification-with-icon .wee-notification-icon-waring {
+  color: #fadb14;
+}
+
+.wee-notification-btnArea {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.wee-popover-wrap {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+  font-weight: normal;
+  white-space: normal;
+  text-align: left;
+  cursor: auto;
+}
+
+.wee-popover-arrow {
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border: 4px solid #fff;
+  transform: rotate(45deg);
+}
+
+.wee-popover-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wee-popover-title {
+  min-width: 177px;
+  min-height: 32px;
+  margin: 0;
+  padding: 5px 16px 4px;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.wee-popover-box {
+  padding: 12px 16px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.wee-popover-hidden {
+  display: none;
+}
+
+.wee-popover-placement-top .wee-popover-arrow {
+  left: 50%;
+  bottom: -4px;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.08);
+}
+
+.wee-popover-placement-bottom .wee-popover-arrow {
+  left: 50%;
+  top: -4px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.wee-popover-placement-left .wee-popover-arrow {
+  top: 12px;
+  right: -4px;
+  box-shadow: 3px -3px 7px rgba(0, 0, 0, 0.08);
+}
+
+.wee-popover-placement-right .wee-popover-arrow {
+  top: 12px;
+  left: -4px;
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.08);
+}
+
 input[type='radio'] {
   box-sizing: border-box;
   padding: 0;
@@ -4259,18 +4505,17 @@ input[type='radio'].disabled {
   list-style: none;
   position: relative;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 12px;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.wee-radio {
+.wee-radio-box {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.65);
   font-size: 14px;
-  line-height: 1.5;
   list-style: none;
   position: relative;
   top: -0.09em;
@@ -4359,8 +4604,8 @@ input[type='radio'].disabled {
 }
 
 .wee-radio-input:focus + .wee-radio-inner,
-.wee-radio-wrapper:hover .wee-radio,
-.wee-radio:hover .wee-radio-inner {
+.wee-radio-wrapper:hover .wee-radio-box,
+.wee-radio-box:hover .wee-radio-inner {
   border-color: #1890ff;
 }
 
@@ -4403,7 +4648,7 @@ input[type='radio'].disabled {
 
 caption {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.2857142857rem;
   line-height: normal;
   font-weight: 700;
   text-align: left;
@@ -4413,7 +4658,7 @@ caption {
 
 table {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   width: 100%;
   margin: 1em 0;
   text-align: left;
@@ -4471,6 +4716,73 @@ table > thead > tr > td {
   background-color: #e4f2ff;
 }
 
+.wee-tooltip-wrap {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  line-height: 1.5;
+  list-style: none;
+  position: absolute;
+  z-index: 1060;
+  display: block;
+  max-width: 250px;
+}
+
+.wee-tooltip-content {
+  min-width: 30px;
+  min-height: 32px;
+  padding: 6px 8px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  word-wrap: break-word;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wee-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.wee-tooltip-placement-top .wee-tooltip-arrow {
+  left: 50%;
+  margin-left: -5px;
+  bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: rgba(0, 0, 0, 0.75);
+}
+
+.wee-tooltip-placement-bottom .wee-tooltip-arrow {
+  left: 50%;
+  margin-left: -5px;
+  top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: rgba(0, 0, 0, 0.75);
+}
+
+.wee-tooltip-placement-left .wee-tooltip-arrow {
+  top: 50%;
+  margin-top: -5px;
+  right: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: rgba(0, 0, 0, 0.75);
+}
+
+.wee-tooltip-placement-right .wee-tooltip-arrow {
+  top: 50%;
+  margin-top: -5px;
+  left: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: rgba(0, 0, 0, 0.75);
+}
+
 dl::after {
   clear: both;
   content: "";
@@ -4499,9 +4811,9 @@ p {
 
 h1, .h1 {
   font-size: 32px;
-  font-size: 2rem;
+  font-size: 2.2857142857rem;
   line-height: 48px;
-  line-height: 3rem;
+  line-height: 3.4285714286rem;
   color: #343434;
   margin-top: 0.7em;
   margin-bottom: 0.5em;
@@ -4509,9 +4821,9 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 1.8571428571rem;
   line-height: 44px;
-  line-height: 2.75rem;
+  line-height: 3.1428571429rem;
   color: #343434;
   margin-top: 1.4em;
   margin-bottom: 0.2em;
@@ -4519,9 +4831,9 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 1.5714285714rem;
   line-height: 38px;
-  line-height: 2.375rem;
+  line-height: 2.7142857143rem;
   color: #343434;
   margin-top: 1em;
   margin-bottom: 0.2em;
@@ -4529,9 +4841,9 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.2857142857rem;
   line-height: 36px;
-  line-height: 2.25rem;
+  line-height: 2.5714285714rem;
   color: #343434;
   margin-top: 1em;
   margin-bottom: 0.2em;
@@ -4539,9 +4851,9 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 1.1428571429rem;
   line-height: 28px;
-  line-height: 1.75rem;
+  line-height: 2rem;
   color: #343434;
   margin-top: 1em;
   margin-bottom: 0.1em;
@@ -4549,9 +4861,9 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 1.7142857143rem;
   color: #343434;
   margin-top: 1em;
   margin-bottom: 0.1em;
@@ -5035,11 +5347,17 @@ template {
 }
 
 .wee-mod-demo {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .wee-mod-demo li {
   margin: 10px 0;
+}
+
+.wee-mod-demo::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 ul, li {

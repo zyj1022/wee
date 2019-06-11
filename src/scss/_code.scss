@@ -144,8 +144,9 @@
 }
 
 .wee-mod-demo {
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	li {margin: 10px 0;}
+	@include clearfix;
 }
 // @for $i from 1 through 24 {
 //   .#{$prefix}-col-#{$i} {

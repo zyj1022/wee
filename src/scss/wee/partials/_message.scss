@@ -3,3 +3,59 @@
 // ==========================================================================
 // Wee – message
 // ==========================================================================
+
+.#{$prefix}-message {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-size: $font-size-base ;
+  line-height: $line-height-base;
+  list-style: none;
+  position: fixed;
+  top: 16px;
+  left: 0;
+  z-index: $z-index-message ;
+  width: 100%;
+
+  .#{$prefix}-icon {
+    position: relative;
+    top: 1px;
+    margin-right: 6px;
+    font-size: $font-size-lg;
+  }
+}
+
+.#{$prefix}-message-notice {
+  padding: $gap-xs;
+  text-align: center;
+}
+
+.#{$prefix}-message-inner {
+  display: inline-block;
+  padding: $gap-xs $gap-md;
+  background: #fff;
+  border-radius: $border-radius-base;
+  box-shadow: $shadow-type-2;
+  pointer-events: all;
+}
+
+.#{$prefix}-message-content {}
+
+.#{$prefix}-message-success {
+  .#{$prefix}-icon {
+      color: $success;
+  }
+}
+
+.#{$prefix}-message-error {
+  .#{$prefix}-icon {
+      color: $danger;
+  }
+}
+
+.#{$prefix}-message-warning {
+  .#{$prefix}-icon {
+      color: $warning;
+  }
+}

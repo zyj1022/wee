@@ -104,6 +104,24 @@ $base-font-weight: 400;
 $base-font-color: $color-grey-8;
 $base-link-color: $color-blue-6;
 
+$heading-color: rgba(0,0,0,0.85);
+$heading-color-dark: rgba(0,0,0,1);
+$text-color: rgba(0,0,0,0.65);
+$text-color-dark: rgba(0,0,0,0.85);
+$text-color-secondary: rgba(0,0,0,0.45);
+$text-color-secondary-dark: rgba(0,0,0,0.65);
+$font-size-base: 14px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-sm: 12px;
+$line-height-base: 1.5;
+$border-radius-base: 4px;
+$border-radius-sm: 2px;
+
+$gap-lg: 24px;
+$gap-md: 16px;
+$gap-sm: 12px;
+$gap-xs: 8px;
+
 // Headings
 // ----------------------------------------------------------------------------
 $heading-font-family: sans-serif;
@@ -145,7 +163,6 @@ $breakpoint-hd: ($screen-hd + 20);
 // Gird Gap
 // ----------------------------------------------------------------------------
 $base-gap: 10px;
-$base-border-radius: 5px;
 $flex-columns: 24;
 
 // Tables
@@ -157,3 +174,49 @@ $table-striped-even-bg: #f7f7f7;
 $table-striped-odd-bg: #fff;
 
 $enable-shadows: false !default;
+
+// Tooltip
+// ----------------------------------------------------------------------------
+$tooltip: $prefix + '-tooltip';
+$tooltip-placement: $prefix + '-tooltip-placement';
+$tooltip-color: rgba(0,0,0,0.75);
+$tooltip-bg: rgba(0,0,0,0.75);
+$tooltip-arrow-width: 5px;
+$tooltip-max-width: 250px;
+
+// popover
+// ----------------------------------------------------------------------------
+$popover: $prefix + '-popover';
+$popover-placement: $prefix + '-popover-placement';
+$popover-color: $text-color;
+$popover-title-color: rgba(0,0,0,0.85);
+$popover-bg: #fff;
+$popover-min-width: 177px;
+$popover-arrow-width: 8px;
+$popover-arrow-color: #fff;
+$popover-arrow-shadow-color: rgba(0,0,0,0.08);
+
+$notification-default-width: 386px;
+
+// Shadow
+// ----------------------------------------------------------------------------
+$shadow-color : rgba(0, 0, 0, .15);
+$shadow-type-1-up : 0 -2px 8px $shadow-color;
+$shadow-type-1-down : 0 2px 8px $shadow-color;
+$shadow-type-1-left : -2px 0 8px $shadow-color;
+$shadow-type-1-right : 2px 0 8px $shadow-color;
+$shadow-box-base : $shadow-type-1-down;
+$shadow-type-2: 0 4px 12px $shadow-color;
+
+// z-index list
+// ----------------------------------------------------------------------------
+$z-index-affix           : 10;
+$z-index-back-top        : 10;
+$z-index-modal-mask      : 1000;
+$z-index-modal           : 1000;
+$z-index-notification    : 1010;
+$z-index-message         : 1010;
+$z-index-popover         : 1030;
+$z-index-picker          : 1050;
+$z-index-dropdown        : 1050;
+$z-index-tooltip         : 1060;
