@@ -3,3 +3,182 @@
 // ==========================================================================
 // Wee – pagination
 // ==========================================================================
+
+$pagination: $prefix + '-pagination';
+
+.#{$pagination} {
+  @include clearfix;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  line-height: $line-height-base;
+  list-style: none;
+  font-size: 0;
+
+  a {
+    font-size: $font-size-base;
+    display: block;
+    color: $text-color;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $primary;
+  }
+}
+
+.#{$pagination}-item {
+  display: inline-block;
+  min-width: 32px;
+  height: 32px;
+  margin-right: $gap-xs;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: $border-radius-base;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.#{$pagination}-item:hover {
+  border: 1px solid $primary;
+}
+
+.#{$pagination}-item-active {
+  font-weight: 500;
+  color: $primary;
+  border: 1px solid $primary;
+
+  a {color: $primary;}
+}
+
+.#{$pagination}-disabled,
+.#{$pagination}-disabled:hover,
+.#{$pagination}-disabled:focus {
+  cursor: not-allowed;
+}
+
+.#{$pagination}-prev,
+.#{$pagination}-next,
+.#{$pagination}-jump-prev,
+.#{$pagination}-jump-next {
+  margin-right: $gap-xs;
+  display: inline-block;
+  min-width: 32px;
+  height: 32px;
+  color: $text-color;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+  border-radius: $border-radius-base;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.#{$pagination}-prev,
+.#{$pagination}-next {
+  .#{$pagination}-item-link {
+    display: block;
+    height: 100%;
+    font-size: $font-size-sm;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    outline: none;
+    transition: all .3s;
+  }
+  a:hover {
+    color: $primary;
+  }
+}
+
+.#{$pagination}-prev:hover,
+.#{$pagination}-next:hover {
+  .#{$pagination}-item-link {
+    border: 1px solid $primary;
+  }
+}
+
+.#{$pagination}-disabled {
+  color: rgba(0,0,0,0.25);
+  border-color: #d9d9d9;
+  cursor: not-allowed;
+
+  a {
+    cursor: not-allowed;
+    color: rgba(0,0,0,0.25);
+  }
+  a:hover {
+    color: rgba(0,0,0,0.25);
+  }
+}
+
+.#{$pagination}-disabled.#{$pagination}-item:hover {
+  color: rgba(0,0,0,0.25);
+  border: 1px solid #d9d9d9;
+}
+
+.#{$pagination}-disabled.#{$pagination}-prev:hover,
+.#{$pagination}-disabled.#{$pagination}-next:hover {
+  color: rgba(0,0,0,0.25);
+  .#{$pagination}-item-link {
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.#{$pagination}-item-content {
+  position: relative;
+  font-size: 12px;
+
+  .#{$pagination}-item-link-icon {
+    display: inline-block;
+    font-size: 12px;
+    transform: scale(1) rotate(0deg);
+    color: $primary;
+    letter-spacing: -1px;
+    opacity: 0;
+    transition: all .2s;
+  }
+}
+
+.#{$pagination}-item-ellipsis {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  color: rgba(0,0,0,0.25);
+  letter-spacing: 2px;
+  text-align: center;
+  text-indent: .13em;
+  opacity: 1;
+  transition: all .2s;
+}
+
+.#{$pagination}-jump-prev:hover,
+.#{$pagination}-jump-next:hover {
+  .#{$pagination}-item-link-icon  {
+    opacity: 1;
+  }
+  .#{$pagination}-item-ellipsis {
+    opacity: 0;
+  }
+}
+
+.#{$pagination}-options {
+  display: inline-block;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+
+.#{$pagination}-options-quick-jumper {
+  
+}
