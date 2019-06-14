@@ -110,17 +110,34 @@ $text-color: rgba(0,0,0,0.65);
 $text-color-dark: rgba(0,0,0,0.85);
 $text-color-secondary: rgba(0,0,0,0.45);
 $text-color-secondary-dark: rgba(0,0,0,0.65);
-$font-size-base: 14px;
-$font-size-lg: $font-size-base + 2px;
-$font-size-sm: 12px;
+
 $line-height-base: 1.5;
 $border-radius-base: 4px;
 $border-radius-sm: 2px;
+$border-color-base: #e8e8e8;
 
+$font-size-base: 14px;
+$font-size-xlg: 24px;
+$font-size-lg: 16px;
+$font-size-sm: 12px;
+
+$gap-xlg: 32px;
 $gap-lg: 24px;
 $gap-md: 16px;
 $gap-sm: 12px;
 $gap-xs: 8px;
+$gap-xxs: 4px;
+
+// Space
+// ----------------------------------------------------------------------------
+$space-base: 16px;
+$space-xxs:  2px;
+$space-xs:   4px;
+$space-s:    8px;
+$space-m:    16px;
+$space-l:    24px;
+$space-xl:   32px;
+$space-xxl:  64px;
 
 // Headings
 // ----------------------------------------------------------------------------
@@ -198,6 +215,14 @@ $popover-arrow-shadow-color: rgba(0,0,0,0.08);
 
 $notification-default-width: 386px;
 
+// modal
+// ----------------------------------------------------------------------------
+$modal-mask-bg: rgba(0,0,0,0.65);
+$modal-top: 100px;
+$modal-default-width: 520px;
+$modal-default-confrim-width: 420px;
+$modal-bg: #fff;
+
 // Shadow
 // ----------------------------------------------------------------------------
 $shadow-color : rgba(0, 0, 0, .15);
@@ -212,8 +237,8 @@ $shadow-type-2: 0 4px 12px $shadow-color;
 // ----------------------------------------------------------------------------
 $z-index-affix           : 10;
 $z-index-back-top        : 10;
-$z-index-modal-mask      : 1000;
-$z-index-modal           : 1000;
+$z-index-modal-mask      : 1100;
+$z-index-modal           : 1100;
 $z-index-notification    : 1010;
 $z-index-message         : 1010;
 $z-index-popover         : 1030;

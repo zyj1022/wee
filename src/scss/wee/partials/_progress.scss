@@ -3,3 +3,160 @@
 // ==========================================================================
 // Wee – progress
 // ==========================================================================
+
+.#{$prefix}-progress {
+  box-sizing: border-box;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  display: inline-block;
+}
+
+.#{$prefix}-progress-outer {
+  display: inline-block;
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.#{$prefix}-progress-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border-radius: 100px;
+}
+
+.#{$prefix}-progress-percent {
+  position: relative;
+  background-color: $primary;
+}
+
+.#{$prefix}-progress-text {
+  display: inline-block;
+  width: 2em;
+  margin-left: $gap-xs;
+  color: $text-color-secondary;
+  font-size: 1em;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: middle;
+  word-break: normal;
+}
+
+div.#{$prefix}-progress-circle,
+div.#{$prefix}-progress-line {
+  margin-right: $gap-xs;
+  margin-bottom: $gap-xs;
+}
+
+.#{$prefix}-progress-line {
+  position: relative;
+  width: 100%;
+  font-size: $font-size-base;
+
+  .#{$prefix}-progress-outer {
+    margin-right: calc(-2em - 16px);
+    padding-right: calc(2em + 16px);
+  }
+}
+
+.#{$prefix}-progress-circle {
+  position: relative;
+
+  .#{$prefix}-progress-inner {
+    position: relative;
+    line-height: 1;
+    background-color: transparent;
+  }
+
+   .#{$prefix}-progress-text {
+      font-size: $font-size-xlg;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      color: $text-color;
+      line-height: 1;
+      margin-left: 0;
+      text-align: center;
+      transform: translate(-50%, -50%);
+   }
+
+   .#{$prefix}-progress-circle-trail {
+      stroke: #f5f5f5;
+   }
+   .#{$prefix}-progress-circle-path {
+      stroke: $primary;
+   }
+}
+
+.#{$prefix}-progress-info {
+  .#{$prefix}-progress-percent {
+    background-color: $primary;
+  }
+}
+
+.#{$prefix}-progress-error {
+  .#{$prefix}-progress-percent {
+    background-color: $danger;
+  }
+
+  .#{$prefix}-progress-text {
+    color: $danger;
+  }
+
+  .#{$prefix}-progress-circle-path {
+    stroke: $danger;
+  }
+}
+
+.#{$prefix}-progress-success {
+  .#{$prefix}-progress-percent {
+    background-color: $success;
+  }
+
+  .#{$prefix}-progress-text {
+    color: $success;
+  }
+
+  .#{$prefix}-progress-circle-path {
+    stroke: $success;
+  }
+}
+
+.#{$prefix}-progress-warning {
+  .#{$prefix}-progress-percent {
+    background-color: $warning;
+  }
+  .#{$prefix}-progress-text {
+    color: $warning;
+  }
+  .#{$prefix}-progress-circle-path {
+    stroke: $warning;
+  }
+}
+
+.#{$prefix}-progress-small.#{$prefix}-progress-line,
+.#{$prefix}-progress-small.#{$prefix}-progress-line {
+  font-size: $font-size-sm;
+
+  .#{$prefix}-progress-text {
+    .#{$prefix}-icon {
+      font-size: $font-size-sm;
+    }
+  }
+}
+
+.#{$prefix}-progress-small.#{$prefix}-progress-circle,
+.#{$prefix}-progress-small.#{$prefix}-progress-circle {
+  font-size: 18px;
+  .#{$prefix}-progress-text {
+    font-size: 18px;
+    .#{$prefix}-icon {
+      font-size: 18px;
+    }
+  }
+}

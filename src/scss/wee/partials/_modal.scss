@@ -3,3 +3,195 @@
 // ==========================================================================
 // Wee – modal
 // ==========================================================================
+
+.#{$prefix}-modal-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index-modal-mask;
+  height: 100%;
+  background-color: $modal-mask-bg;
+}
+
+.#{$prefix}-modal-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index-modal;
+  overflow: auto;
+  outline: 0;
+}
+
+.#{$prefix}-modal {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  list-style: none;
+  position: relative;
+  top: $modal-top;
+  width: $modal-default-width;
+  margin: 0 auto;
+  padding-bottom: $gap-lg;
+}
+
+.#{$prefix}-modal-content {
+  position: relative;
+  background-color: $modal-bg;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: $border-radius-base;
+  box-shadow: $shadow-type-2;
+}
+
+.#{$prefix}-modal-header {
+  padding: $gap-md $gap-lg;
+  color: $text-color;
+  position: relative;
+  background: $modal-bg;
+  border-bottom: 1px solid $border-color-base;
+  border-radius: $border-radius-base $border-radius-base 0 0;
+
+  .#{$prefix}-modal-title {
+    color: $text-color-secondary-dark;
+    font-weight: 500;
+    font-size: $font-size-lg;
+    line-height: $line-height-base;
+    word-wrap: break-word;
+  }
+
+  .#{$prefix}-modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    color: $text-color-secondary;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color .3s;
+  }
+  .#{$prefix}-modal-close:hover {
+    color: $text-color-secondary-dark;
+    text-decoration: none;
+  }
+  .#{$prefix}-modal-close-x {
+    display: block;
+    width: 56px;
+    height: 56px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 56px;
+    text-align: center;
+  }
+}
+
+.#{$prefix}-modal-body {
+  padding: $gap-lg;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  word-wrap: break-word;
+}
+
+.#{$prefix}-modal-footer {
+  padding: $gap-sm $gap-md;
+  text-align: right;
+  background: transparent;
+  border-top: 1px solid $border-color-base;
+  border-radius: 0 0 $border-radius-base $border-radius-base;
+
+  button+button {
+    margin-bottom: 0;
+    margin-left: 8px;
+  }
+}
+
+.#{$prefix}-modal-confirm {
+  width:$modal-default-confrim-width;
+
+  .#{$prefix}-modal-body {
+    padding: $gap-lg;
+  }
+
+  .#{$prefix}-modal-confirm-body {
+    position: relative;
+    padding-left: 42px;
+
+    .#{$prefix}-icon {
+      font-size: 24px;
+      position: absolute;
+      left:0;
+      top:0;
+    }
+  }
+
+  .#{$prefix}-modal-confirm-body-inner {
+
+  }
+
+  .#{$prefix}-modal-confirm-btnArea {
+    padding-top: $gap-md;
+    text-align: right;
+
+    button+button {
+      margin-bottom: 0;
+      margin-left: 8px;
+    }
+  }
+
+  .#{$prefix}-modal-confirm-title {
+    display: block;
+    overflow: hidden;
+    color: $text-color-secondary-dark;
+    font-weight: 500;
+    font-size: $font-size-lg;
+    line-height: $line-height-base;
+  }
+
+  .#{$prefix}-modal-confirm-content {
+    margin-top: $gap-xlg $gap-xlg  $gap-xs;
+    color: $text-color;
+    font-size: $font-size-base;
+  }
+}
+
+.#{$prefix}-modal-confirm-info {
+    .#{$prefix}-icon {
+      color: $primary;
+    }
+  }
+
+  .#{$prefix}-modal-confirm-success {
+    .#{$prefix}-icon {
+      color: $success;
+    }
+  }
+
+  .#{$prefix}-modal-confirm-error {
+    .#{$prefix}-icon {
+      color: $danger;
+    }
+  }
+
+  .#{$prefix}-modal-confirm-warning {
+    .#{$prefix}-icon {
+      color: $warning;
+    }
+  }
+
+.#{$prefix}-modal-confirm-confirm {
+  .#{$prefix}-icon {
+    color: $warning;
+  }
+}

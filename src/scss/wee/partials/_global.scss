@@ -11,7 +11,10 @@ body {
   @include box-sizing(border-box);
 }
 
-*,*:before,*:after { box-sizing: inherit; }
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 a {
   color: $base-link-color;
