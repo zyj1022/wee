@@ -1,0 +1,66 @@
+{
+  "docs": {
+    "WEEUI": [
+      "components/about",
+      "components/installation",
+      "components/theme"
+    ],
+    "Basic": [
+      "components/grid",
+      "components/container",
+      "components/layout",
+      "components/colors",
+      "components/font",
+      "components/icon"
+    ],
+    "Form": [
+      "components/radio",
+      "components/checkbox",
+      "components/input",
+      "components/inputnumber",
+      "components/select",
+      "components/cascader",
+      "components/switch",
+      "components/slider",
+      "components/timePicker",
+      "components/datePicker",
+      "components/colorPicker",
+      "components/upload",
+      "components/rate",
+      "components/transfer",
+      "components/pagination",
+      "components/avatar",
+      "components/badge,",
+      "components/form"
+    ],
+    "Notice": [
+      "components/alert",
+      "components/message",
+      "components/modal",
+      "components/loading",
+      "components/notification"
+    ],
+    "Navigation": [
+      "components/nav",
+      "components/tabs",
+      "components/dropdown",
+      "components/steps",
+      "components/breadcrumb"
+    ],
+    "Others": [
+      "components/table",
+      "components/tooltip",
+      "components/popover",
+      "components/card",
+      "components/timeline",
+      "components/image",
+      "components/backtop",
+      "components/carousel",
+      "components/collapse",
+      "components/charts"
+    ]
+  },
+  "docs-other": {
+    "其它": []
+  }
+}
