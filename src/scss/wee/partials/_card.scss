@@ -4,25 +4,51 @@
 
 .#{$prefix}-card {
   background: #fff;
-  border-radius: 4px;
-  font-size: 12px;
-  position: relative;
-  overflow: hidden;
-  transition: all .3s;
-  border: 1px solid #ccc;
-}
-
-.#{$prefix}-head-title {
-  padding: 5px 20px;
+  box-sizing: border-box;
   margin: 0;
-  border-bottom: 1px solid #ccc;
-  // background: #eee;
+  padding: 0;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  list-style: none;
+  position: relative;
+  border-radius: $border-radius-base;
+  transition: all .3s;
+  box-shadow: $card-shadow;
 }
 
+.#{$prefix}-card-bordered {
+  border: 1px solid $border-color-base;
+}
+
+.#{$prefix}-card-title {
+  display: inline-block;
+  line-height: 48px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.#{$prefix}-card-cover {
+  img {
+    width: 100%;
+  }
+}
+
+.#{$prefix}-card-head {
+  min-height: 48px;
+  padding: 0 $gap-lg;
+  color: rgba(0,0,0,0.85);
+  font-weight: 500;
+  font-size: $font-size-lg;
+  background: transparent;
+  border-bottom: 1px solid $border-color-base;
+  border-radius: $border-radius-base $border-radius-base 0 0;
+  zoom: 1;
+}
 
 .#{$prefix}-card-body {
   padding: 20px;
-  // background: #ddd;
 
   img {margin-bottom: 20px; width:100%;}
 }

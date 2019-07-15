@@ -223,6 +223,27 @@ $modal-default-width: 520px;
 $modal-default-confrim-width: 420px;
 $modal-bg: #fff;
 
+// Card
+// ----------------------------------------------------------------------------
+$card-shadow: 0 4px 8px rgba(0,0,0,.12);
+
+
+// Input
+// ----------------------------------------------------------------------------
+$input-height-base: 32px;
+$input-height-large: 40px;
+$input-height-small: 24px;
+$input-bg-color: #fff;
+$input-addon-bg-color: #fafafa;
+$input-border-color: #d9d9d9;
+$input-box-foucs-shadow: 0 0 0 2px rgba(24,144,255,0.2);
+
+// Select
+// ----------------------------------------------------------------------------
+$select-bg-color: #fff;
+$select-dropdown-shadow: 0 2px 8px rgba(0,0,0,0.15);
+$select-dropdown-bg-color: #fff;
+
 // Shadow
 // ----------------------------------------------------------------------------
 $shadow-color : rgba(0, 0, 0, .15);

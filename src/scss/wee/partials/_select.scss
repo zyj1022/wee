@@ -1,5 +1,155 @@
 @charset "UTF-8";
-
 // ==========================================================================
 // Wee – select
 // ==========================================================================
+
+.#{$prefix}-select {
+  box-sizing: border-box;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  outline: 0;
+}
+
+.#{$prefix}-select-selection {
+  position: relative;
+  height: 32px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top-width: 1.02px;
+  border-radius: $border-radius-base;
+  outline: none;
+  transition: all 0.3s;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.#{$prefix}-select-selection:hover {
+  border-color: $primary;
+  border-right-width: 1px !important;
+  .#{$prefix}-select-arrow-icon {
+    transform: rotate(180deg);
+  }
+}
+
+.#{$prefix}-select-focused .#{$prefix}-select-selection,
+.#{$prefix}-select-selection:active,
+.#{$prefix}-select-selection:focus {
+  border-color: $primary;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(24,144,255,0.2);
+}
+
+.#{$prefix}-select-rendered {
+  position: relative;
+  display: block;
+  margin-right: 10px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.#{$prefix}-select-rendered:after {
+  display: inline-block;
+  width: 0;
+  visibility: hidden;
+  content: '.';
+  pointer-events: none;
+}
+
+.#{$prefix}-select-arrow {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -6px;
+  color: rgba(0,0,0,0.25);
+  font-size: 12px;
+  line-height: 1;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: all 0.3s;
+  svg {
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+}
+
+.#{$prefix}-select-open {
+  .#{$prefix}-select-arrow {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.#{$prefix}-select-focused {
+
+}
+
+.#{$prefix}-select-dropdown {
+  width: 100%;
+  color: $text-color;
+  line-height: $font-size-base;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: $z-index-dropdown;
+  box-sizing: border-box;
+  font-size: $font-size-base;
+  font-variant: initial;
+  background-color: $select-dropdown-bg-color;
+  border-radius: $border-radius-base;
+  box-shadow: $select-dropdown-shadow;
+
+  .#{$prefix}-select-dropdown-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    display: block;
+    padding: 5px 12px;
+    overflow: hidden;
+    color: $text-color;
+    font-weight: normal;
+    line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: background .3s ease;
+  }
+  .#{$prefix}-select-dropdown-item-selected {
+    color: $text-color;
+    font-weight: 700;
+    background-color: #fafafa;
+  }
+
+  .#{$prefix}-select-dropdown-item-disabled {
+    color: rgba(0,0,0,0.25);
+    cursor: not-allowed;
+  }
+
+  .#{$prefix}-select-dropdown-item:hover:not(.#{$prefix}-select-dropdown-item-disabled) {
+    background-color: #e6f7ff;
+  }
+}

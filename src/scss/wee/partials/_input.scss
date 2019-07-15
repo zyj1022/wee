@@ -1,5 +1,108 @@
 @charset "UTF-8";
-
 // ==========================================================================
 // Wee – input
 // ==========================================================================
+
+.#{$prefix}-input {
+  box-sizing: border-box;
+  line-height: $line-height-base;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: $input-height-base;
+  padding: 4px 11px;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: $input-height-base;
+  background-color: $input-bg-color;
+  background-image: none;
+  border: 1px solid $input-border-color;
+  border-radius: $border-radius-base;
+  @include transition(all 0.3s);
+}
+
+.#{$prefix}-input:hover {
+  border-color: $primary;
+  border-right-width: 1px !important;
+}
+
+.#{$prefix}-input:focus {
+  border-color: $primary;
+  border-right-width: 1px !important;
+  outline: 0;
+  box-shadow: $input-box-foucs-shadow;
+}
+
+.#{$prefix}-input-lg {
+  height: $input-height-large;
+  padding: 6px 11px;
+  font-size: $font-size-lg;
+  line-height: $input-height-large;
+}
+
+.#{$prefix}-input-sm {
+  height: $input-height-small;
+  padding: 1px 7px;
+  line-height: $input-height-small;
+}
+
+.#{$prefix}-input-group {
+  box-sizing: border-box;
+  border-spacing: 0;
+  color: $text-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  list-style: none;
+  position: relative;
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+
+  .#{$prefix}-input {
+    float: left;
+  }
+  .#{$prefix}-input:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .#{$prefix}-input:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.#{$prefix}-input-group-addon:not(:first-child):not(:last-child),
+.#{$prefix}-input-group>.#{$prefix}-input:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.#{$prefix}-input-addon {
+  width: 1px;
+  white-space: nowrap;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 10px;
+  color: $text-color;
+  font-weight: normal;
+  font-size: $font-size-base;
+  line-height: 1;
+  text-align: center;
+  background-color: $input-addon-bg-color;
+  border: 1px solid $input-border-color;
+  border-radius: $border-radius-base;
+  @include transition(all 0.3s);
+  display: table-cell;
+}
+
+.#{$prefix}-input-addon:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.#{$prefix}-input-addon:last-child {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

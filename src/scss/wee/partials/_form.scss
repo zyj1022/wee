@@ -62,8 +62,7 @@ label {
   }
 }
 
-$inputs: 'select,
-          textarea,
+$inputs: 'textarea,
           input[type="text"],
           input[type="password"],
           input[type="datetime"],
@@ -83,13 +82,10 @@ $inputs: 'select,
 // --- component: inputs ---------------------------------
 
 #{$inputs} {
-  width: 200px;
-  height: 30px;
-  padding: 6px;
   outline: none;
   display: inline-block;
-  border: 1px solid #ccc;
-  @include border-radius(3px);
+  border: 1px solid #d9d9d9;
+  @include border-radius($border-radius-base);
 
   &[disabled] {
     opacity: .35;
@@ -104,7 +100,7 @@ $inputs: 'select,
 
 
 // Custom Select
-.#{$prefix}-select {
+.#{$prefix}-select-native {
   border: 1px solid #ccc;
   overflow: hidden;
   height: 36px;
