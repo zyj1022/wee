@@ -3,3 +3,109 @@
 // ==========================================================================
 // Wee – lsit
 // ==========================================================================
+
+
+/*
+ * @list列表形式
+ * @nine-grid 九宫格
+ * @nine-grid-pic 九宫格纯图片
+ * @waterfall 瀑布流
+ * @timeline 时间轴
+ * @left-pic 图片在左边
+ * @right-pic 图片在右边
+ * @full-pic 图片通栏
+ * @masonry 砖砌结构
+ */
+
+$list: $prefix + '-list';
+
+.#{$list} {
+  border: 1px solid #eee;
+  padding: 20px 20px 0;
+  min-height: 100px;
+}
+
+.#{$list}-inner {
+
+}
+
+.#{$list}-body {
+
+  .#{$list}-item {
+    margin-bottom: 20px;
+    @include clearfix;
+  }
+  .#{$list}-item-pic {
+    width: 100%;
+    height: 240px;
+    background: #f5f5f5;
+    margin-bottom: 10px;
+  }
+  .#{$list}-item-txt {
+    width:100%;
+    min-height: 20px;
+    line-height: 1.5;
+  }
+}
+
+.#{$list}-nine-grid {
+  .#{$list}-item-pic {
+
+  }
+  .#{$list}-item-txt {
+    text-align: left;
+  }
+}
+
+.#{$list}-left-pic {
+  .#{$list}-item-pic {
+    float:left;
+    max-width: 200px;
+    height: 140px;
+    margin-right: 20px;
+  }
+  .#{$list}-item-txt {
+    padding-left: 220px;
+  }
+}
+
+.#{$list}-right-pic {
+  .#{$list}-item-pic {
+    float:right;
+    max-width: 300px;
+    height: 200px;
+  }
+  .#{$list}-item-txt {
+    width: 80%;
+    text-align: left;
+  }
+}
+
+.#{$list}-full-pic {
+  .#{$list}-item-pic {
+
+  }
+  .#{$list}-item-txt {
+    text-align: left;
+  }
+}
+
+.#{$list}-text {
+  .#{$list}-item {
+    color: rgba(0,0,0,0.65);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    a {
+      color: rgba(0,0,0,0.65);
+    }
+    a:hover {
+      color:$primary;
+    }
+  }
+
+  .#{$list}-item:last-child {
+    border:none;
+  }
+}

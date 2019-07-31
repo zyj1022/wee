@@ -4,13 +4,11 @@
 // Wee – Button
 // ==========================================================================
 
-
 @mixin btn-color($bgColor, $borderColor, $textColor) {
- background:$bgColor;
- color: $textColor;
- border:1px solid $borderColor;
+  background: $bgColor;
+  color: $textColor;
+  border: 1px solid $borderColor;
 }
-
 //Button
 .#{$prefix}-btn {
   position: relative;
@@ -23,37 +21,35 @@
   background-image: none;
   height: 32px;
   padding: 0 14px;
-  font-size:14px;
+  font-size: 14px;
   color: rgba(0,0,0,0.65);
   display: inline-block;
   @include border-radius(4px);
   @include transition(all 0.3s ease-in-out);
   @include box-shadow(0, 2px, 0, rgba(0,0,0,0.0125));
 
-  &:hover,
-  &:active {
+  &:active,
+  &:hover {
     text-decoration: none;
     @include btn-color(transparent, $color-blue-7, $color-blue-7)
   }
 
-  &:focus,
-  &.focus {
+  &.focus,
+  &:focus {
     outline: 0;
     @include box-shadow(0, 4px, 6px, rgba(#000, .125));
   }
 
   &.disabled,
   &:disabled {
-    cursor:default;
+    cursor: default;
     @include btn-color(transparent, $color-grey-5, $color-grey-5)
   }
 
-  &:not(:disabled):not(.disabled) {
+  &:not(:disabled):not(.disabled) {}
 
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
     @include box-shadow(0, 4px, 6px, rgba(#000, .125));
 
     &:focus {
@@ -61,8 +57,6 @@
     }
   }
 }
-
-
 @each $color, $value in $theme-colors {
   // btn
   .#{$prefix}-btn-#{$color} {
@@ -74,26 +68,25 @@
     @include btn-color(darken($value, 5%), darken($value, 5%), $color-grey-1);
   }
 
-  .#{$prefix}-btn-#{$color}:focus,
-  .#{$prefix}-btn-#{$color}.focus {
+  .#{$prefix}-btn-#{$color}.focus,
+  .#{$prefix}-btn-#{$color}:focus {
     box-shadow: 0 0 0 1px rgba($value, .3);
   }
 
   .#{$prefix}-btn-#{$color}.disabled,
   .#{$prefix}-btn-#{$color}:disabled {
-    cursor:default;
-    @include btn-color(lighten($value, 20%), lighten($value, 20%),  $color-grey-1);
+    cursor: default;
+    @include btn-color(lighten($value, 20%), lighten($value, 20%), $color-grey-1);
   }
 
-  .#{$prefix}-btn-#{$color}:not(:disabled):not(.disabled):active,
-  .#{$prefix}-btn-#{$color}:not(:disabled):not(.disabled).active {
+  .#{$prefix}-btn-#{$color}:not(:disabled):not(.disabled).active,
+  .#{$prefix}-btn-#{$color}:not(:disabled):not(.disabled):active {
     @include btn-color(darken($value, 10%), darken($value, 10%), $color-grey-1);
 
     &:focus {
       @include box-shadow(0, 3px, 5px, rgba($value, .5));
     }
   }
-
   // btn-outline
   .#{$prefix}-btn-outline-#{$color} {
     @include btn-color(transparent, $value, $value);
@@ -101,29 +94,28 @@
   }
 
   .#{$prefix}-btn-outline-#{$color}:hover {
-     @include btn-color($value, $value, $color-grey-1);
+    @include btn-color($value, $value, $color-grey-1);
   }
 
-  .#{$prefix}-btn-outline-#{$color}:focus,
-  .#{$prefix}-btn-outline-#{$color}.focus {
+  .#{$prefix}-btn-outline-#{$color}.focus,
+  .#{$prefix}-btn-outline-#{$color}:focus {
     box-shadow: 0 0 0 1px rgba($value, .3);
   }
 
   .#{$prefix}-btn-outline-#{$color}.disabled,
   .#{$prefix}-btn-outline-#{$color}:disabled {
-    cursor:default;
-    @include btn-color(transparent, lighten($value, 20%),  lighten($value, 20%));
+    cursor: default;
+    @include btn-color(transparent, lighten($value, 20%), lighten($value, 20%));
   }
 
-  .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled):active,
-  .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled).active {
+  .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled).active,
+  .#{$prefix}-btn-outline-#{$color}:not(:disabled):not(.disabled):active {
     @include btn-color(darken($value, 10%), darken($value, 10%), $color-grey-1);
 
     &:focus {
       @include box-shadow(0, 3px, 5px, rgba($value, .5));
     }
   }
-
 }
 
 .#{$prefix}-btn-light,
@@ -132,34 +124,31 @@
   border-color: $color-grey-3;
 }
 
-.#{$prefix}-btn-light:not(:disabled):not(.disabled):active,
-.#{$prefix}-btn-light:not(:disabled):not(.disabled).active {
+.#{$prefix}-btn-light:not(:disabled):not(.disabled).active,
+.#{$prefix}-btn-light:not(:disabled):not(.disabled):active {
   color: $color-grey-7;
   border-color: $color-grey-3;
 }
 
-
 .#{$prefix}-btn-block {
-  display:block;
-  width:100%;
+  display: block;
+  width: 100%;
 }
 
-.#{$prefix}-btn-disable {
-
-}
+.#{$prefix}-btn-disable {}
 
 .#{$prefix}-btn-lg {
-  padding:0 15px;
+  padding: 0 15px;
   height: 40px;
-  line-height:40px;
-  font-size:18px;
-  line-height:1.3333;
+  line-height: 40px;
+  font-size: 18px;
+  line-height: 1.3333;
 }
 
 .#{$prefix}-btn-sm {
-  padding:0 6px;
+  padding: 0 6px;
   height: 24px;
-  font-size:12px;
+  font-size: 12px;
 }
 
 .#{$prefix}-btn-round {
@@ -203,7 +192,6 @@
     width: 40px;
   }
 }
-
 // Button Link
 .#{$prefix}-btn-link {
   color: $color-blue-6;
@@ -211,23 +199,26 @@
   border: none;
   box-shadow: none;
   text-decoration: none;
-  &:hover,
-  &:active {
+
+  &:active,
+  &:hover {
     color: $color-blue-7;
     text-decoration: underline;
     outline: 0;
     border: none;
-    box-shadow:none;
-  }
-  &:focus {
-    box-shadow:none;
+    box-shadow: none;
   }
 
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    box-shadow:none;
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active {
+    box-shadow: none;
+
     &:focus {
-      box-shadow:none;
+      box-shadow: none;
     }
   }
 }
