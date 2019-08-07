@@ -4,7 +4,6 @@
 // Wee – lsit
 // ==========================================================================
 
-
 /*
  * @list列表形式
  * @nine-grid 九宫格
@@ -22,7 +21,7 @@ $list: $prefix + '-list';
 .#{$list} {
   border: 1px solid #eee;
   padding: 20px 20px 0;
-  min-height: 100px;
+  min-height: 60px;
 }
 
 .#{$list}-inner {
@@ -30,7 +29,9 @@ $list: $prefix + '-list';
 }
 
 .#{$list}-body {
-
+  img {
+    width: 100%;
+  }
   .#{$list}-item {
     margin-bottom: 20px;
     @include clearfix;
@@ -40,8 +41,9 @@ $list: $prefix + '-list';
     height: 240px;
     background: #f5f5f5;
     margin-bottom: 10px;
+    overflow: hidden;
   }
-  .#{$list}-item-txt {
+  .#{$list}-item-text {
     width:100%;
     min-height: 20px;
     line-height: 1.5;
@@ -50,10 +52,16 @@ $list: $prefix + '-list';
 
 .#{$list}-nine-grid {
   .#{$list}-item-pic {
-
+    overflow: hidden;
   }
-  .#{$list}-item-txt {
+  .#{$list}-item-text {
     text-align: left;
+  }
+}
+
+.#{$list}-grid-pic {
+  .#{$list}-item-pic {
+    overflow: hidden;
   }
 }
 
@@ -64,7 +72,7 @@ $list: $prefix + '-list';
     height: 140px;
     margin-right: 20px;
   }
-  .#{$list}-item-txt {
+  .#{$list}-item-text {
     padding-left: 220px;
   }
 }
@@ -74,9 +82,11 @@ $list: $prefix + '-list';
     float:right;
     max-width: 300px;
     height: 200px;
+    margin-left: 20px;
+    margin-bottom: 0;
   }
-  .#{$list}-item-txt {
-    width: 80%;
+  .#{$list}-item-text {
+    margin-right: 300px;
     text-align: left;
   }
 }
@@ -85,24 +95,29 @@ $list: $prefix + '-list';
   .#{$list}-item-pic {
 
   }
-  .#{$list}-item-txt {
+  .#{$list}-item-text {
     text-align: left;
   }
 }
 
 .#{$list}-text {
   .#{$list}-item {
-    color: rgba(0,0,0,0.65);
+    color: $text-color-secondary-dark;
     border-bottom: 1px solid #eee;
     padding-bottom: 8px;
     margin-bottom: 8px;
 
     a {
-      color: rgba(0,0,0,0.65);
+      color: $text-color-secondary-dark;
     }
     a:hover {
       color:$primary;
     }
+  }
+
+  .#{$list}-text-time {
+    color: #999;
+    float: right;
   }
 
   .#{$list}-item:last-child {

@@ -4473,7 +4473,11 @@ img.circle {
 .wee-list {
   border: 1px solid #eee;
   padding: 20px 20px 0;
-  min-height: 100px;
+  min-height: 60px;
+}
+
+.wee-list-body img {
+  width: 100%;
 }
 
 .wee-list-body .wee-list-item {
@@ -4491,16 +4495,25 @@ img.circle {
   height: 240px;
   background: #f5f5f5;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
-.wee-list-body .wee-list-item-txt {
+.wee-list-body .wee-list-item-text {
   width: 100%;
   min-height: 20px;
   line-height: 1.5;
 }
 
-.wee-list-nine-grid .wee-list-item-txt {
+.wee-list-nine-grid .wee-list-item-pic {
+  overflow: hidden;
+}
+
+.wee-list-nine-grid .wee-list-item-text {
   text-align: left;
+}
+
+.wee-list-grid-pic .wee-list-item-pic {
+  overflow: hidden;
 }
 
 .wee-list-left-pic .wee-list-item-pic {
@@ -4510,7 +4523,7 @@ img.circle {
   margin-right: 20px;
 }
 
-.wee-list-left-pic .wee-list-item-txt {
+.wee-list-left-pic .wee-list-item-text {
   padding-left: 220px;
 }
 
@@ -4518,14 +4531,16 @@ img.circle {
   float: right;
   max-width: 300px;
   height: 200px;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
-.wee-list-right-pic .wee-list-item-txt {
-  width: 80%;
+.wee-list-right-pic .wee-list-item-text {
+  margin-right: 300px;
   text-align: left;
 }
 
-.wee-list-full-pic .wee-list-item-txt {
+.wee-list-full-pic .wee-list-item-text {
   text-align: left;
 }
 
@@ -4542,6 +4557,11 @@ img.circle {
 
 .wee-list-text .wee-list-item a:hover {
   color: #1890ff;
+}
+
+.wee-list-text .wee-list-text-time {
+  color: #999;
+  float: right;
 }
 
 .wee-list-text .wee-list-item:last-child {
