@@ -607,19 +607,32 @@ textarea {
   border-radius: 50%;
 }
 
+.wee-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
 .wee-avatar .wee-badge {
   position: absolute;
   top: -6px;
   right: -12px;
   z-index: 10;
   min-width: 20px;
+  height: 20px;
+  font-weight: normal;
   text-align: center;
   font-size: 10px;
+  padding: 0 6px;
+  line-height: 20px;
   white-space: nowrap;
   display: inline-block;
+  font-style: normal;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  box-shadow: 0 0 0 2px #fff;
 }
 
 .wee-avatar-lg {
@@ -631,8 +644,8 @@ textarea {
 
 .wee-avatar-lg .wee-badge {
   font-size: 12px;
-  top: -2px;
-  right: -12px;
+  top: -4px;
+  right: -8px;
 }
 
 .wee-avatar-sm {
@@ -649,14 +662,14 @@ textarea {
 }
 
 .wee-avatar-square .wee-badge {
-  top: -10px;
-  right: -15px;
+  top: -6px;
+  right: -8px;
 }
 
 .wee-badge {
   display: inline-block;
   min-width: 10px;
-  padding: 4px 8px;
+  padding: 5px 10px;
   font-size: 75%;
   font-weight: 700;
   color: #fff;
@@ -788,14 +801,14 @@ a.wee-badge:hover, a.wee-badge:focus {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.0125);
 }
 
-.wee-btn:hover, .wee-btn:active {
+.wee-btn:active, .wee-btn:hover {
   text-decoration: none;
   background: transparent;
   color: #096dd9;
   border: 1px solid #096dd9;
 }
 
-.wee-btn:focus, .wee-btn.focus {
+.wee-btn.focus, .wee-btn:focus {
   outline: 0;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
@@ -809,13 +822,13 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #d9d9d9;
 }
 
-.wee-btn:not(:disabled):not(.disabled):active, .wee-btn:not(:disabled):not(.disabled).active {
+.wee-btn:not(:disabled):not(.disabled).active, .wee-btn:not(:disabled):not(.disabled):active {
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
 }
 
-.wee-btn:not(:disabled):not(.disabled):active:focus, .wee-btn:not(:disabled):not(.disabled).active:focus {
+.wee-btn:not(:disabled):not(.disabled).active:focus, .wee-btn:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.125);
@@ -834,8 +847,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #0084fe;
 }
 
-.wee-btn-primary:focus,
-.wee-btn-primary.focus {
+.wee-btn-primary.focus,
+.wee-btn-primary:focus {
   box-shadow: 0 0 0 1px rgba(24, 144, 255, 0.3);
 }
 
@@ -847,15 +860,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #7ec1ff;
 }
 
-.wee-btn-primary:not(:disabled):not(.disabled):active,
-.wee-btn-primary:not(:disabled):not(.disabled).active {
+.wee-btn-primary:not(:disabled):not(.disabled).active,
+.wee-btn-primary:not(:disabled):not(.disabled):active {
   background: #0076e4;
   color: #ffffff;
   border: 1px solid #0076e4;
 }
 
-.wee-btn-primary:not(:disabled):not(.disabled):active:focus,
-.wee-btn-primary:not(:disabled):not(.disabled).active:focus {
+.wee-btn-primary:not(:disabled):not(.disabled).active:focus,
+.wee-btn-primary:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
   box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
@@ -874,8 +887,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #1890ff;
 }
 
-.wee-btn-outline-primary:focus,
-.wee-btn-outline-primary.focus {
+.wee-btn-outline-primary.focus,
+.wee-btn-outline-primary:focus {
   box-shadow: 0 0 0 1px rgba(24, 144, 255, 0.3);
 }
 
@@ -887,15 +900,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #7ec1ff;
 }
 
-.wee-btn-outline-primary:not(:disabled):not(.disabled):active,
-.wee-btn-outline-primary:not(:disabled):not(.disabled).active {
+.wee-btn-outline-primary:not(:disabled):not(.disabled).active,
+.wee-btn-outline-primary:not(:disabled):not(.disabled):active {
   background: #0076e4;
   color: #ffffff;
   border: 1px solid #0076e4;
 }
 
-.wee-btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-primary:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-primary:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
   box-shadow: 0 3px 5px rgba(24, 144, 255, 0.5);
@@ -914,8 +927,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #7f7f7f;
 }
 
-.wee-btn-secondary:focus,
-.wee-btn-secondary.focus {
+.wee-btn-secondary.focus,
+.wee-btn-secondary:focus {
   box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.3);
 }
 
@@ -927,15 +940,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #bfbfbf;
 }
 
-.wee-btn-secondary:not(:disabled):not(.disabled):active,
-.wee-btn-secondary:not(:disabled):not(.disabled).active {
+.wee-btn-secondary:not(:disabled):not(.disabled).active,
+.wee-btn-secondary:not(:disabled):not(.disabled):active {
   background: #737272;
   color: #ffffff;
   border: 1px solid #737272;
 }
 
-.wee-btn-secondary:not(:disabled):not(.disabled):active:focus,
-.wee-btn-secondary:not(:disabled):not(.disabled).active:focus {
+.wee-btn-secondary:not(:disabled):not(.disabled).active:focus,
+.wee-btn-secondary:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
   box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
@@ -954,8 +967,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #8c8c8c;
 }
 
-.wee-btn-outline-secondary:focus,
-.wee-btn-outline-secondary.focus {
+.wee-btn-outline-secondary.focus,
+.wee-btn-outline-secondary:focus {
   box-shadow: 0 0 0 1px rgba(140, 140, 140, 0.3);
 }
 
@@ -967,15 +980,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #bfbfbf;
 }
 
-.wee-btn-outline-secondary:not(:disabled):not(.disabled):active,
-.wee-btn-outline-secondary:not(:disabled):not(.disabled).active {
+.wee-btn-outline-secondary:not(:disabled):not(.disabled).active,
+.wee-btn-outline-secondary:not(:disabled):not(.disabled):active {
   background: #737272;
   color: #ffffff;
   border: 1px solid #737272;
 }
 
-.wee-btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-secondary:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
   box-shadow: 0 3px 5px rgba(140, 140, 140, 0.5);
@@ -994,8 +1007,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #49ad17;
 }
 
-.wee-btn-success:focus,
-.wee-btn-success.focus {
+.wee-btn-success.focus,
+.wee-btn-success:focus {
   box-shadow: 0 0 0 1px rgba(82, 196, 26, 0.3);
 }
 
@@ -1007,15 +1020,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #8ae95b;
 }
 
-.wee-btn-success:not(:disabled):not(.disabled):active,
-.wee-btn-success:not(:disabled):not(.disabled).active {
+.wee-btn-success:not(:disabled):not(.disabled).active,
+.wee-btn-success:not(:disabled):not(.disabled):active {
   background: #3f9714;
   color: #ffffff;
   border: 1px solid #3f9714;
 }
 
-.wee-btn-success:not(:disabled):not(.disabled):active:focus,
-.wee-btn-success:not(:disabled):not(.disabled).active:focus {
+.wee-btn-success:not(:disabled):not(.disabled).active:focus,
+.wee-btn-success:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
   box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
@@ -1034,8 +1047,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #52c41a;
 }
 
-.wee-btn-outline-success:focus,
-.wee-btn-outline-success.focus {
+.wee-btn-outline-success.focus,
+.wee-btn-outline-success:focus {
   box-shadow: 0 0 0 1px rgba(82, 196, 26, 0.3);
 }
 
@@ -1047,15 +1060,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #8ae95b;
 }
 
-.wee-btn-outline-success:not(:disabled):not(.disabled):active,
-.wee-btn-outline-success:not(:disabled):not(.disabled).active {
+.wee-btn-outline-success:not(:disabled):not(.disabled).active,
+.wee-btn-outline-success:not(:disabled):not(.disabled):active {
   background: #3f9714;
   color: #ffffff;
   border: 1px solid #3f9714;
 }
 
-.wee-btn-outline-success:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-success:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-success:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
   box-shadow: 0 3px 5px rgba(82, 196, 26, 0.5);
@@ -1074,8 +1087,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #11abab;
 }
 
-.wee-btn-info:focus,
-.wee-btn-info.focus {
+.wee-btn-info.focus,
+.wee-btn-info:focus {
   box-shadow: 0 0 0 1px rgba(19, 194, 194, 0.3);
 }
 
@@ -1087,15 +1100,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #4deeee;
 }
 
-.wee-btn-info:not(:disabled):not(.disabled):active,
-.wee-btn-info:not(:disabled):not(.disabled).active {
+.wee-btn-info:not(:disabled):not(.disabled).active,
+.wee-btn-info:not(:disabled):not(.disabled):active {
   background: #0e9494;
   color: #ffffff;
   border: 1px solid #0e9494;
 }
 
-.wee-btn-info:not(:disabled):not(.disabled):active:focus,
-.wee-btn-info:not(:disabled):not(.disabled).active:focus {
+.wee-btn-info:not(:disabled):not(.disabled).active:focus,
+.wee-btn-info:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
   box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
@@ -1114,8 +1127,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #13c2c2;
 }
 
-.wee-btn-outline-info:focus,
-.wee-btn-outline-info.focus {
+.wee-btn-outline-info.focus,
+.wee-btn-outline-info:focus {
   box-shadow: 0 0 0 1px rgba(19, 194, 194, 0.3);
 }
 
@@ -1127,15 +1140,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #4deeee;
 }
 
-.wee-btn-outline-info:not(:disabled):not(.disabled):active,
-.wee-btn-outline-info:not(:disabled):not(.disabled).active {
+.wee-btn-outline-info:not(:disabled):not(.disabled).active,
+.wee-btn-outline-info:not(:disabled):not(.disabled):active {
   background: #0e9494;
   color: #ffffff;
   border: 1px solid #0e9494;
 }
 
-.wee-btn-outline-info:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-info:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-info:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
   box-shadow: 0 3px 5px rgba(19, 194, 194, 0.5);
@@ -1154,8 +1167,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #efd005;
 }
 
-.wee-btn-warning:focus,
-.wee-btn-warning.focus {
+.wee-btn-warning.focus,
+.wee-btn-warning:focus {
   box-shadow: 0 0 0 1px rgba(250, 219, 20, 0.3);
 }
 
@@ -1167,15 +1180,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #fcea78;
 }
 
-.wee-btn-warning:not(:disabled):not(.disabled):active,
-.wee-btn-warning:not(:disabled):not(.disabled).active {
+.wee-btn-warning:not(:disabled):not(.disabled).active,
+.wee-btn-warning:not(:disabled):not(.disabled):active {
   background: #d6ba05;
   color: #ffffff;
   border: 1px solid #d6ba05;
 }
 
-.wee-btn-warning:not(:disabled):not(.disabled):active:focus,
-.wee-btn-warning:not(:disabled):not(.disabled).active:focus {
+.wee-btn-warning:not(:disabled):not(.disabled).active:focus,
+.wee-btn-warning:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
   box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
@@ -1194,8 +1207,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #fadb14;
 }
 
-.wee-btn-outline-warning:focus,
-.wee-btn-outline-warning.focus {
+.wee-btn-outline-warning.focus,
+.wee-btn-outline-warning:focus {
   box-shadow: 0 0 0 1px rgba(250, 219, 20, 0.3);
 }
 
@@ -1207,15 +1220,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #fcea78;
 }
 
-.wee-btn-outline-warning:not(:disabled):not(.disabled):active,
-.wee-btn-outline-warning:not(:disabled):not(.disabled).active {
+.wee-btn-outline-warning:not(:disabled):not(.disabled).active,
+.wee-btn-outline-warning:not(:disabled):not(.disabled):active {
   background: #d6ba05;
   color: #ffffff;
   border: 1px solid #d6ba05;
 }
 
-.wee-btn-outline-warning:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-warning:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-warning:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-warning:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
   box-shadow: 0 3px 5px rgba(250, 219, 20, 0.5);
@@ -1234,8 +1247,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #f30b17;
 }
 
-.wee-btn-danger:focus,
-.wee-btn-danger.focus {
+.wee-btn-danger.focus,
+.wee-btn-danger:focus {
   box-shadow: 0 0 0 1px rgba(245, 34, 45, 0.3);
 }
 
@@ -1247,15 +1260,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #f9848a;
 }
 
-.wee-btn-danger:not(:disabled):not(.disabled):active,
-.wee-btn-danger:not(:disabled):not(.disabled).active {
+.wee-btn-danger:not(:disabled):not(.disabled).active,
+.wee-btn-danger:not(:disabled):not(.disabled):active {
   background: #da0a15;
   color: #ffffff;
   border: 1px solid #da0a15;
 }
 
-.wee-btn-danger:not(:disabled):not(.disabled):active:focus,
-.wee-btn-danger:not(:disabled):not(.disabled).active:focus {
+.wee-btn-danger:not(:disabled):not(.disabled).active:focus,
+.wee-btn-danger:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
   box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
@@ -1274,8 +1287,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #f5222d;
 }
 
-.wee-btn-outline-danger:focus,
-.wee-btn-outline-danger.focus {
+.wee-btn-outline-danger.focus,
+.wee-btn-outline-danger:focus {
   box-shadow: 0 0 0 1px rgba(245, 34, 45, 0.3);
 }
 
@@ -1287,15 +1300,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #f9848a;
 }
 
-.wee-btn-outline-danger:not(:disabled):not(.disabled):active,
-.wee-btn-outline-danger:not(:disabled):not(.disabled).active {
+.wee-btn-outline-danger:not(:disabled):not(.disabled).active,
+.wee-btn-outline-danger:not(:disabled):not(.disabled):active {
   background: #da0a15;
   color: #ffffff;
   border: 1px solid #da0a15;
 }
 
-.wee-btn-outline-danger:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-danger:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-danger:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
   box-shadow: 0 3px 5px rgba(245, 34, 45, 0.5);
@@ -1314,8 +1327,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #e8e8e8;
 }
 
-.wee-btn-light:focus,
-.wee-btn-light.focus {
+.wee-btn-light.focus,
+.wee-btn-light:focus {
   box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.3);
 }
 
@@ -1327,15 +1340,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid white;
 }
 
-.wee-btn-light:not(:disabled):not(.disabled):active,
-.wee-btn-light:not(:disabled):not(.disabled).active {
+.wee-btn-light:not(:disabled):not(.disabled).active,
+.wee-btn-light:not(:disabled):not(.disabled):active {
   background: #dcdbdb;
   color: #ffffff;
   border: 1px solid #dcdbdb;
 }
 
-.wee-btn-light:not(:disabled):not(.disabled):active:focus,
-.wee-btn-light:not(:disabled):not(.disabled).active:focus {
+.wee-btn-light:not(:disabled):not(.disabled).active:focus,
+.wee-btn-light:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
   box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
@@ -1354,8 +1367,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #f5f5f5;
 }
 
-.wee-btn-outline-light:focus,
-.wee-btn-outline-light.focus {
+.wee-btn-outline-light.focus,
+.wee-btn-outline-light:focus {
   box-shadow: 0 0 0 1px rgba(245, 245, 245, 0.3);
 }
 
@@ -1367,15 +1380,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid white;
 }
 
-.wee-btn-outline-light:not(:disabled):not(.disabled):active,
-.wee-btn-outline-light:not(:disabled):not(.disabled).active {
+.wee-btn-outline-light:not(:disabled):not(.disabled).active,
+.wee-btn-outline-light:not(:disabled):not(.disabled):active {
   background: #dcdbdb;
   color: #ffffff;
   border: 1px solid #dcdbdb;
 }
 
-.wee-btn-outline-light:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-light:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-light:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
   box-shadow: 0 3px 5px rgba(245, 245, 245, 0.5);
@@ -1394,8 +1407,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #191919;
 }
 
-.wee-btn-dark:focus,
-.wee-btn-dark.focus {
+.wee-btn-dark.focus,
+.wee-btn-dark:focus {
   box-shadow: 0 0 0 1px rgba(38, 38, 38, 0.3);
 }
 
@@ -1407,15 +1420,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #595959;
 }
 
-.wee-btn-dark:not(:disabled):not(.disabled):active,
-.wee-btn-dark:not(:disabled):not(.disabled).active {
+.wee-btn-dark:not(:disabled):not(.disabled).active,
+.wee-btn-dark:not(:disabled):not(.disabled):active {
   background: #0d0c0c;
   color: #ffffff;
   border: 1px solid #0d0c0c;
 }
 
-.wee-btn-dark:not(:disabled):not(.disabled):active:focus,
-.wee-btn-dark:not(:disabled):not(.disabled).active:focus {
+.wee-btn-dark:not(:disabled):not(.disabled).active:focus,
+.wee-btn-dark:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
   box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
@@ -1434,8 +1447,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #262626;
 }
 
-.wee-btn-outline-dark:focus,
-.wee-btn-outline-dark.focus {
+.wee-btn-outline-dark.focus,
+.wee-btn-outline-dark:focus {
   box-shadow: 0 0 0 1px rgba(38, 38, 38, 0.3);
 }
 
@@ -1447,15 +1460,15 @@ a.wee-badge:hover, a.wee-badge:focus {
   border: 1px solid #595959;
 }
 
-.wee-btn-outline-dark:not(:disabled):not(.disabled):active,
-.wee-btn-outline-dark:not(:disabled):not(.disabled).active {
+.wee-btn-outline-dark:not(:disabled):not(.disabled).active,
+.wee-btn-outline-dark:not(:disabled):not(.disabled):active {
   background: #0d0c0c;
   color: #ffffff;
   border: 1px solid #0d0c0c;
 }
 
-.wee-btn-outline-dark:not(:disabled):not(.disabled):active:focus,
-.wee-btn-outline-dark:not(:disabled):not(.disabled).active:focus {
+.wee-btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.wee-btn-outline-dark:not(:disabled):not(.disabled):active:focus {
   -webkit-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
   -moz-box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
   box-shadow: 0 3px 5px rgba(38, 38, 38, 0.5);
@@ -1467,8 +1480,8 @@ a.wee-badge:hover, a.wee-badge:focus {
   border-color: #f5f5f5;
 }
 
-.wee-btn-light:not(:disabled):not(.disabled):active,
-.wee-btn-light:not(:disabled):not(.disabled).active {
+.wee-btn-light:not(:disabled):not(.disabled).active,
+.wee-btn-light:not(:disabled):not(.disabled):active {
   color: #8c8c8c;
   border-color: #f5f5f5;
 }
@@ -1548,7 +1561,7 @@ a.wee-badge:hover, a.wee-badge:focus {
   text-decoration: none;
 }
 
-.wee-btn-link:hover, .wee-btn-link:active {
+.wee-btn-link:active, .wee-btn-link:hover {
   color: #096dd9;
   text-decoration: underline;
   outline: 0;
@@ -1560,11 +1573,11 @@ a.wee-badge:hover, a.wee-badge:focus {
   box-shadow: none;
 }
 
-.wee-btn-link:not(:disabled):not(.disabled):active, .wee-btn-link:not(:disabled):not(.disabled).active {
+.wee-btn-link:not(:disabled):not(.disabled).active, .wee-btn-link:not(:disabled):not(.disabled):active {
   box-shadow: none;
 }
 
-.wee-btn-link:not(:disabled):not(.disabled):active:focus, .wee-btn-link:not(:disabled):not(.disabled).active:focus {
+.wee-btn-link:not(:disabled):not(.disabled).active:focus, .wee-btn-link:not(:disabled):not(.disabled):active:focus {
   box-shadow: none;
 }
 
@@ -4271,6 +4284,49 @@ input[type="color"][disabled] {
   text-align: center;
 }
 
+/*
+ * 顶部导航
+ */
+.wee-header {
+  width: 100%;
+  background: #eee;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 2000;
+}
+
+.wee-header-inner {
+  background: #ccc;
+  min-height: 72px;
+}
+
+.wee-header-inner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.wee-logo {
+  width: 200px;
+  height: 50px;
+  background: #ddd;
+  float: left;
+}
+
+.wee-header-nav {
+  float: right;
+}
+
+.wee-header-nav::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.wee-header-nav .wee-nav-item {
+  float: left;
+}
+
 .wee-icon {
   display: inline-block;
   color: inherit;
@@ -4353,6 +4409,22 @@ img.circle {
   box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
 }
 
+.wee-input-disabled {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: whitesmoke;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.wee-input-disabled:hover {
+  border-color: #d9d9d9;
+}
+
+.wee-input-disabled:focus {
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
 .wee-input-lg {
   height: 40px;
   padding: 6px 11px;
@@ -4428,6 +4500,115 @@ img.circle {
   border-left: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+/*
+ * @list列表形式
+ * @nine-grid 九宫格
+ * @nine-grid-pic 九宫格纯图片
+ * @waterfall 瀑布流
+ * @timeline 时间轴
+ * @left-pic 图片在左边
+ * @right-pic 图片在右边
+ * @full-pic 图片通栏
+ * @masonry 砖砌结构
+ */
+.wee-list {
+  border: 1px solid #eee;
+  padding: 20px 20px 0;
+  min-height: 60px;
+}
+
+.wee-list-body img {
+  width: 100%;
+}
+
+.wee-list-body .wee-list-item {
+  margin-bottom: 20px;
+}
+
+.wee-list-body .wee-list-item::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.wee-list-body .wee-list-item-pic {
+  width: 100%;
+  height: 240px;
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.wee-list-body .wee-list-item-text {
+  width: 100%;
+  min-height: 20px;
+  line-height: 1.5;
+}
+
+.wee-list-nine-grid .wee-list-item-pic {
+  overflow: hidden;
+}
+
+.wee-list-nine-grid .wee-list-item-text {
+  text-align: left;
+}
+
+.wee-list-grid-pic .wee-list-item-pic {
+  overflow: hidden;
+}
+
+.wee-list-left-pic .wee-list-item-pic {
+  float: left;
+  max-width: 200px;
+  height: 140px;
+  margin-right: 20px;
+}
+
+.wee-list-left-pic .wee-list-item-text {
+  padding-left: 220px;
+}
+
+.wee-list-right-pic .wee-list-item-pic {
+  float: right;
+  max-width: 300px;
+  height: 200px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.wee-list-right-pic .wee-list-item-text {
+  margin-right: 300px;
+  text-align: left;
+}
+
+.wee-list-full-pic .wee-list-item-text {
+  text-align: left;
+}
+
+.wee-list-text .wee-list-item {
+  color: rgba(0, 0, 0, 0.65);
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.wee-list-text .wee-list-item a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.wee-list-text .wee-list-item a:hover {
+  color: #1890ff;
+}
+
+.wee-list-text .wee-list-text-time {
+  color: #999;
+  float: right;
+}
+
+.wee-list-text .wee-list-item:last-child {
+  border: none;
 }
 
 .wee-message {
@@ -5473,22 +5654,51 @@ input[type='radio'].disabled {
 }
 
 .wee-select-dropdown {
-  margin: 0;
-  padding: 0;
+  width: 100%;
   color: rgba(0, 0, 0, 0.65);
   line-height: 14px;
-  list-style: none;
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+  top: 34px;
+  left: 0;
   z-index: 1050;
   box-sizing: border-box;
   font-size: 14px;
   font-variant: initial;
   background-color: #fff;
   border-radius: 4px;
-  outline: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.wee-select-dropdown .wee-select-dropdown-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+  display: block;
+  padding: 5px 12px;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: normal;
+  line-height: 22px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.wee-select-dropdown .wee-select-dropdown-item-selected {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 700;
+  background-color: #fafafa;
+}
+
+.wee-select-dropdown .wee-select-dropdown-item-disabled {
+  color: rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+.wee-select-dropdown .wee-select-dropdown-item:hover:not(.wee-select-dropdown-item-disabled) {
+  background-color: #e6f7ff;
 }
 
 caption {

@@ -1,0 +1,214 @@
+// ==========================================================================
+// Wee – HeaderBar
+// ==========================================================================
+
+/*
+ * 顶部导航
+ * @default 默认文字模式
+ * @border-top 按钮顶部线条
+ * @border-bottom 按钮底部线条
+ * @border-box 围绕文字按钮
+ * @boxed  按钮区块背景色
+ * @boxed-rounded 按钮区块背景色圆角
+ * @strip 按钮全色覆盖
+ * @colored 整体导航变色
+ */
+
+.#{$prefix}-header {
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	z-index: $z-index-header-bar;
+	left: 0;
+	top: 0;
+}
+
+.#{$prefix}-header-inner {
+	@include clearfix;
+}
+
+.#{$prefix}-logo {
+	margin: 10px;
+	width: 180px;
+	height: 44px;
+	background: rgba(0, 0, 0, 0.06);
+	float: left;
+}
+
+.#{$prefix}-header-nav {
+	float: right;
+	@include clearfix;
+  .#{$prefix}-nav-item {
+		float: left;
+		line-height: 64px;
+		display: block;
+		margin: 0 5px;
+    padding: 0 20px;
+    @include transition(all 0.2s ease-out);
+
+		a {
+      display: block;
+      color: rgba(0, 0, 0, 0.9);
+      @include transition(all 0.2s ease-out);
+    }
+    a:hover {
+      color: $primary;
+    }
+	}
+
+	.#{$prefix}-nav-item-active {
+		a {
+			color: $primary;
+		}
+	}
+}
+
+.#{$prefix}-header-default {
+
+}
+
+// 默认文字模式
+.#{$prefix}-header-default {
+}
+// 按钮顶部线条
+.#{$prefix}-header-border-top {
+  .#{$prefix}-nav-item {
+    border-top: 5px solid #fff;
+	}
+	.#{$prefix}-nav-item:hover {
+    border-top: 5px solid $primary;
+	}
+	.#{$prefix}-nav-item-active {
+		border-top: 5px solid $primary;
+	}
+}
+// 按钮底部线条
+.#{$prefix}-header-border-bottom {
+  .#{$prefix}-nav-item {
+    border-bottom: 5px solid #fff;
+	}
+	.#{$prefix}-nav-item:hover {
+    border-bottom: 5px solid $primary;
+	}
+	.#{$prefix}-nav-item-active {
+		border-bottom: 5px solid $primary;
+	}
+}
+// 围绕文字按钮
+.#{$prefix}-header-border-box {
+  .#{$prefix}-nav-item {
+    padding: 0 5px;
+		a {
+      height: 32px;
+      margin:15px 0;
+      line-height: 30px;
+      padding: 0 15px;
+      border: 1px solid #fff;
+			color: rgba(0, 0, 0, 0.9);
+    }
+    a:hover {
+      color: $primary;
+      border-color: $primary;
+		}
+	}
+	.#{$prefix}-nav-item:hover {}
+	.#{$prefix}-nav-item-active {
+		a {
+      color: $primary;
+      border-color: $primary;
+		}
+	}
+}
+// 按钮区块背景色
+.#{$prefix}-header-boxed {
+  .#{$prefix}-nav-item {
+    padding: 0 5px;
+		a {
+      height: 34px;
+      margin:15px 0;
+      line-height: 34px;
+      padding: 0 15px;
+			color: rgba(0, 0, 0, 0.9);
+    }
+    a:hover {
+      color: #fff;
+      background: $primary;
+		}
+	}
+	.#{$prefix}-nav-item:hover {
+
+	}
+	.#{$prefix}-nav-item-active {
+		a {
+      color: #fff;
+      background: $primary;
+		}
+	}
+}
+// 按钮区块背景色圆角
+.#{$prefix}-header-boxed-rounded {
+  .#{$prefix}-nav-item {
+    padding: 0 5px;
+		a {
+      height: 34px;
+      margin:15px 0;
+      line-height: 34px;
+      padding: 0 20px;
+      color: rgba(0, 0, 0, 0.9);
+      @include border-radius(20px);
+    }
+    a:hover {
+      color: #fff;
+      background: $primary;
+		}
+	}
+	.#{$prefix}-nav-item-active {
+		a {
+      color: #fff;
+      background: $primary;
+		}
+	}
+}
+// 按钮全色覆盖
+.#{$prefix}-header-strip {
+  .#{$prefix}-nav-item {
+		a {
+			color: rgba(0, 0, 0, 0.9);
+		}
+	}
+	.#{$prefix}-nav-item:hover {
+		background: $primary;
+		a {
+			color: #fff;
+		}
+	}
+	.#{$prefix}-nav-item-active {
+		background: $primary;
+		a {
+			color: #fff;
+		}
+	}
+}
+
+// 整体导航变色
+.#{$prefix}-header-colored {
+  background: $primary;
+  .#{$prefix}-nav-item {
+		a {
+			color: rgba(255, 255, 255, 0.9);
+		}
+	}
+	.#{$prefix}-nav-item:hover {
+		background: #3ba1ff;
+		a {
+			color: #fff;
+		}
+	}
+	.#{$prefix}-nav-item-active {
+		background: #3ba1ff;
+		a {
+			color: #fff;
+		}
+	}
+}
