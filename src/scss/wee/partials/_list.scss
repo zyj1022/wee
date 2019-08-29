@@ -7,7 +7,7 @@
 /*
  * @list列表形式
  * @nine-grid 九宫格
- * @nine-grid-pic 九宫格纯图片
+ * @grid-pic 九宫格纯图片
  * @waterfall 瀑布流
  * @timeline 时间轴
  * @left-pic 图片在左边
@@ -38,8 +38,8 @@ $list: $prefix + '-list';
   }
   .#{$list}-item-pic {
     width: 100%;
-    height: 240px;
-    background: #f5f5f5;
+    min-height: 64px;
+    background:rgba(0,0,0,0.05);
     margin-bottom: 10px;
     overflow: hidden;
   }
@@ -60,8 +60,44 @@ $list: $prefix + '-list';
 }
 
 .#{$list}-grid-pic {
+  .#{$list}-body {
+    display: grid;
+    padding: 0 0 20px;
+    margin: 0;
+    list-style-type: none;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-auto-flow: dense;
+  }
+  .#{$list}-item {
+    background: rgba(0,0,0,.05);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 304px;
+    min-height: 200px;
+    grid-column: span 1;
+    grid-row: span 1;
+    margin-bottom: 0;
+  }
   .#{$list}-item-pic {
     overflow: hidden;
+    margin-bottom: 0;
+  }
+  .#{$list}-item-2x2 {
+    max-width: 100%;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .#{$list}-item-1x2 {
+    max-width: 100%;
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .#{$list}-item-2x1 {
+    max-width: 100%;
+    grid-column: span 2;
+    grid-row: span 1;
   }
 }
 

@@ -127,468 +127,76 @@ textarea {
   border-radius: 40px;
 }
 
-.wee-alert-primary {
-  background-color: #cbe6ff;
-  border-color: #b1daff;
-  color: #0069cb;
-}
-
-.wee-alert-primary hr {
-  border-top-color: #98cdff;
-}
-
-.wee-alert-primary .wee-alert-link {
-  color: #00417e;
-}
-
-.wee-alert-primary .wee-alert-close {
-  color: #00417e;
-}
-
-.wee-alert-secondary {
-  background-color: #e5e5e5;
-  border-color: #d9d8d8;
-  color: #666666;
-}
-
-.wee-alert-secondary hr {
-  border-top-color: #cccccc;
-}
-
-.wee-alert-secondary .wee-alert-link {
-  color: #403f3f;
-}
-
-.wee-alert-secondary .wee-alert-close {
-  color: #403f3f;
-}
-
 .wee-alert-success {
-  background-color: #baf29e;
-  border-color: #aaef88;
-  color: #368011;
+  background-color: #F1F7F0;
+  border-color: #A5C896;
+  color: #686A67;
 }
 
 .wee-alert-success hr {
-  border-top-color: #9aec71;
+  border-top-color: #97bf85;
 }
 
 .wee-alert-success .wee-alert-link {
-  color: #193d08;
+  color: #424341;
 }
 
 .wee-alert-success .wee-alert-close {
-  color: #193d08;
+  color: #424341;
 }
 
 .wee-alert-info {
-  background-color: #93f4f4;
-  border-color: #7cf2f2;
-  color: #0c7c7c;
+  background-color: #EBF1F8;
+  border-color: #5386C7;
+  color: #686A67;
 }
 
 .wee-alert-info hr {
-  border-top-color: #65f0f0;
+  border-top-color: #4078c1;
 }
 
 .wee-alert-info .wee-alert-link {
-  color: #053737;
+  color: #424341;
 }
 
 .wee-alert-info .wee-alert-close {
-  color: #053737;
+  color: #424341;
 }
 
 .wee-alert-warning {
-  background-color: #fef6c3;
-  border-color: #fdf2aa;
-  color: #bda404;
+  background-color: #FBF6F0;
+  border-color: #E3BC7F;
+  color: #686A67;
 }
 
 .wee-alert-warning hr {
-  border-top-color: #fdee91;
+  border-top-color: #deb16a;
 }
 
 .wee-alert-warning .wee-alert-link {
-  color: #736302;
+  color: #424341;
 }
 
 .wee-alert-warning .wee-alert-close {
-  color: #736302;
+  color: #424341;
 }
 
 .wee-alert-danger {
-  background-color: #fdcdcf;
-  border-color: #fcb4b8;
-  color: #c20912;
+  background-color: #F7EEED;
+  border-color: #CB847D;
+  color: #686A67;
 }
 
 .wee-alert-danger hr {
-  border-top-color: #fb9ca1;
+  border-top-color: #c4736b;
 }
 
 .wee-alert-danger .wee-alert-link {
-  color: #79050b;
+  color: #424341;
 }
 
 .wee-alert-danger .wee-alert-close {
-  color: #79050b;
-}
-
-.wee-alert-light {
-  background-color: white;
-  border-color: #f5f5f5;
-  color: #cfcfcf;
-}
-
-.wee-alert-light hr {
-  border-top-color: #e8e8e8;
-}
-
-.wee-alert-light .wee-alert-link {
-  color: #a9a8a8;
-}
-
-.wee-alert-light .wee-alert-close {
-  color: #a9a8a8;
-}
-
-.wee-alert-dark {
-  background-color: #7f7f7f;
-  border-color: #737272;
-  color: black;
-}
-
-.wee-alert-dark hr {
-  border-top-color: #666666;
-}
-
-.wee-alert-dark .wee-alert-link {
-  color: black;
-}
-
-.wee-alert-dark .wee-alert-close {
-  color: black;
-}
-
-.wee-alert-primary-outline {
-  background-color: #fff;
-  border-color: #1890ff;
-  color: #1890ff;
-}
-
-.wee-alert-primary-outline hr {
-  border-top-color: #0084fe;
-}
-
-.wee-alert-primary-outline .wee-alert-link {
-  color: #0069cb;
-}
-
-.wee-alert-primary-outline .wee-alert-close {
-  color: #0069cb;
-}
-
-.wee-alert-secondary-outline {
-  background-color: #fff;
-  border-color: #8c8c8c;
-  color: #8c8c8c;
-}
-
-.wee-alert-secondary-outline hr {
-  border-top-color: #7f7f7f;
-}
-
-.wee-alert-secondary-outline .wee-alert-link {
-  color: #666666;
-}
-
-.wee-alert-secondary-outline .wee-alert-close {
-  color: #666666;
-}
-
-.wee-alert-success-outline {
-  background-color: #fff;
-  border-color: #52c41a;
-  color: #52c41a;
-}
-
-.wee-alert-success-outline hr {
-  border-top-color: #49ad17;
-}
-
-.wee-alert-success-outline .wee-alert-link {
-  color: #368011;
-}
-
-.wee-alert-success-outline .wee-alert-close {
-  color: #368011;
-}
-
-.wee-alert-info-outline {
-  background-color: #fff;
-  border-color: #13c2c2;
-  color: #13c2c2;
-}
-
-.wee-alert-info-outline hr {
-  border-top-color: #11abab;
-}
-
-.wee-alert-info-outline .wee-alert-link {
-  color: #0c7c7c;
-}
-
-.wee-alert-info-outline .wee-alert-close {
-  color: #0c7c7c;
-}
-
-.wee-alert-warning-outline {
-  background-color: #fff;
-  border-color: #fadb14;
-  color: #fadb14;
-}
-
-.wee-alert-warning-outline hr {
-  border-top-color: #efd005;
-}
-
-.wee-alert-warning-outline .wee-alert-link {
-  color: #bda404;
-}
-
-.wee-alert-warning-outline .wee-alert-close {
-  color: #bda404;
-}
-
-.wee-alert-danger-outline {
-  background-color: #fff;
-  border-color: #f5222d;
-  color: #f5222d;
-}
-
-.wee-alert-danger-outline hr {
-  border-top-color: #f30b17;
-}
-
-.wee-alert-danger-outline .wee-alert-link {
-  color: #c20912;
-}
-
-.wee-alert-danger-outline .wee-alert-close {
-  color: #c20912;
-}
-
-.wee-alert-light-outline {
-  background-color: #fff;
-  border-color: #f5f5f5;
-  color: #cfcfcf;
-}
-
-.wee-alert-light-outline hr {
-  border-top-color: #e8e8e8;
-}
-
-.wee-alert-light-outline .wee-alert-link {
-  color: #a9a8a8;
-}
-
-.wee-alert-light-outline .wee-alert-close {
-  color: #a9a8a8;
-}
-
-.wee-alert-dark-outline {
-  background-color: #fff;
-  border-color: #262626;
-  color: #262626;
-}
-
-.wee-alert-dark-outline hr {
-  border-top-color: #191919;
-}
-
-.wee-alert-dark-outline .wee-alert-link {
-  color: black;
-}
-
-.wee-alert-dark-outline .wee-alert-close {
-  color: black;
-}
-
-.wee-alert-primary-bg {
-  background-color: #1890ff;
-  border-color: #1890ff;
-  color: #fff;
-}
-
-.wee-alert-primary-bg hr {
-  border-top-color: #0084fe;
-}
-
-.wee-alert-primary-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-primary-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-primary-bg .wee-alert-link {
-  color: #fff;
-}
-
-.wee-alert-secondary-bg {
-  background-color: #8c8c8c;
-  border-color: #8c8c8c;
-  color: #fff;
-}
-
-.wee-alert-secondary-bg hr {
-  border-top-color: #7f7f7f;
-}
-
-.wee-alert-secondary-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-secondary-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-secondary-bg .wee-alert-link {
-  color: #fff;
-}
-
-.wee-alert-success-bg {
-  background-color: #52c41a;
-  border-color: #52c41a;
-  color: #fff;
-}
-
-.wee-alert-success-bg hr {
-  border-top-color: #49ad17;
-}
-
-.wee-alert-success-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-success-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-success-bg .wee-alert-link {
-  color: #fff;
-}
-
-.wee-alert-info-bg {
-  background-color: #13c2c2;
-  border-color: #13c2c2;
-  color: #fff;
-}
-
-.wee-alert-info-bg hr {
-  border-top-color: #11abab;
-}
-
-.wee-alert-info-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-info-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-info-bg .wee-alert-link {
-  color: #fff;
-}
-
-.wee-alert-warning-bg {
-  background-color: #fadb14;
-  border-color: #fadb14;
-  color: #fff;
-}
-
-.wee-alert-warning-bg hr {
-  border-top-color: #efd005;
-}
-
-.wee-alert-warning-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-warning-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-warning-bg .wee-alert-link {
-  color: #fff;
-}
-
-.wee-alert-danger-bg {
-  background-color: #f5222d;
-  border-color: #f5222d;
-  color: #fff;
-}
-
-.wee-alert-danger-bg hr {
-  border-top-color: #f30b17;
-}
-
-.wee-alert-danger-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-danger-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-danger-bg .wee-alert-link {
-  color: #fff;
-}
-
-.wee-alert-light-bg {
-  background-color: #f5f5f5;
-  border-color: #f5f5f5;
-  color: #b5b5b5;
-}
-
-.wee-alert-light-bg hr {
-  border-top-color: #e8e8e8;
-}
-
-.wee-alert-light-bg .wee-alert-link {
-  color: #8f8f8f;
-}
-
-.wee-alert-light-bg .wee-alert-close {
-  color: #8f8f8f;
-}
-
-.wee-alert-light-bg .wee-alert-link {
-  color: #b5b5b5;
-}
-
-.wee-alert-dark-bg {
-  background-color: #262626;
-  border-color: #262626;
-  color: #fff;
-}
-
-.wee-alert-dark-bg hr {
-  border-top-color: #191919;
-}
-
-.wee-alert-dark-bg .wee-alert-link {
-  color: #d9d9d9;
-}
-
-.wee-alert-dark-bg .wee-alert-close {
-  color: #d9d9d9;
-}
-
-.wee-alert-dark-bg .wee-alert-link {
-  color: #fff;
+  color: #424341;
 }
 
 .wee-avatar {
@@ -669,7 +277,7 @@ textarea {
 .wee-badge {
   display: inline-block;
   min-width: 10px;
-  padding: 5px 10px;
+  padding: 4px 8px;
   font-size: 75%;
   font-weight: 700;
   color: #fff;
@@ -4315,8 +3923,15 @@ input[type="color"][disabled] {
   margin: 10px;
   width: 180px;
   height: 44px;
-  background: rgba(0, 0, 0, 0.06);
+  line-height: 44px;
+  font-size: 24px;
   float: left;
+}
+
+.wee-logo i {
+  font-style: normal;
+  color: #3ba1ff;
+  font-weight: 700;
 }
 
 .wee-header-nav {
@@ -4472,6 +4087,14 @@ input[type="color"][disabled] {
 
 .wee-header-colored {
   background: #1890ff;
+}
+
+.wee-header-colored .wee-logo {
+  color: #fff;
+}
+
+.wee-header-colored .wee-logo i {
+  color: #fff;
 }
 
 .wee-header-colored .wee-nav-item a {
@@ -4672,7 +4295,7 @@ img.circle {
 /*
  * @list列表形式
  * @nine-grid 九宫格
- * @nine-grid-pic 九宫格纯图片
+ * @grid-pic 九宫格纯图片
  * @waterfall 瀑布流
  * @timeline 时间轴
  * @left-pic 图片在左边
@@ -4702,8 +4325,8 @@ img.circle {
 
 .wee-list-body .wee-list-item-pic {
   width: 100%;
-  height: 240px;
-  background: #f5f5f5;
+  min-height: 64px;
+  background: rgba(0, 0, 0, 0.05);
   margin-bottom: 10px;
   overflow: hidden;
 }
@@ -4722,8 +4345,49 @@ img.circle {
   text-align: left;
 }
 
+.wee-list-grid-pic .wee-list-body {
+  display: grid;
+  padding: 0 0 20px;
+  margin: 0;
+  list-style-type: none;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.wee-list-grid-pic .wee-list-item {
+  background: rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 304px;
+  min-height: 200px;
+  grid-column: span 1;
+  grid-row: span 1;
+  margin-bottom: 0;
+}
+
 .wee-list-grid-pic .wee-list-item-pic {
   overflow: hidden;
+  margin-bottom: 0;
+}
+
+.wee-list-grid-pic .wee-list-item-2x2 {
+  max-width: 100%;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.wee-list-grid-pic .wee-list-item-1x2 {
+  max-width: 100%;
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.wee-list-grid-pic .wee-list-item-2x1 {
+  max-width: 100%;
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .wee-list-left-pic .wee-list-item-pic {
