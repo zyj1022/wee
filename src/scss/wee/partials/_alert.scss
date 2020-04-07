@@ -1,9 +1,7 @@
 @charset "UTF-8";
-
 // ==========================================================================
 // Wee – alert
 // ==========================================================================
-
 @mixin alert-define($background, $border, $text-color) {
   background-color: $background;
   border-color: $border;
@@ -12,9 +10,11 @@
   hr {
     border-top-color: darken($border, 5%);
   }
+
   .#{$prefix}-alert-link {
     color: darken($text-color, 15%);
   }
+
   .#{$prefix}-alert-close {
     color: darken($text-color, 15%);
   }
@@ -47,16 +47,18 @@
 .#{$prefix}-alert-success {
   @include alert-define(#F1F7F0, #A5C896, #686A67);
 }
+
 .#{$prefix}-alert-info {
   @include alert-define(#EBF1F8, #5386C7, #686A67);
 }
+
 .#{$prefix}-alert-warning {
   @include alert-define(#FBF6F0, #E3BC7F, #686A67);
 }
+
 .#{$prefix}-alert-danger {
   @include alert-define(#F7EEED, #CB847D, #686A67);
 }
-
 
 // @each $color, $value in $theme-colors {
 //   @if $color == light {
@@ -69,7 +71,7 @@
 //     }
 //   }
 // }
-
+//
 // @each $color, $value in $theme-colors {
 //   @if $color == light {
 //     .#{$prefix}-alert-#{$color}-outline {
@@ -81,7 +83,7 @@
 //     }
 //   }
 // }
-
+//
 // @each $color, $value in $theme-colors {
 //   @if $color == light {
 //     .#{$prefix}-alert-#{$color}-bg {

@@ -16,7 +16,7 @@
   background-color: $color-grey-1;
   cursor: pointer;
   text-align: center;
-  line-height: normal;
+  line-height: 32px;
   white-space: nowrap;
   background-image: none;
   height: 32px;
@@ -142,13 +142,14 @@
   height: 40px;
   line-height: 40px;
   font-size: 18px;
-  line-height: 1.3333;
+  line-height: 40px;
 }
 
 .#{$prefix}-btn-sm {
   padding: 0 6px;
   height: 24px;
   font-size: 12px;
+  line-height: 24px;
 }
 
 .#{$prefix}-btn-round {

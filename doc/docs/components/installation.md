@@ -1,7 +1,7 @@
 ---
 id: installation
-title: installation 安装
-sidebar_label: installation 安装
+title: Installation 安装
+sidebar_label: Installation 安装
 ---
 
-## installation 安装
+## Installation 安装

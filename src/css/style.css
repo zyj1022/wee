@@ -390,7 +390,7 @@ a.wee-badge:hover, a.wee-badge:focus {
   background-color: #ffffff;
   cursor: pointer;
   text-align: center;
-  line-height: normal;
+  line-height: 32px;
   white-space: nowrap;
   background-image: none;
   height: 32px;
@@ -1104,13 +1104,14 @@ a.wee-badge:hover, a.wee-badge:focus {
   height: 40px;
   line-height: 40px;
   font-size: 18px;
-  line-height: 1.3333;
+  line-height: 40px;
 }
 
 .wee-btn-sm, .wee-btn-group-sm > .wee-btn {
   padding: 0 6px;
   height: 24px;
   font-size: 12px;
+  line-height: 24px;
 }
 
 .wee-btn-round {
@@ -6137,7 +6138,7 @@ template {
 .wee-row span {
   line-height: 30px;
   margin-bottom: 10px;
-  background: #ccc;
+  background: #e9f0ff;
   display: block;
   text-align: center;
 }
@@ -6171,7 +6172,7 @@ template {
   display: block;
   text-align: center;
   border: 1px solid #ccc;
-  background-color: #eee;
+  background-color: #e9f0ff;
   width: 100%;
 }
 
